@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Perl Tutorial</title>
-    <link>https://perl.dev.br/en/categories/</link>
+    <link>https://perl.dev.br/categories/</link>
     <description>Recent content in Categories on Perl Tutorial</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>pt</language><atom:link href="https://perl.dev.br/en/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>pt</language><atom:link href="https://perl.dev.br/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

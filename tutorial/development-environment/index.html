@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Aprenda Perl | Perl Tutorial</title>
+    <title>Configurando o ambiente de desenvolvimento do Perl | Perl Tutorial</title>
 
     
     <link href="/css/nucleus.css?1641761282" rel="stylesheet">
@@ -38,7 +38,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/">
+  <body class="" data-url="/tutorial/development-environment/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -97,7 +97,7 @@
   
     
     <li data-nav-id="/tutorial/" title="Tutorial" class="dd-item
-        
+        parent
         
         
         ">
@@ -146,7 +146,7 @@
  
   
     
-      <li data-nav-id="/tutorial/development-environment/" title="Configurando o ambiente de desenvolvimento do Perl" class="dd-item ">
+      <li data-nav-id="/tutorial/development-environment/" title="Configurando o ambiente de desenvolvimento do Perl" class="dd-item active">
         <a href="/tutorial/development-environment/">
         Perl - Ambiente de Desenvolvimento
         <i class="fas fa-check read-icon"></i>
@@ -310,30 +310,10 @@
                   
                     
                     
-                      <option id="pt" value="https://perl.dev.br/" selected>Português</option>
+                      <option id="pt" value="https://perl.dev.br/tutorial/development-environment/" selected>Português</option>
                     
                   
               
-                  
-              
-                  
-              
-                  
-              
-                  
-              
-                  
-              
-          
-              
-              
-                  
-              
-                  
-                    
-                    
-                      <option id="en" value="https://perl.dev.br/en/">English</option>
-                    
                   
               
                   
@@ -380,6 +360,72 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Melhorar esta página' href="https://github.com/w3programming/perl.dev.br/edit/master/content/tutorial/development-environment/index.pt.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Melhorar esta página</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Aprenda Perl</a> > <a href='/tutorial/'>Tutorial</a> > Configurando o ambiente de desenvolvimento do Perl
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#strawberry-perl--o-que-é-e-como-baixá-lo"><strong>Strawberry Perl</strong> — O que é e como baixá-lo</a></li>
+    <li><a href="#instalando-o-strawberry-perl-no-windows--passo-a-passo-com-imagens"><strong>Instalando o Strawberry Perl no Windows</strong> — Passo a Passo com imagens</a></li>
+    <li><a href="#confirmação-da-instalação-do-perl">Confirmação da instalação do Perl</a></li>
+    <li><a href="#instalando-um-editor-de-texto--também-conhecido-como-editor-de-código"><strong>Instalando um editor de texto</strong> — Também conhecido como editor de código</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
         <div id="head-tags">
         
         </div>
@@ -388,23 +434,89 @@
             
 <div class="affiliate-disclosure">Esse site contém links de afiliados. Se você comprar algo através de um link desse site nós podemos receber uma pequena comissão sem nenhum custo adicional para você. <a href="https://support.perl.dev.br/pt/institutional/affiliate-disclosure/" target="blank" rel="noopener">Saiba mais</a></div>
           
+            <h1>
+              
+              Configurando o ambiente de desenvolvimento do Perl
+            </h1>
+          
 
         
 
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
-</span>
 
- 
-<h1 id="aprenda-perl">Aprenda Perl</h1>
+<p>Nesse tutorial nós vamos instalar o Perl e tudo o que for necessário para começar a programar nesta linguagem.</p>
+<p>Para programar em Pel é necessário instalar o aplicativo de distribuição da linguagem e um editor de texto simples.</p>
+<h2 id="strawberry-perl--o-que-é-e-como-baixá-lo"><strong>Strawberry Perl</strong> — O que é e como baixá-lo</h2>
+<p>O Strawberry Perl é um ambiente de desenvolvimento Perl para o Microsoft Windows.</p>
+<p>O Strawberry Perl contém todos os requisitos necessários para executar scripts em Perl.</p>
+<p>O Strawberry Perl pode ser baixado diretamente do site oficial <a href='https://strawberryperl.com' target="_blank" rel="nofollow noopener" title="Clique para visitar o site oficial do Strawberry Perl (site em inglês)">https://strawberryperl.com&nbsp;<i class="fas fa-external-link-alt outter-link"></i>
+</a>.</p>
 
-<div class="notices note" ><p>Este tutorial cobre os aspectos mais fundamentais do Perl para aqueles que querem aprender como liberar todo o potencial dessa linguagem de programação poderosa e estabelecida.</p>
+<div class="notices info" ><p>Após o download, basta executar o aplicativo de instalação.</p>
 </div>
 
-<p>Não importa se você está apenas começando em Perl ou é um programador experiente, esse tutorial é para você.</p>
-<p>Este tutorial começará com o básico de Perl e avançará para um nível mais profissional. Aprender Perl é fácil, então você não precisa se preocupar com isso. As lições são pequenas e curtas para permitir que você aprenda no seu próprio ritmo.</p>
+<h2 id="instalando-o-strawberry-perl-no-windows--passo-a-passo-com-imagens"><strong>Instalando o Strawberry Perl no Windows</strong> — Passo a Passo com imagens</h2>
+<ol>
+<li>Logo após executar o instalador do Strawberry Perl, a janela abaixo é apresentada. Clique no botão <code>Next</code> para continuar.</li>
+</ol>
+<p><img src="/images/install-perl-strawberry-1.png" alt="Tela de apresentação do instalador do Strawberry Perl"></p>
+<ol start="2">
+<li>Leia e aceite os termos do programa clicando na caixa de seleção <code>I accept the terms in the License Agreement</code> e em seguida no botão <code>Next</code></li>
+</ol>
+<p><img src="/images/install-perl-strawberry-2.png" alt="Termos e condições do Strawberry Perl"></p>
+<ol start="3">
+<li>Selecione o local de instalação do aplicativo. Por padrão, é sugerido instalar o Strawberry Perl na pasta <code>c:\Strawberry</code>. Se tiver em dúvida de onde instalá-lo, deixa essa pasta padrão mesmo.</li>
+</ol>
+<p><img src="/images/install-perl-strawberry-3.png" alt="Local de instalação do Strawberry Perl"></p>
+<ol start="4">
+<li>Com o sistema todo configurado, basta clicar no botão <code>Install</code> para iniciar a instalação do software.</li>
+</ol>
+<p><img src="/images/install-perl-strawberry-4.png" alt="Tela de confirmação da instalação do Strawberry Perl"></p>
+<ol start="5">
+<li>Agora, basta aguardar a finalização da instalação.</li>
+</ol>
+<p><img src="/images/install-perl-strawberry-5.png" alt="Andamento da instalação do Strawberry Perl no Windows"></p>
+<ol start="6">
+<li>Após completar a instalação do Strawberry Perl, a seguinte tela é apresentada. Finalize o instalador clicando no botão <code>Finish</code>.</li>
+</ol>
+<p><img src="/images/install-perl-strawberry-6.png" alt="Tela final da instalação do Strawberry Perl no Windows"></p>
+<h2 id="confirmação-da-instalação-do-perl">Confirmação da instalação do Perl</h2>
+<p>Para confirmar se o Perl foi devidamente instalado no seu computador, siga os seguintes passos:</p>
+<ol>
+<li>Abra um <code>prompt de comando</code> do Windows e digite o comando <code>perl -v</code>.</li>
+<li>Pressiona a tecla <code>Enter</code> para executar o comando.</li>
+<li>Verifique se a saída do comando indica a versão do Perl instalado no computador como na imagem abaixo.</li>
+</ol>
+<p><img src="/images/perl-v.png" alt="Confirmando a instalação do Perl no Windows"></p>
+<p>Caso retorno do comando seja algo do tipo:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#e6db74">&#39;perl&#39;</span> is not recognized as an internal or external command, operable program or batch file.
+</code></pre></div><p>ou</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#e6db74">&#39;perl&#39;</span> não é reconhecido como um comando interno...
+</code></pre></div><p>&hellip;é necessário verificar se o diretório <code>C:\Strawberry\perl\bin</code> foi inserido na variável de ambiente <code>PATH</code> do windows.</p>
+<p>Você pode inserir o diretório do Perl na variável de ambiente <code>PATH</code> usando o comando:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">setx path <span style="color:#e6db74">&#34;%path%;C:\Strawberry\perl\bin&#34;</span>
+</code></pre></div><h2 id="instalando-um-editor-de-texto--também-conhecido-como-editor-de-código"><strong>Instalando um editor de texto</strong> — Também conhecido como editor de código</h2>
+<p>Os scripts em Perl são textos simples.</p>
+<p>Os scripts em Perl podem ser editados em qualquer editor de texto simples.</p>
+<p>Para facilitar a programação em Perl, é recomendável instalar um editor que possua recursos como detaque de sintaxe e autocompletar.</p>
+<p>As opções de editores são várias. Eu recomendo usar o Visual Studio Code.</p>
+<p>Para baixá-lo, basta visitar o site oficial em <a href='https://code.visualstudio.com' target="_blank" rel="nofollow noopener" title="Clique para visitar o site oficial do Visual Studio Code">https://code.visualstudio.com&nbsp;<i class="fas fa-external-link-alt outter-link"></i>
+</a></p>
+
+<div class="notices info" ><p>A instalação do Visual Studio Code é bem simples e direta. Clicando no instalador e seguindo as etapas apresentadas pelo programa.</p>
+</div>
+
+<blockquote>
+<p>Caso queira experimentar outras opções de editores, você pode testar o <a href='https://www.sublimetext.com' target="_blank" rel="nofollow noopener" title="Site oficial do Sublime Text (site em inglês)">Sublime Text&nbsp;<i class="fas fa-external-link-alt outter-link"></i>
+</a> ou o <a href='https://atom.io' target="_blank" rel="nofollow noopener" title="Site oficial do Atom (site em inglês)">Atom&nbsp;<i class="fas fa-external-link-alt outter-link"></i>
+</a>. Dois dos mais populares editores de código entre programadores. O <a href='https://notepad-plus-plus.org/downloads/' target="_blank" rel="nofollow noopener" title="Site oficial do Notepad&#43;&#43; (site em inglês)">Notepad&#43;&#43;&nbsp;<i class="fas fa-external-link-alt outter-link"></i>
+</a> também é uma boa opção.</p>
+</blockquote>
+
+
+<footer class="footline">
 	
-  
+</footer>
+
         
         </div>
         
@@ -436,8 +548,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -451,6 +561,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -468,6 +581,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -483,6 +597,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -571,8 +688,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/tutorial/introduction/" title="Introdução ao Perl"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/tutorial/" title="Tutorial" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/tutorial/first-program/" title="Desenvolvendo o primeiro programa em Perl" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Documentação Completa do Perl on Perl Tutorial</title>
+    <link>https://perl.dev.br/reference/</link>
+    <description>Recent content in Documentação Completa do Perl on Perl Tutorial</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt</language><atom:link href="https://perl.dev.br/reference/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Palavras-chave do Perl</title>
+      <link>https://perl.dev.br/reference/keywords/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://perl.dev.br/reference/keywords/</guid>
+      <description>Nesta página você encontrará uma referência completa para todas as palavras-chave do Perl e o que cada uma delas representa para a linguagem.
+Uma palavra-chave representa um termo reservado da linguagem de programação.
+ No Perl é possível sobreescrever as palavras-chave, mas isso é uma prática não recomendada. Sobrescrever palavras-chaves podem gerar erros de lógica muito difíceis de serem depurados.
+ Funções internas do Perl    Palavra-chave Definição     -A    -B    -b    -C    -c    -d    -e    -f    -g    -k    -l    -M    -O    -o    -p    -r    -R    -S    -s    -T    -t    -u    -w    -W    -X    -x    -z    abs    accept    alarm    atan2    AUTOLOAD    BEGIN    bind    binmode    bless    break    caller    chdir    CHECK    chmod    chomp    chop    chown    chr    chroot    close    closedir    connect    cos    crypt    dbmclose    dbmopen    defined    delete    DESTROY    die    dump    each    END    endgrent    endhostent    endnetent    endprotoent    endpwent    endservent    eof    eval    exec    exists    exit    fcntl    fileno    flock    fork    format    formline    getc    getgrent    getgrgid    getgrnam    gethostbyaddr    gethostbyname    gethostent    getlogin    getnetbyaddr    getnetbyname    getnetent    getpeername    getpgrp    getppid    getpriority    getprotobyname    getprotobynumber    getprotoent    getpwent    getpwnam    getpwuid    getservbyname    getservbyport    getservent    getsockname    getsockopt    glob    gmtime    goto    grep    hex    index    INIT    int    ioctl    join    keys    kill    last    lc    lcfirst    length    link    listen    local    localtime    log    lstat    map    mkdir    msgctl    msgget    msgrcv    msgsnd    my    next    not    oct    open    opendir    ord    our    pack    pipe    pop    pos    print    printf    prototype    push    quotemeta    rand    read    readdir    readline    readlink    readpipe    recv    redo    ref    rename    require    reset    return    reverse    rewinddir    rindex    rmdir    say    scalar    seek    seekdir    select    semctl    semget    semop    send    setgrent    sethostent    setnetent    setpgrp    setpriority    setprotoent    setpwent    setservent    setsockopt    shift    shmctl    shmget    shmread    shmwrite    shutdown    sin    sleep    socket    socketpair    sort    splice    split    sprintf    sqrt    srand    stat    state    study    substr    symlink    syscall    sysopen    sysread    sysseek    system    syswrite    tell    telldir    tie    tied    time    times    truncate    uc    ucfirst    umask    undef    UNITCHECK    unlink    unpack    unshift    untie    use    utime    values    vec    wait    waitpid    wantarray    warn    write     Sintaxe interna do Perl    Palavra-chave Descrição     __DATA__    __END__    __FILE__    __LINE__    __PACKAGE__    and    cmp    continue    CORE    do    else    elsif    eq    exp    for    foreach    ge    gt    if    le    lock    lt    m    ne    no    or    package    q    qq    qr    qw    qx    s    sub    tr    unless    until    while    xor    y     Variáveis internas do Perl    Palavra-chave Descrição     $!</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://perl.dev.br/pt/tutorial/</loc>
+    <loc>https://perl.dev.br/tutorial/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -11,10 +11,24 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="https://perl.dev.br/pt/tutorial/"
+                href="https://perl.dev.br/tutorial/"
                 />
   </url><url>
-    <loc>https://perl.dev.br/pt/</loc>
+    <loc>https://perl.dev.br/reference/</loc>
+  </url><url>
+    <loc>https://perl.dev.br/tutorial/introduction/</loc>
+  </url><url>
+    <loc>https://perl.dev.br/reference/keywords/</loc>
+  </url><url>
+    <loc>https://perl.dev.br/tutorial/development-environment/</loc>
+  </url><url>
+    <loc>https://perl.dev.br/tutorial/first-program/</loc>
+  </url><url>
+    <loc>https://perl.dev.br/tutorial/syntax/</loc>
+  </url><url>
+    <loc>https://perl.dev.br/tutorial/variables/</loc>
+  </url><url>
+    <loc>https://perl.dev.br/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -23,10 +37,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="https://perl.dev.br/pt/"
+                href="https://perl.dev.br/"
                 />
   </url><url>
-    <loc>https://perl.dev.br/pt/categories/</loc>
+    <loc>https://perl.dev.br/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -35,10 +49,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="https://perl.dev.br/pt/categories/"
+                href="https://perl.dev.br/categories/"
                 />
   </url><url>
-    <loc>https://perl.dev.br/pt/tags/</loc>
+    <loc>https://perl.dev.br/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -47,7 +61,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="https://perl.dev.br/pt/tags/"
+                href="https://perl.dev.br/tags/"
                 />
   </url>
 </urlset>

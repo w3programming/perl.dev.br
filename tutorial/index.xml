@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorial on Perl Tutorial</title>
+    <link>https://perl.dev.br/tutorial/</link>
+    <description>Recent content in Tutorial on Perl Tutorial</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt</language><atom:link href="https://perl.dev.br/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introdução ao Perl</title>
+      <link>https://perl.dev.br/tutorial/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://perl.dev.br/tutorial/introduction/</guid>
+      <description>Neste artigo você conhecerá alguns aspectos importantes da linguagem de programação Perl. Esse é um primeiro contato com características que compõem a linguagem.
+Características do Perl — Aspectos importantes da linguagem Perl é uma das linguagens de programação mais populares e ricas em recursos do mercado. Ela vem sendo desenvolvida e aprimorada por mais de duas décadas. Conta com uma comunidade ativa e participativa em seu desenvolvimento.
+O Perl pode ser executado em uma quantidade absurda de plataforma.</description>
+    </item>
+    
+    <item>
+      <title>Configurando o ambiente de desenvolvimento do Perl</title>
+      <link>https://perl.dev.br/tutorial/development-environment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://perl.dev.br/tutorial/development-environment/</guid>
+      <description>Nesse tutorial nós vamos instalar o Perl e tudo o que for necessário para começar a programar nesta linguagem.
+Para programar em Pel é necessário instalar o aplicativo de distribuição da linguagem e um editor de texto simples.
+Strawberry Perl — O que é e como baixá-lo O Strawberry Perl é um ambiente de desenvolvimento Perl para o Microsoft Windows.
+O Strawberry Perl contém todos os requisitos necessários para executar scripts em Perl.</description>
+    </item>
+    
+    <item>
+      <title>Desenvolvendo o primeiro programa em Perl</title>
+      <link>https://perl.dev.br/tutorial/first-program/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://perl.dev.br/tutorial/first-program/</guid>
+      <description>Os programas em Perl são textos simples.
+ Apesar da simplicidade, os scripts em Perl podem executar tarefas complexas.
+ Primeiro, crie uma pasta chamada scripts-perl no diretório raiz c:. Abre o seu editor de texto preferido para criarmos o primeiro script em Perl. Crie um novo arquivo e insira o código abaixo:  #!/usr/bin/perl use warnings; print(&amp;#34;Olá, Mundo!\n&amp;#34;);  Salve o arquivo com o nome hello.pl dentro do diretório scripts-perl.</description>
+    </item>
+    
+    <item>
+      <title>Perl - Sintaxe</title>
+      <link>https://perl.dev.br/tutorial/syntax/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://perl.dev.br/tutorial/syntax/</guid>
+      <description>Perl possui uma sintaxe muito simples e direta.
+Vários elementos da linguagem são semelhantes ao idioma inglês.
+Variáveis e valores Em Perl, nós criamos programas para manipular algum tipo de dado.
+O Perl possui diversos tipos diferentes de dados.
+Esses tipos de dados incluem strings, números e dados mais complexos como listas.
+Exemplo:
+&amp;#34;Programando em Perl&amp;#34; 120 1.2 Um dos conceitos mais importantes em programação é a reusabilidade.
+Para reusar valores nós precisamos armazená-los em algum lugar.</description>
+    </item>
+    
+    <item>
+      <title>Perl - Variáveis</title>
+      <link>https://perl.dev.br/tutorial/variables/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://perl.dev.br/tutorial/variables/</guid>
+      <description>Variáveis em Perl são usadas para armazenar dados.
+Uma variável é um recursos excencial para qualquer linguagem de programação.
+O Perl fonece três tipos de variáveis:
+ Scalars, Listas, e Hashes.  Nesse tutorial nós vamos aprender sobre o tipo Scalar.
+ Criando uma variável Uma variável em Perl é criada usando o cifrão $ seguido pelo identificador da variável e um valor de atribuição.
+Assim que um valor é atribuido para a variável, ela é criada pelo Perl.</description>
+    </item>
+    
+  </channel>
+</rss>

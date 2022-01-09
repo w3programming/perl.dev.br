@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Aprenda Perl | Perl Tutorial</title>
+    <title>Introdução ao Perl | Perl Tutorial</title>
 
     
     <link href="/css/nucleus.css?1641761282" rel="stylesheet">
@@ -38,7 +38,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/">
+  <body class="" data-url="/tutorial/introduction/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -97,7 +97,7 @@
   
     
     <li data-nav-id="/tutorial/" title="Tutorial" class="dd-item
-        
+        parent
         
         
         ">
@@ -125,7 +125,7 @@
  
   
     
-      <li data-nav-id="/tutorial/introduction/" title="Introdução ao Perl" class="dd-item ">
+      <li data-nav-id="/tutorial/introduction/" title="Introdução ao Perl" class="dd-item active">
         <a href="/tutorial/introduction/">
         Perl - Introdução
         <i class="fas fa-check read-icon"></i>
@@ -310,30 +310,10 @@
                   
                     
                     
-                      <option id="pt" value="https://perl.dev.br/" selected>Português</option>
+                      <option id="pt" value="https://perl.dev.br/tutorial/introduction/" selected>Português</option>
                     
                   
               
-                  
-              
-                  
-              
-                  
-              
-                  
-              
-                  
-              
-          
-              
-              
-                  
-              
-                  
-                    
-                    
-                      <option id="en" value="https://perl.dev.br/en/">English</option>
-                    
                   
               
                   
@@ -380,6 +360,81 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Melhorar esta página' href="https://github.com/w3programming/perl.dev.br/edit/master/content/tutorial/introduction/index.pt.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Melhorar esta página</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Aprenda Perl</a> > <a href='/tutorial/'>Tutorial</a> > Introdução ao Perl
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#características-do-perl--aspectos-importantes-da-linguagem"><strong>Características do Perl</strong> — Aspectos importantes da linguagem</a></li>
+    <li><a href="#os-recursos-mais-importantes-do-perl--destaques-da-linguagem"><strong>Os Recursos Mais Importantes do Perl</strong> — Destaques da linguagem</a>
+      <ul>
+        <li><a href="#1-linguagem-de-programação-extensível">1. Linguagem de programação extensível</a></li>
+        <li><a href="#2-facilidade-de-uso-e-aprendizado">2. Facilidade de uso e aprendizado</a></li>
+        <li><a href="#3-versatilidade">3. Versatilidade</a></li>
+        <li><a href="#4-expressão-regular">4. Expressão regular</a></li>
+        <li><a href="#5-código-aberto">5. Código aberto</a></li>
+        <li><a href="#6-qualidade-e-segurança">6. Qualidade e segurança</a></li>
+      </ul>
+    </li>
+    <li><a href="#diferentes-versões-do-perl--versão-5-x-versão-6"><strong>Diferentes Versões do Perl</strong> — Versão 5 x Versão 6</a></li>
+    <li><a href="#quem-inventou-o-perl">Quem inventou o Perl?</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
         <div id="head-tags">
         
         </div>
@@ -388,23 +443,77 @@
             
 <div class="affiliate-disclosure">Esse site contém links de afiliados. Se você comprar algo através de um link desse site nós podemos receber uma pequena comissão sem nenhum custo adicional para você. <a href="https://support.perl.dev.br/pt/institutional/affiliate-disclosure/" target="blank" rel="noopener">Saiba mais</a></div>
           
+            <h1>
+              
+              Introdução ao Perl
+            </h1>
+          
 
         
 
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
-</span>
 
- 
-<h1 id="aprenda-perl">Aprenda Perl</h1>
+<p><strong>Neste artigo você conhecerá alguns aspectos importantes da linguagem de programação Perl.</strong> Esse é um primeiro contato com características que compõem a linguagem.</p>
+<h2 id="características-do-perl--aspectos-importantes-da-linguagem"><strong>Características do Perl</strong> — Aspectos importantes da linguagem</h2>
+<p><strong>Perl é uma das linguagens de programação mais populares e ricas em recursos do mercado.</strong> Ela vem sendo desenvolvida e aprimorada por mais de duas décadas. Conta com uma comunidade ativa e participativa em seu desenvolvimento.</p>
+<p>O Perl pode ser executado em uma quantidade absurda de plataforma. Compatível com sistemas operacionais mais populares como Windows, Linux e MacOS, ele se torna uma escolha acertada para quem precisa de portabilidade multiplataforma.</p>
+<blockquote>
+<p>No momento o Perl é compatível com mais de 100 plataformas diferentes.</p>
+</blockquote>
+<p><strong>Mas para que o Perl pode ser utilizado?</strong></p>
+<p>O Perl é uma linguagem versátil. Pode ser usado tanto em projeto de missão crítica como para projetos menores, ou até scripts bem simples de apenas uma linha.</p>
+<h2 id="os-recursos-mais-importantes-do-perl--destaques-da-linguagem"><strong>Os Recursos Mais Importantes do Perl</strong> — Destaques da linguagem</h2>
+<h3 id="1-linguagem-de-programação-extensível">1. Linguagem de programação extensível</h3>
+<p>O Perl possui um repositório de módulos chamado <a href='https://www.cpan.org' target="_blank" rel="nofollow noopener" title="Visitar o CPAN">CPAN&nbsp;<i class="fas fa-external-link-alt outter-link"></i>
+</a>, abreviação de <strong>Comprehensive Perl Archive Network</strong>, nele é possível encontrar centenas de milhares de extensões para a linguagem.</p>
+<p>Se você precisa de algum módulo que execute uma determinada tarefa, é bem provável que alguém na comunidade já o tenha desenvolvido.</p>
+<p>Os módulos incluem desde <strong>interfaces gráficas</strong> com o usuário UIs até integração com os <strong>gerenciadores de banco de dados</strong> mais populares.</p>
+<blockquote>
+<p>O Perl fornece suporte para os bancos de dados mais conhecidos pelos programadores como <strong>MySQL, Oracle, PostgresSQL</strong> e muito mais.</p>
+</blockquote>
+<h3 id="2-facilidade-de-uso-e-aprendizado">2. Facilidade de uso e aprendizado</h3>
+<p><strong>Apesar de algumas controvérsias em relação ao Perl, a linguagem é muito fácil de ser aprendida.</strong></p>
+<p>Além de contar com uma <a href='https://www.perl.org/community.html' target="_blank" rel="nofollow noopener" title="Comunidade do Perl (site em inglês)">comunidade enorme e prestativa&nbsp;<i class="fas fa-external-link-alt outter-link"></i>
+</a>, ainda é possível encontrar milhares de tutoriais disponíveis de graça pela internet.</p>
+<p>O Perl conta ainda com uma <a href='https://perldoc.perl.org' target="_blank" rel="nofollow noopener" title="Documentação do Perl (site em inglês)">documentação&nbsp;<i class="fas fa-external-link-alt outter-link"></i>
+</a> bem detalhada e fácil de entender. A linguagem se destaca pela sua eficiência em executar tarefas complexas.</p>
+<h3 id="3-versatilidade">3. Versatilidade</h3>
+<p>Um dos recursos mais importantes de qualquer linguagem de programação é a sua versatilidade em relação a paradigmas de programação.</p>
+<p><strong>Orientação a objetos, programação procedural ou programação funcional</strong>, todos esses paradigmas de programação são suportados pelo Perl.</p>
+<p>Isso permite ao programador ter a liberdade para desenvolver seus programas usando o paradigma que melhor se encaixa em seus projetos.</p>
+<h3 id="4-expressão-regular">4. Expressão regular</h3>
+<p>Quando falamos em manipulação de texto o Perl está em outro nível. Podemos dizer que a linguagem é a <strong>precursora das expressões regulares.</strong></p>
+<blockquote>
+<p>Expressão regular ou regex é um sistema poderoso usado para encontrar ocorrências de texto em diversos tipos de conteúdos. Você aprenderá muito mais sobre esse sistema no decorrer do tutorial.</p>
+</blockquote>
+<p>O Perl possui um conjunto de APIs internas usadas especificamente para processamento de texto. Com elas é bem mais fácil manipular arquivos gerados a partir de linguagens de marcação como XML e HTML.</p>
+<p>Já o motor de regex do Perl dispensa comentários. Com um sistema robusto, o regex do Perl pode ser usado para encontrar arquivos específicos em sistemas através de combinações complexas.</p>
+<h3 id="5-código-aberto">5. Código aberto</h3>
+<p>Um projeto de código aberto permite ao usuário acessar, alterar e até distribuí-lo de forma livre e gratuita.</p>
+<p><strong>O Perl foi desenvolvido desde de a sua criação como um projeto de código aberto.</strong> Você pode baixar o Perl, alterá-lo e distribuí-lo de forma livre usando uma das licenças GNU, GPL ou uma licença artística.</p>
+<p>A linguagem ainda conta com suporte para o uso comercial.</p>
+<h3 id="6-qualidade-e-segurança">6. Qualidade e segurança</h3>
+<p>A segurança da linguagem é algo indispensável quando falamos em programação.</p>
+<p>O Perl é certificado pela Coverity com livre de falhas de segurança. O núcleo da linguagem também tem baixa densidade de defeitos.</p>
+<p>Isso permite ao usuário ter mais confiança em desenvolver seus programas usando o Perl.</p>
+<h2 id="diferentes-versões-do-perl--versão-5-x-versão-6"><strong>Diferentes Versões do Perl</strong> — Versão 5 x Versão 6</h2>
+<p>Vale destacar aqui que o Perl conta com duas versões majoritárias que geram confusão nos usuários.</p>
+<p>Até a versão 5 do Perl, a linguagem ainda é chamada de Perl. Já a versão 6, se diferenciou tanto do Perl, que se tornou outra linguagem, conhecida como <a href='https://www.raku.org' target="_blank" rel="nofollow noopener" title="Visitar o site oficial do Raku (site em inglês)">Raku&nbsp;<i class="fas fa-external-link-alt outter-link"></i>
+</a>.</p>
 
-<div class="notices note" ><p>Este tutorial cobre os aspectos mais fundamentais do Perl para aqueles que querem aprender como liberar todo o potencial dessa linguagem de programação poderosa e estabelecida.</p>
+<div class="notices info" ><p>O Raku pode ser considerado uma implementação do Perl totalmente orientada a objetos.</p>
 </div>
 
-<p>Não importa se você está apenas começando em Perl ou é um programador experiente, esse tutorial é para você.</p>
-<p>Este tutorial começará com o básico de Perl e avançará para um nível mais profissional. Aprender Perl é fácil, então você não precisa se preocupar com isso. As lições são pequenas e curtas para permitir que você aprenda no seu próprio ritmo.</p>
+<p>No nosso tutorial nós vamos usar a versão 5.3 do Perl.</p>
+<h2 id="quem-inventou-o-perl">Quem inventou o Perl?</h2>
+<p><strong>O Perl teve sua primeira versão apresentada em 1987 pelo programador Larry Wall.</strong></p>
+<p>Ele era administrador de sistemas na NASA e precisava de uma linguagem para processar relatórios de forma mais eficiente. A primeira versão do Perl foi criada e rodada no sistema operacional UNIX.</p>
+<p>Durante mais de duas décadas o Perl vem sendo desenvolvido e aprimorado por uma comunidade ativa e dedicada de programadores.</p>
+
+
+<footer class="footline">
 	
-  
+</footer>
+
         
         </div>
         
@@ -436,8 +545,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -451,6 +558,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -467,6 +575,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -571,8 +682,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/tutorial/" title="Tutorial"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/tutorial/" title="Tutorial" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/tutorial/development-environment/" title="Configurando o ambiente de desenvolvimento do Perl" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

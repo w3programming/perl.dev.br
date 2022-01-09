@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Aprenda Perl | Perl Tutorial</title>
+    <title>Desenvolvendo o primeiro programa em Perl | Perl Tutorial</title>
 
     
     <link href="/css/nucleus.css?1641761282" rel="stylesheet">
@@ -38,7 +38,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/">
+  <body class="" data-url="/tutorial/first-program/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -97,7 +97,7 @@
   
     
     <li data-nav-id="/tutorial/" title="Tutorial" class="dd-item
-        
+        parent
         
         
         ">
@@ -167,7 +167,7 @@
  
   
     
-      <li data-nav-id="/tutorial/first-program/" title="Desenvolvendo o primeiro programa em Perl" class="dd-item ">
+      <li data-nav-id="/tutorial/first-program/" title="Desenvolvendo o primeiro programa em Perl" class="dd-item active">
         <a href="/tutorial/first-program/">
         Perl - Primeiro Programa
         <i class="fas fa-check read-icon"></i>
@@ -310,30 +310,10 @@
                   
                     
                     
-                      <option id="pt" value="https://perl.dev.br/" selected>Português</option>
+                      <option id="pt" value="https://perl.dev.br/tutorial/first-program/" selected>Português</option>
                     
                   
               
-                  
-              
-                  
-              
-                  
-              
-                  
-              
-                  
-              
-          
-              
-              
-                  
-              
-                  
-                    
-                    
-                      <option id="en" value="https://perl.dev.br/en/">English</option>
-                    
                   
               
                   
@@ -380,6 +360,70 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Melhorar esta página' href="https://github.com/w3programming/perl.dev.br/edit/master/content/tutorial/first-program/index.pt.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Melhorar esta página</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Aprenda Perl</a> > <a href='/tutorial/'>Tutorial</a> > Desenvolvendo o primeiro programa em Perl
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#executando-um-script-em-perl">Executando um script em Perl</a></li>
+    <li><a href="#explicação-do-script--em-detalhes"><strong>Explicação do script</strong> — Em detalhes</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
         <div id="head-tags">
         
         </div>
@@ -388,23 +432,69 @@
             
 <div class="affiliate-disclosure">Esse site contém links de afiliados. Se você comprar algo através de um link desse site nós podemos receber uma pequena comissão sem nenhum custo adicional para você. <a href="https://support.perl.dev.br/pt/institutional/affiliate-disclosure/" target="blank" rel="noopener">Saiba mais</a></div>
           
+            <h1>
+              
+              Desenvolvendo o primeiro programa em Perl
+            </h1>
+          
 
         
 
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
-</span>
 
- 
-<h1 id="aprenda-perl">Aprenda Perl</h1>
+<blockquote>
+<p>Os programas em Perl são textos simples.</p>
+</blockquote>
+<p>Apesar da simplicidade, os scripts em Perl podem executar tarefas complexas.</p>
+<ul>
+<li>Primeiro, crie uma pasta chamada <code>scripts-perl</code> no diretório raiz <code>c:</code>.</li>
+<li>Abre o seu editor de texto preferido para criarmos o primeiro script em Perl.</li>
+<li>Crie um novo arquivo e insira o código abaixo:</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
+<span style="color:#66d9ef">use</span> warnings;
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Olá, Mundo!\n&#34;</span>);
+</code></pre></div><ul>
+<li>Salve o arquivo com o nome <code>hello.pl</code> dentro do diretório <code>scripts-perl</code>.</li>
+</ul>
+<h2 id="executando-um-script-em-perl">Executando um script em Perl</h2>
+<p>Para executar um script em Perl, abra um prompt de comando no Windows.</p>
+<p>Navegue até a pasta onde o script se encontra.</p>
 
-<div class="notices note" ><p>Este tutorial cobre os aspectos mais fundamentais do Perl para aqueles que querem aprender como liberar todo o potencial dessa linguagem de programação poderosa e estabelecida.</p>
+<div class="notices info" ><p>No nosso caso a pasta se encontra em <code>c:\scripts-perl</code>. Para posicionar o prompt dentro dessa pasta, digite o comando <code>cd c:\scripts-perl</code> e pressione a tecla <code>Enter</code>.</p>
 </div>
 
-<p>Não importa se você está apenas começando em Perl ou é um programador experiente, esse tutorial é para você.</p>
-<p>Este tutorial começará com o básico de Perl e avançará para um nível mais profissional. Aprender Perl é fácil, então você não precisa se preocupar com isso. As lições são pequenas e curtas para permitir que você aprenda no seu próprio ritmo.</p>
+<p>Execute o comando:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">perl hello.pl
+</code></pre></div><p>Saída:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Olá, Mundo
+</code></pre></div><p>Se você conseguiu ver esse resultado no prompt de comando, parabéns você acaba de criar e executar o seu primeiro script em Perl com sucesso.</p>
+<h2 id="explicação-do-script--em-detalhes"><strong>Explicação do script</strong> — Em detalhes</h2>
+<p>Vamos analisar cada linha do nosso primeiro programa em Perl para entender como ele funciona.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
+</code></pre></div><p>A primeira linha indica para o shell que esse script deve ser executado usando o interpretador do Perl.</p>
+<p>O endereço <code>/usr/bin/perl</code> é justamente onde fica localizado o interpretador.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#66d9ef">use</span> warnings;
+</code></pre></div><p>A segunda linha do script inclui um <code>pragma</code>.</p>
+<p>Esse <code>pragma</code> indica para o interpretador do Perl que avisos adicionais devem ser exibidos para o usuário quando algo acontecer no código.</p>
+
+<div class="notices tip" ><p>Outro <code>pragma</code> importante muito usado no Perl é o <code>use stricts</code>. Veremos mais sobre ele no decorrer do tutorial.</p>
+</div>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Olá, Mundo!\n&#34;</span>);
+</code></pre></div><p>A terceira linha do script contém uma função chamada <code>print</code>.</p>
+<p>Essa função coloca um valor na tela.</p>
+<p>Nesse caso, o valor é o que estiver dentro dos parenteses.</p>
+<p><code>&quot;Olá, Mundo!\n&quot;</code> representa uma string em Perl.</p>
+<p>As string em Perl são colocadas entre aspas <code>&quot;&quot;</code>.</p>
+<p>No decorrer do tutorial, você aprenderá tudo sobre strings em Perl.</p>
+<p>A sequência <code>\n</code> dentro da string representa uma nova linha para o Perl.</p>
+<p>O <code>\n</code> é conhecido como sequência de escape, do inglês <em>escape sequence</em>.</p>
+
+
+<footer class="footline">
 	
-  
+</footer>
+
         
         </div>
         
@@ -436,8 +526,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -451,6 +539,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -484,6 +575,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -499,6 +591,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -571,8 +666,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/tutorial/development-environment/" title="Configurando o ambiente de desenvolvimento do Perl"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/tutorial/" title="Tutorial" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/tutorial/syntax/" title="Perl - Sintaxe" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

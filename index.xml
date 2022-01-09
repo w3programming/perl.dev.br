@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Aprenda Perl on Perl Tutorial</title>
+    <link>https://perl.dev.br/</link>
+    <description>Recent content in Aprenda Perl on Perl Tutorial</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt</language><atom:link href="https://perl.dev.br/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introdução ao Perl</title>
+      <link>https://perl.dev.br/tutorial/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://perl.dev.br/tutorial/introduction/</guid>
+      <description>Neste artigo você conhecerá alguns aspectos importantes da linguagem de programação Perl. Esse é um primeiro contato com características que compõem a linguagem.
+Características do Perl — Aspectos importantes da linguagem Perl é uma das linguagens de programação mais populares e ricas em recursos do mercado. Ela vem sendo desenvolvida e aprimorada por mais de duas décadas. Conta com uma comunidade ativa e participativa em seu desenvolvimento.
+O Perl pode ser executado em uma quantidade absurda de plataforma.</description>
+    </item>
+    
+    <item>
+      <title>Palavras-chave do Perl</title>
+      <link>https://perl.dev.br/reference/keywords/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://perl.dev.br/reference/keywords/</guid>
+      <description>Nesta página você encontrará uma referência completa para todas as palavras-chave do Perl e o que cada uma delas representa para a linguagem.
+Uma palavra-chave representa um termo reservado da linguagem de programação.
+ No Perl é possível sobreescrever as palavras-chave, mas isso é uma prática não recomendada. Sobrescrever palavras-chaves podem gerar erros de lógica muito difíceis de serem depurados.
+ Funções internas do Perl    Palavra-chave Definição     -A    -B    -b    -C    -c    -d    -e    -f    -g    -k    -l    -M    -O    -o    -p    -r    -R    -S    -s    -T    -t    -u    -w    -W    -X    -x    -z    abs    accept    alarm    atan2    AUTOLOAD    BEGIN    bind    binmode    bless    break    caller    chdir    CHECK    chmod    chomp    chop    chown    chr    chroot    close    closedir    connect    cos    crypt    dbmclose    dbmopen    defined    delete    DESTROY    die    dump    each    END    endgrent    endhostent    endnetent    endprotoent    endpwent    endservent    eof    eval    exec    exists    exit    fcntl    fileno    flock    fork    format    formline    getc    getgrent    getgrgid    getgrnam    gethostbyaddr    gethostbyname    gethostent    getlogin    getnetbyaddr    getnetbyname    getnetent    getpeername    getpgrp    getppid    getpriority    getprotobyname    getprotobynumber    getprotoent    getpwent    getpwnam    getpwuid    getservbyname    getservbyport    getservent    getsockname    getsockopt    glob    gmtime    goto    grep    hex    index    INIT    int    ioctl    join    keys    kill    last    lc    lcfirst    length    link    listen    local    localtime    log    lstat    map    mkdir    msgctl    msgget    msgrcv    msgsnd    my    next    not    oct    open    opendir    ord    our    pack    pipe    pop    pos    print    printf    prototype    push    quotemeta    rand    read    readdir    readline    readlink    readpipe    recv    redo    ref    rename    require    reset    return    reverse    rewinddir    rindex    rmdir    say    scalar    seek    seekdir    select    semctl    semget    semop    send    setgrent    sethostent    setnetent    setpgrp    setpriority    setprotoent    setpwent    setservent    setsockopt    shift    shmctl    shmget    shmread    shmwrite    shutdown    sin    sleep    socket    socketpair    sort    splice    split    sprintf    sqrt    srand    stat    state    study    substr    symlink    syscall    sysopen    sysread    sysseek    system    syswrite    tell    telldir    tie    tied    time    times    truncate    uc    ucfirst    umask    undef    UNITCHECK    unlink    unpack    unshift    untie    use    utime    values    vec    wait    waitpid    wantarray    warn    write     Sintaxe interna do Perl    Palavra-chave Descrição     __DATA__    __END__    __FILE__    __LINE__    __PACKAGE__    and    cmp    continue    CORE    do    else    elsif    eq    exp    for    foreach    ge    gt    if    le    lock    lt    m    ne    no    or    package    q    qq    qr    qw    qx    s    sub    tr    unless    until    while    xor    y     Variáveis internas do Perl    Palavra-chave Descrição     $!</description>
+    </item>
+    
+    <item>
+      <title>Configurando o ambiente de desenvolvimento do Perl</title>
+      <link>https://perl.dev.br/tutorial/development-environment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://perl.dev.br/tutorial/development-environment/</guid>
+      <description>Nesse tutorial nós vamos instalar o Perl e tudo o que for necessário para começar a programar nesta linguagem.
+Para programar em Pel é necessário instalar o aplicativo de distribuição da linguagem e um editor de texto simples.
+Strawberry Perl — O que é e como baixá-lo O Strawberry Perl é um ambiente de desenvolvimento Perl para o Microsoft Windows.
+O Strawberry Perl contém todos os requisitos necessários para executar scripts em Perl.</description>
+    </item>
+    
+    <item>
+      <title>Desenvolvendo o primeiro programa em Perl</title>
+      <link>https://perl.dev.br/tutorial/first-program/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://perl.dev.br/tutorial/first-program/</guid>
+      <description>Os programas em Perl são textos simples.
+ Apesar da simplicidade, os scripts em Perl podem executar tarefas complexas.
+ Primeiro, crie uma pasta chamada scripts-perl no diretório raiz c:. Abre o seu editor de texto preferido para criarmos o primeiro script em Perl. Crie um novo arquivo e insira o código abaixo:  #!/usr/bin/perl use warnings; print(&amp;#34;Olá, Mundo!\n&amp;#34;);  Salve o arquivo com o nome hello.pl dentro do diretório scripts-perl.</description>
+    </item>
+    
+    <item>
+      <title>Perl - Sintaxe</title>
+      <link>https://perl.dev.br/tutorial/syntax/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://perl.dev.br/tutorial/syntax/</guid>
+      <description>Perl possui uma sintaxe muito simples e direta.
+Vários elementos da linguagem são semelhantes ao idioma inglês.
+Variáveis e valores Em Perl, nós criamos programas para manipular algum tipo de dado.
+O Perl possui diversos tipos diferentes de dados.
+Esses tipos de dados incluem strings, números e dados mais complexos como listas.
+Exemplo:
+&amp;#34;Programando em Perl&amp;#34; 120 1.2 Um dos conceitos mais importantes em programação é a reusabilidade.
+Para reusar valores nós precisamos armazená-los em algum lugar.</description>
+    </item>
+    
+    <item>
+      <title>Perl - Variáveis</title>
+      <link>https://perl.dev.br/tutorial/variables/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://perl.dev.br/tutorial/variables/</guid>
+      <description>Variáveis em Perl são usadas para armazenar dados.
+Uma variável é um recursos excencial para qualquer linguagem de programação.
+O Perl fonece três tipos de variáveis:
+ Scalars, Listas, e Hashes.  Nesse tutorial nós vamos aprender sobre o tipo Scalar.
+ Criando uma variável Uma variável em Perl é criada usando o cifrão $ seguido pelo identificador da variável e um valor de atribuição.
+Assim que um valor é atribuido para a variável, ela é criada pelo Perl.</description>
+    </item>
+    
+  </channel>
+</rss>

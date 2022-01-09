@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="pt" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.84.2" />
+    <meta name="description" content="Tutorial completo de Perl grátis em Português. Aprenda todos os conceitos fundamentais do Perl para iniciar a sua carreira em programação.">
+<meta name="author" content="w3empire.com">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Perl - Sintaxe | Perl Tutorial</title>
+
+    
+    <link href="/css/nucleus.css?1641761282" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1641761282" rel="stylesheet">
+    <link href="/css/hybrid.css?1641761282" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1641761282" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1641761282" rel="stylesheet">
+    <link href="/css/auto-complete.css?1641761282" rel="stylesheet">
+    
+    <link href="/css/github-dark.min.css?1641761282" rel="stylesheet">
+    <link href="/css/theme.css?1641761282" rel="stylesheet">
+    <link href="/css/tabs.css?1641761282" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1641761282" rel="stylesheet">
+    
+    <link href="/css/theme-dark-gray.css?1641761282" rel="stylesheet">
+    
+    <link href="/css/app.css?1641761282" rel="stylesheet">
+
+    <script src="/js/jquery-3.3.1.min.js?1641761282"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/tutorial/syntax/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      
+
+
+
+
+
+
+
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Procurar...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1641761282"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1641761282"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/perl.dev.br\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1641761282"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/pt/'><i class='fas fa-home'></i> Ínicio</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/tutorial/" title="Tutorial" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/tutorial/">
+          Tutorial
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/tutorial/introduction/" title="Introdução ao Perl" class="dd-item ">
+        <a href="/tutorial/introduction/">
+        Perl - Introdução
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/tutorial/development-environment/" title="Configurando o ambiente de desenvolvimento do Perl" class="dd-item ">
+        <a href="/tutorial/development-environment/">
+        Perl - Ambiente de Desenvolvimento
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/tutorial/first-program/" title="Desenvolvendo o primeiro programa em Perl" class="dd-item ">
+        <a href="/tutorial/first-program/">
+        Perl - Primeiro Programa
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/tutorial/syntax/" title="Perl - Sintaxe" class="dd-item active">
+        <a href="/tutorial/syntax/">
+        Perl - Sintaxe
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/tutorial/variables/" title="Perl - Variáveis" class="dd-item ">
+        <a href="/tutorial/variables/">
+        Perl - Variáveis
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/reference/" title="Documentação Completa do Perl" class="dd-item
+        
+        
+        
+        ">
+      <a href="/reference/">
+          Referência
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/reference/keywords/" title="Palavras-chave do Perl" class="dd-item ">
+        <a href="/reference/keywords/">
+        Palavras-chave
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+          <div class="select-style">
+            <select id="select-language" onchange="location = this.value;">
+          
+          
+          
+              
+              
+                  
+                    
+                    
+                      <option id="pt" value="https://perl.dev.br/tutorial/syntax/" selected>Português</option>
+                    
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+        </select>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+          <g>
+            <g id="arrow-drop-down">
+              <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+            </g>
+          </g>
+        </svg>
+        </div>
+        </a>
+        </li>
+      
+
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Limpar Histórico</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <small>
+    <a href="https://support.perl.dev.br/pt/institutional/about/" target="_blank" rel="noopener">Sobre&nbsp;nós</a> | <a href="https://support.perl.dev.br/pt/institutional/terms/" target="_blank" rel="noopener">Termos&nbsp;de&nbsp;uso</a> | <a href="https://support.perl.dev.br/pt/institutional/privacy-policy/" target="_blank" rel="noopener">Política&nbsp;de&nbsp;privacidade</a> | <a href="https://support.perl.dev.br/pt/institutional/cookie-policy/" target="_blank" rel="noopener">Política&nbsp;de&nbsp;cookie</a> | <a href="https://support.perl.dev.br/pt/institutional/affiliate-disclosure/" target="_blank" rel="noopener">Divulgação&nbsp;de&nbsp;afiliados</a>
+</small>
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Melhorar esta página' href="https://github.com/w3programming/perl.dev.br/edit/master/content/tutorial/syntax/index.pt.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Melhorar esta página</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Aprenda Perl</a> > <a href='/tutorial/'>Tutorial</a> > Perl - Sintaxe
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#variáveis-e-valores">Variáveis e valores</a></li>
+    <li><a href="#expressões-em-perl">Expressões em Perl</a></li>
+    <li><a href="#instruções-em-perl">Instruções em Perl</a></li>
+    <li><a href="#comentários-em-perl">Comentários em Perl</a></li>
+    <li><a href="#blocos">Blocos</a></li>
+    <li><a href="#espaços-em-branco">Espaços em branco</a></li>
+    <li><a href="#palavras-chave">Palavras-chave</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+            
+<div class="affiliate-disclosure">Esse site contém links de afiliados. Se você comprar algo através de um link desse site nós podemos receber uma pequena comissão sem nenhum custo adicional para você. <a href="https://support.perl.dev.br/pt/institutional/affiliate-disclosure/" target="blank" rel="noopener">Saiba mais</a></div>
+          
+            <h1>
+              
+              Perl - Sintaxe
+            </h1>
+          
+
+        
+
+
+<p>Perl possui uma sintaxe muito simples e direta.</p>
+<p>Vários elementos da linguagem são semelhantes ao idioma inglês.</p>
+<h2 id="variáveis-e-valores">Variáveis e valores</h2>
+<p>Em Perl, nós criamos programas para manipular algum tipo de dado.</p>
+<p>O Perl possui diversos tipos diferentes de dados.</p>
+<p>Esses tipos de dados incluem strings, números e dados mais complexos como listas.</p>
+<p><strong>Exemplo:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#e6db74">&#34;Programando em Perl&#34;</span>
+<span style="color:#ae81ff">120</span>
+<span style="color:#ae81ff">1.2</span>
+</code></pre></div><p>Um dos conceitos mais importantes em programação é a reusabilidade.</p>
+<p>Para reusar valores nós precisamos armazená-los em algum lugar.</p>
+<p>Em Perl, nós usamos variáveis para armazenar valores, reusá-los e processá-los.</p>
+<p><strong>Exemplo:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">$name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Peter&#34;</span>;
+$x <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
+$z <span style="color:#f92672">=</span> <span style="color:#ae81ff">10.567</span>;
+</code></pre></div><p>No exemplo anterior:</p>
+<ul>
+<li>A variável <code>$name</code> possui um valor do tipo <strong>string</strong>,</li>
+<li>A variável <code>$x</code> possui um valor do tipo <strong>número inteiro</strong>,</li>
+<li>E a variável <code>$z</code> possui um valor do tipo <strong>número de ponto flutuante</strong>.</li>
+</ul>
+<h2 id="expressões-em-perl">Expressões em Perl</h2>
+<p>Uma expressão em Perl, é qualquer coisa que retorne um valor.</p>
+<p>Uma expressão em Perl pode ser desde um número literal até uma chamada de função.</p>
+<p><strong>Exemplo:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#ae81ff">10</span>
+</code></pre></div><p>O número literal <code>10</code> é considerado uma expressão em Perl que retorna o mesmo valor, <code>10</code>.</p>
+<p><strong>Exemplo:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">$num1 <span style="color:#f92672">+</span> $num2
+</code></pre></div><p><code>$num1 + $num2</code> é uma expressão em Perl que retorna a soma dos valores das variáveis <code>$num1</code> e <code>$num2</code>.</p>
+
+<div class="notices info" ><p>Uma expressão em Perl pode ser usada em um outra expressão maior ou em uma instrução.</p>
+</div>
+
+<h2 id="instruções-em-perl">Instruções em Perl</h2>
+<p>Uma instrução em Perl é composta por expressões.</p>
+<p>Uma instrução em Perl deve ser finalizada por um ponto e vírgula <code>;</code>.</p>
+<p><strong>Exemplo:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">$num1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
+$num2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>;
+
+$total <span style="color:#f92672">=</span> $num1 <span style="color:#f92672">+</span> $num2;
+
+<span style="color:#66d9ef">print</span>($total);
+</code></pre></div><p><strong>Saída:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#ae81ff">30</span>
+</code></pre></div><p>Cada linha do código de exemplo representa uma instrução em Perl.</p>
+<h2 id="comentários-em-perl">Comentários em Perl</h2>
+<p>Para criar um comentário em Perl, inicie a linha com uma hash <code>#</code></p>
+<p><strong>Exemplo:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e"># Essa linha é um comentário em Perl.</span>
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Comentários em Perl.\n&#34;</span>)
+</code></pre></div><p><strong>Saída:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Comentários em Perl.
+</code></pre></div><p>Comentários em Perl podem ser usados para documentar o código.</p>
+<p><strong>Exemplo:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e"># Define uma variável com o valor do salários do funcionário.</span>
+$salary <span style="color:#f92672">=</span> <span style="color:#ae81ff">1220</span>;
+
+<span style="color:#75715e"># Imprimi o salário atual.</span>
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Salário atual: &#34;</span> <span style="color:#f92672">.</span> $salary <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;\n&#34;</span>);
+
+<span style="color:#75715e"># Aumenta em 10% o salário atual.</span>
+$salary <span style="color:#f92672">=</span> $salary <span style="color:#f92672">*</span> <span style="color:#ae81ff">1.10</span>;
+
+<span style="color:#75715e"># Imprimi o salário com o aumento de 10%.</span>
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Salário atual com aumento: &#34;</span> <span style="color:#f92672">.</span> $salary <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;\n&#34;</span>);
+</code></pre></div><p><strong>Saída:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Salário atual: <span style="color:#ae81ff">1220</span>
+Salário atual com aumento: <span style="color:#ae81ff">1342</span>
+</code></pre></div><p>Também é possível usar comentários na mesma linha.</p>
+<p><strong>Exemplo:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Olá, tudo bem?\n&#34;</span>); <span style="color:#75715e"># Imprimi uma frase na tela.</span>
+</code></pre></div><p><strong>Saída:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Olá, tudo bem?
+</code></pre></div><h2 id="blocos">Blocos</h2>
+<p>Um bloco em Perl é composto por uma ou mais instruções entre parenteses <code>{}</code>.</p>
+<p><strong>Exemplo:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">{
+    $num1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
+    $num2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>;
+
+    $total <span style="color:#f92672">=</span> $num1 <span style="color:#f92672">+</span> $num2;
+
+    <span style="color:#66d9ef">print</span>($total);
+}
+</code></pre></div><p><strong>Saída:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#ae81ff">30</span>
+</code></pre></div><p>Blocos em Perl podem ser usados para separar pedaços de códigos reutilizaveis.</p>
+<p>Blocos são importantes para organizar o programa e torná-lo mais simples de entender.</p>
+
+<div class="notices info" ><p>Variáveis declaradas dentro de um bloco possuem escopo limitado. Somente instruções e expressões de dentro do próprio bloco terão acesso a essas variáveis.</p>
+</div>
+
+<h2 id="espaços-em-branco">Espaços em branco</h2>
+<p>Espaços em branco em Perl são compostos por:</p>
+<ul>
+<li>espaços,</li>
+<li>tabulações,</li>
+<li>novas linhas,</li>
+<li>ou uma combinação desses elementos.</li>
+</ul>
+<p>Espaços em branco em Perl são usados para deixar o código mais legível.</p>
+<p>O interpretador do Perl ignora os espaços em branco.</p>
+<p><strong>Exemplo:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">$num1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
+$num2<span style="color:#f92672">=</span><span style="color:#ae81ff">20</span>;
+$num3             <span style="color:#f92672">=</span><span style="color:#ae81ff">30</span>;
+</code></pre></div><p>O script acima é válido para o Perl e os espaços em branco não fazem nenhuma diferença para o interpretador.</p>
+
+<div class="notices tip" ><p>Sempre use espaços em branco para tornar o seu código mais <strong>legível</strong> e <strong>fácil de compreender</strong>.</p>
+</div>
+
+<h2 id="palavras-chave">Palavras-chave</h2>
+<p>Em programação, uma palavra-chave é um termo reservado pela linguagem.</p>
+<p>Uma palavra-chave pode significar uma função interna, um comando, um pragma ou possuir outro significado especial.</p>
+<p>Palvras-chave da linguagem de programação, normalmente, não podem ser reutilizadas pelo usuário.</p>
+<p>Por exemplo, o Perl possui a palavra-chave <code>print</code> reservada para a função <code>print()</code>.</p>
+<p>Não seria uma boa escolha nomear uma variável como <code>$print</code> ou criar uma função usando o mesmo nome.</p>
+<p>Isso pode gerar confusão se algo de errado ocorrer no seu código.</p>
+<p>Você pode também sobreescrever alguma função importante interna da linguagem.</p>
+
+<div class="notices info" ><p>Vale ressaltar que muitas linguagens de programação não permitem que os usuários sobreescrevam palavras reservadas, justamente para evitar confusão com os termos internos.</p>
+</div>
+
+<blockquote>
+<p><strong>Veja também</strong><br>
+<a href='/reference/keywords/' target="_blank" rel="nofollow noopener" title="Palavras-chave do Perl">Palavras-chave do Perl: Referência Completa&nbsp;<i class="fas fa-external-link-alt outter-link"></i>
+</a></p>
+</blockquote>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/tutorial/first-program/" title="Desenvolvendo o primeiro programa em Perl"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/tutorial/variables/" title="Perl - Variáveis" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1641761282"></script>
+    <script src="/js/perfect-scrollbar.min.js?1641761282"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1641761282"></script>
+    <script src="/js/jquery.sticky.js?1641761282"></script>
+    <script src="/js/featherlight.min.js?1641761282"></script>
+    <script src="/js/highlight.pack.js?1641761282"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1641761282"></script>
+    <script src="/js/learn.js?1641761282"></script>
+    <script src="/js/hugo-learn.js?1641761282"></script>
+    
+    
+  </body>
+</html>
+
