@@ -12,23 +12,23 @@
     <title>Perl - Variáveis | Perl Tutorial</title>
 
     
-    <link href="/css/nucleus.css?1641762061" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1641762061" rel="stylesheet">
-    <link href="/css/hybrid.css?1641762061" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1641762061" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1641762061" rel="stylesheet">
-    <link href="/css/auto-complete.css?1641762061" rel="stylesheet">
+    <link href="/css/nucleus.css?1641845038" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1641845038" rel="stylesheet">
+    <link href="/css/hybrid.css?1641845038" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1641845038" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1641845038" rel="stylesheet">
+    <link href="/css/auto-complete.css?1641845038" rel="stylesheet">
     
-    <link href="/css/github-dark.min.css?1641762061" rel="stylesheet">
-    <link href="/css/theme.css?1641762061" rel="stylesheet">
-    <link href="/css/tabs.css?1641762061" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1641762061" rel="stylesheet">
+    <link href="/css/github-dark.min.css?1641845038" rel="stylesheet">
+    <link href="/css/theme.css?1641845038" rel="stylesheet">
+    <link href="/css/tabs.css?1641845038" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1641845038" rel="stylesheet">
     
-    <link href="/css/theme-dark-gray.css?1641762061" rel="stylesheet">
+    <link href="/css/theme-dark-gray.css?1641845038" rel="stylesheet">
     
-    <link href="/css/app.css?1641762061" rel="stylesheet">
+    <link href="/css/app.css?1641845038" rel="stylesheet">
 
-    <script src="/js/jquery-3.3.1.min.js?1641762061"></script>
+    <script src="/js/jquery-3.3.1.min.js?1641845038"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -78,14 +78,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1641762061"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1641762061"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1641845038"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1641845038"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/perl.dev.br\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1641762061"></script>
+<script type="text/javascript" src="/js/search.js?1641845038"></script>
 
     
   </div>
@@ -228,6 +228,27 @@
       <li data-nav-id="/tutorial/variables/" title="Perl - Variáveis" class="dd-item active">
         <a href="/tutorial/variables/">
         Perl - Variáveis
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/tutorial/numbers/" title="Perl - Números" class="dd-item ">
+        <a href="/tutorial/numbers/">
+        Perl - Números
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -432,6 +453,9 @@
     <li><a href="#criando-uma-variável">Criando uma variável</a></li>
     <li><a href="#variáveis-scalar-em-perl">Variáveis Scalar em Perl</a></li>
     <li><a href="#criando-variáveis-com-o-comando-my-em-perl">Criando variáveis com o comando &ldquo;my&rdquo; em Perl</a></li>
+    <li><a href="#escopo-de-variáveis">Escopo de variáveis</a></li>
+    <li><a href="#variável-global-em-perl">Variável global em Perl</a></li>
+    <li><a href="#interpolação-de-variáveis-em-perl">Interpolação de variáveis em Perl</a></li>
   </ul>
 </nav>
     </div>
@@ -508,7 +532,7 @@ $var <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
 <p>O exemplo a seguir contém nomes válidos de variáveis em Perl.</p>
 <p><strong>Exemplo:</strong></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">$name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Richard&#34;</span>;
-$full_name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Richard Bela&#34;</span>;
+$full_name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Richard Nonato&#34;</span>;
 $_10 <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
 $__port__to__use__ <span style="color:#f92672">=</span> <span style="color:#ae81ff">80</span>;
 
@@ -585,7 +609,87 @@ $name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Rich
 <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Meu nome é $name\n&#34;</span>);
 </code></pre></div><p><strong>Saída:</strong></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">Meu nome é Richard
+</code></pre></div><h2 id="escopo-de-variáveis">Escopo de variáveis</h2>
+<p>Em Perl, as variáveis possuem escopo de bloco.</p>
+<p>O escopo de variável se refere a limitação do código em poder acessar uma variável dependendo do bloco que ela foi criada.</p>
+<p>Uma variável criada dentro de um bloco em Perl é considerada uma variável local. E só pode ser acessada dentro desse bloco.</p>
+<p><strong>Exemplo:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
+<span style="color:#66d9ef">use</span> warnings;
+
+$fruit <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;abacaxi&#34;</span>;
+
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Minha fruta favorita é o &#34;</span> <span style="color:#f92672">.</span> $fruit <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;\n&#34;</span>);
+
+{
+    <span style="color:#66d9ef">my</span> $fruit <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;morango&#34;</span>;
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Eu também gosto de &#34;</span> <span style="color:#f92672">.</span> $fruit <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;\n&#34;</span>);
+}
+
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Só para confirmar, minha fruta favorita é o &#34;</span> <span style="color:#f92672">.</span> $fruit <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;\n&#34;</span>);
+</code></pre></div><p><strong>Saída:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Minha fruta favorita é o abacaxi
+Eu também gosto de morango
+Só para confirmar, minha fruta favorita é o abacaxi
+</code></pre></div><p><strong>Vamos enteder melhor o exemplo anterior:</strong></p>
+<ul>
+<li>Logo no inicio do código, nós declaramos uma variável <code>$fruit</code> com o valor <code>abacaxi</code>.</li>
+<li>Em seguida esse valor é apresentado na tela usando a função <code>print</code>.</li>
+</ul>
+
+<div class="notices tip" ><p>Perceba que o valor impresso na tela é <code>abacaxi</code>.</p>
+</div>
+
+<ul>
+<li>Na sequência, um bloco é criado e dentro dele, criamos outra variável <code>$fruit</code> usando o comando <code>my</code> e atribuimos o valor <code>morango</code></li>
+<li>Ainda dentro do bloco o valor dessa variável é apresentado na tela, ou seja, <code>morango</code>.</li>
+<li>E por fim, fora do bloco, colocamos o valor da variável <code>$fruit</code> na tela.</li>
+</ul>
+
+<div class="notices tip" ><p>Novamente o valor apresentado é <code>abacaxi</code>, pois a variável <code>$fruit</code> de dentro do bloco não pode ser acessada fora dele, devido ao seu escopo local. Essa variável <code>$fruit</code> que acessamos ao final do código, é a variável <code>$fruit</code> global, declarada fora do bloco, logo no inicio do script.</p>
+</div>
+
+<h2 id="variável-global-em-perl">Variável global em Perl</h2>
+<p>O Perl permite que o programador declare uma variável global de forma explicita.</p>
+<p>Uma variável global é visível por todo o código e pode, tabém, ser acessada por pacotes de código externos.</p>
+<p>Para criar uma variável global em Perl, use o comando <code>our</code> na declaração da variável.</p>
+<p><strong>Exemplo:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#66d9ef">our</span> $fruit <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;abacaxi&#34;</span>;
+</code></pre></div><h2 id="interpolação-de-variáveis-em-perl">Interpolação de variáveis em Perl</h2>
+<p>Em Perl, é possível inserir variáveis diretamente dentro de strings.</p>
+<p>A interpolação faz a junção do valor da string e do valor da variável sem a necessidade do uso do <code>.</code> para concatenação.</p>
+<p><strong>Exemplo:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
+<span style="color:#66d9ef">use</span> strict;
+<span style="color:#66d9ef">use</span> warnings;
+
+<span style="color:#66d9ef">my</span> $age <span style="color:#f92672">=</span> <span style="color:#ae81ff">22</span>;
+<span style="color:#66d9ef">my</span> $text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Eu tenho $age anos de idade.\n&#34;</span>;
+
+<span style="color:#66d9ef">print</span>($text);
+</code></pre></div><p><strong>Saída:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Eu tenho <span style="color:#ae81ff">22</span> anos de idade.
 </code></pre></div>
+<div class="notices warning" ><p>Em Perl, só é possível interpolar variáveis <code>scalar</code> e vetores (<code>arrays</code>). O Perl não faz interpolação de variáveis quando essas são do tipo <code>hash</code>.</p>
+</div>
+
+
+<div class="notices info" ><p>A interpolação em Perl somente funciona em strings usando aspas dupla <code>&quot;&quot;</code>. Não é possível interpolar variáveis em strings com aspas simples <code>''</code>.</p>
+</div>
+
+<p>Existe uma outra forma de concatenar strings que você já viu no decorrer do tutorial.</p>
+<p>Usando o <code>.</code> também é possível juntar valores em Perl.</p>
+<p><strong>Exemplo:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#66d9ef">my</span> $text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Eu tenho &#34;</span> <span style="color:#f92672">.</span> $age <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34; de idade.\n&#34;</span>;
+</code></pre></div><p>Nesse caso a variável fica fora das aspas.</p>
+<p>A concatenação usando o ponto <code>.</code> também funciona com strings usando aspas simples <code>''</code>.</p>
+<p><strong>Exemplo:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#66d9ef">my</span> $text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Eu tenho &#39;</span> <span style="color:#f92672">.</span> $age <span style="color:#f92672">.</span> <span style="color:#e6db74">&#39; de idade.&#39;</span> <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;\n&#34;</span>;
+</code></pre></div>
+<div class="notices tip" ><p>O caracter de nova linha <code>\n</code> só funciona dentro de aspas dupla <code>&quot;&quot;</code>. Se colocá-lo dentro de aspas simples <code>''</code>, ele será apresentado na tela como texto.</p>
+</div>
+
+
 
 <footer class="footline">
 	
@@ -715,9 +819,6 @@ $name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Rich
             
         
                     
-            
-        
-                    
                         
             
             
@@ -725,6 +826,25 @@ $name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Rich
                     
                         
                         
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -765,7 +885,7 @@ $name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Rich
 			<a class="nav nav-prev" href="/tutorial/syntax/" title="Perl - Sintaxe"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/reference/" title="Documentação Completa do Perl" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/tutorial/numbers/" title="Perl - Números" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -775,16 +895,16 @@ $name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Rich
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1641762061"></script>
-    <script src="/js/perfect-scrollbar.min.js?1641762061"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1641762061"></script>
-    <script src="/js/jquery.sticky.js?1641762061"></script>
-    <script src="/js/featherlight.min.js?1641762061"></script>
-    <script src="/js/highlight.pack.js?1641762061"></script>
+    <script src="/js/clipboard.min.js?1641845038"></script>
+    <script src="/js/perfect-scrollbar.min.js?1641845038"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1641845038"></script>
+    <script src="/js/jquery.sticky.js?1641845038"></script>
+    <script src="/js/featherlight.min.js?1641845038"></script>
+    <script src="/js/highlight.pack.js?1641845038"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1641762061"></script>
-    <script src="/js/learn.js?1641762061"></script>
-    <script src="/js/hugo-learn.js?1641762061"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1641845038"></script>
+    <script src="/js/learn.js?1641845038"></script>
+    <script src="/js/hugo-learn.js?1641845038"></script>
     
     
   </body>

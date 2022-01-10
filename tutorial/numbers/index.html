@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="pt" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.84.2" />
+    <meta name="description" content="Tutorial completo de Perl grátis em Português. Aprenda todos os conceitos fundamentais do Perl para iniciar a sua carreira em programação.">
+<meta name="author" content="w3empire.com">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Perl - Números | Perl Tutorial</title>
+
+    
+    <link href="/css/nucleus.css?1641845038" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1641845038" rel="stylesheet">
+    <link href="/css/hybrid.css?1641845038" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1641845038" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1641845038" rel="stylesheet">
+    <link href="/css/auto-complete.css?1641845038" rel="stylesheet">
+    
+    <link href="/css/github-dark.min.css?1641845038" rel="stylesheet">
+    <link href="/css/theme.css?1641845038" rel="stylesheet">
+    <link href="/css/tabs.css?1641845038" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1641845038" rel="stylesheet">
+    
+    <link href="/css/theme-dark-gray.css?1641845038" rel="stylesheet">
+    
+    <link href="/css/app.css?1641845038" rel="stylesheet">
+
+    <script src="/js/jquery-3.3.1.min.js?1641845038"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-41KQMP58BQ"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-41KQMP58BQ'); 
+    gtag('config', 'UA-69958365-10'); 
+</script>
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3427355473051563" crossorigin="anonymous"></script>
+  </head>
+  <body class="" data-url="/tutorial/numbers/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      
+
+
+
+
+
+
+
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Procurar...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1641845038"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1641845038"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/perl.dev.br\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1641845038"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/pt/'><i class='fas fa-home'></i> Ínicio</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/tutorial/" title="Tutorial" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/tutorial/">
+          Tutorial
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/tutorial/introduction/" title="Introdução ao Perl" class="dd-item ">
+        <a href="/tutorial/introduction/">
+        Perl - Introdução
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/tutorial/development-environment/" title="Configurando o ambiente de desenvolvimento do Perl" class="dd-item ">
+        <a href="/tutorial/development-environment/">
+        Perl - Ambiente de Desenvolvimento
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/tutorial/first-program/" title="Desenvolvendo o primeiro programa em Perl" class="dd-item ">
+        <a href="/tutorial/first-program/">
+        Perl - Primeiro Programa
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/tutorial/syntax/" title="Perl - Sintaxe" class="dd-item ">
+        <a href="/tutorial/syntax/">
+        Perl - Sintaxe
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/tutorial/variables/" title="Perl - Variáveis" class="dd-item ">
+        <a href="/tutorial/variables/">
+        Perl - Variáveis
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/tutorial/numbers/" title="Perl - Números" class="dd-item active">
+        <a href="/tutorial/numbers/">
+        Perl - Números
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/reference/" title="Documentação Completa do Perl" class="dd-item
+        
+        
+        
+        ">
+      <a href="/reference/">
+          Referência
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/reference/keywords/" title="Palavras-chave do Perl" class="dd-item ">
+        <a href="/reference/keywords/">
+        Palavras-chave
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+          <div class="select-style">
+            <select id="select-language" onchange="location = this.value;">
+          
+          
+          
+              
+              
+                  
+                    
+                    
+                      <option id="pt" value="https://perl.dev.br/tutorial/numbers/" selected>Português</option>
+                    
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+        </select>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+          <g>
+            <g id="arrow-drop-down">
+              <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+            </g>
+          </g>
+        </svg>
+        </div>
+        </a>
+        </li>
+      
+
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Limpar Histórico</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <small>
+    <a href="https://support.perl.dev.br/pt/institutional/about/" target="_blank" rel="noopener">Sobre&nbsp;nós</a> | <a href="https://support.perl.dev.br/pt/institutional/terms/" target="_blank" rel="noopener">Termos&nbsp;de&nbsp;uso</a> | <a href="https://support.perl.dev.br/pt/institutional/privacy-policy/" target="_blank" rel="noopener">Política&nbsp;de&nbsp;privacidade</a> | <a href="https://support.perl.dev.br/pt/institutional/cookie-policy/" target="_blank" rel="noopener">Política&nbsp;de&nbsp;cookie</a> | <a href="https://support.perl.dev.br/pt/institutional/affiliate-disclosure/" target="_blank" rel="noopener">Divulgação&nbsp;de&nbsp;afiliados</a>
+</small>
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Melhorar esta página' href="https://github.com/w3programming/perl.dev.br/edit/master/content/tutorial/numbers/index.pt.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Melhorar esta página</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Aprenda Perl</a> > <a href='/tutorial/'>Tutorial</a> > Perl - Números
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#número-inteiro-em-perl">Número inteiro em Perl</a></li>
+    <li><a href="#número-de-ponto-flutuante-em-perl">Número de ponto flutuante em Perl</a>
+      <ul>
+        <li><a href="#notação-de-ponto-fixo">Notação de ponto fixo</a></li>
+        <li><a href="#notação-científica">Notação científica</a></li>
+      </ul>
+    </li>
+    <li><a href="#número-hexadecimal-em-perl">Número hexadecimal em Perl</a></li>
+    <li><a href="#número-octal-em-perl">Número octal em Perl</a></li>
+    <li><a href="#número-binário-em-perl">Número binário em Perl</a></li>
+    <li><a href="#gerando-um-número-aleatório-em-perl">Gerando um número aleatório em Perl</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+            
+<div class="affiliate-disclosure">Esse site contém links de afiliados. Se você comprar algo através de um link desse site nós podemos receber uma pequena comissão sem nenhum custo adicional para você. <a href="https://support.perl.dev.br/pt/institutional/affiliate-disclosure/" target="blank" rel="noopener">Saiba mais</a></div>
+          
+            <h1>
+              
+              Perl - Números
+            </h1>
+          
+
+        
+
+
+<h2 id="número-inteiro-em-perl">Número inteiro em Perl</h2>
+<p>Em Perl, é possível trabalhar com números em formato inteiro.</p>
+<p>Um número inteiro em Perl não possui dígitos decimais.</p>
+<p>Um número inteiro em Perl é um decimal com base 10.</p>
+<p><strong>Exemplo:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">$x <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
+$y <span style="color:#f92672">=</span> <span style="color:#ae81ff">1200</span>;
+$z <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>;
+</code></pre></div>
+<div class="notices " ><p>Números inteiros em Perl podem ser tanto positivos como negativos.</p>
+</div>
+
+<p>Quando o número inteiro é muito grande nós podemos usar a vírgula <code>,</code> para torná-lo mais legível, por exemplo <code>258,695,789</code>.</p>
+<p>Em Perl, a vírgula <code>,</code> é substituída pelo sublinhado <code>_</code>.</p>
+<p>Sendo assim, o número <code>258,695,789</code> se torna <code>258_695_789</code>.</p>
+<p><strong>Exemplo:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#66d9ef">my</span> $big_num <span style="color:#f92672">=</span> <span style="color:#ae81ff">258_695_789</span>;
+
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;$big_num\n&#34;</span>);
+</code></pre></div><p><strong>Saída:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#ae81ff">258695789</span>
+</code></pre></div>
+<div class="notices info" ><p>O Perl não usa nem a vírgula <code>,</code> nem o sublinhado <code>_</code> para manipular o número. O uso do sublinhado <code>_</code> no código é somente para tornar o número mais legível.</p>
+</div>
+
+<h2 id="número-de-ponto-flutuante-em-perl">Número de ponto flutuante em Perl</h2>
+<p>Um número de ponto flutuante em Perl contém uma parte inteira e uma parte fracionária.</p>
+<blockquote>
+<p>Esse número possui a parte inteira e fracionária separadas por um ponto decimal. Números de ponto flutuante em Perl podem ser positivos ou negativos.</p>
+</blockquote>
+<p>A parte fracionária do número pode ser somente positiva.</p>
+<p>Os números de ponto flutuante podem ser representados por duas notações, ponto fixo e científico.</p>
+<h3 id="notação-de-ponto-fixo">Notação de ponto fixo</h3>
+<p>Um número de ponto fixo em Perl possui a parte decimal fixa.</p>
+<p>A parte decimal do número representa o início da fração.</p>
+<p><strong>Exemplo:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#ae81ff">20.589</span>
+</code></pre></div><h3 id="notação-científica">Notação científica</h3>
+<p>A notação científica em Perl é usada para representar um número muito grande ou um número muito pequeno.</p>
+<p>A notação científica em Perl tem a seguinte sintaxe:</p>
+<blockquote>
+<p><strong>m</strong>e<strong>n</strong></p>
+</blockquote>
+<p>Onde <code>m</code> representa a mantissa, <code>e</code> é a notação científica para o Perl e o <code>n</code> é a ordem de grandeza ou expoente.</p>
+<blockquote>
+<p><strong>Veja também:</strong><br>
+<a href='https://pt.wikipedia.org/wiki/Nota%C3%A7%C3%A3o_cient%C3%ADfica' target="_blank" rel="nofollow noopener" title="Notação científica (Wikipedia)">Notação científica (Wikipedia)&nbsp;<i class="fas fa-external-link-alt outter-link"></i>
+</a></p>
+</blockquote>
+<p><strong>Exemplo:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
+<span style="color:#66d9ef">use</span> strict;
+<span style="color:#66d9ef">use</span> warnings;
+
+<span style="color:#66d9ef">my</span> $x <span style="color:#f92672">=</span> <span style="color:#ae81ff">7.58325e2</span>; <span style="color:#75715e"># 758.325</span>
+<span style="color:#66d9ef">my</span> $y <span style="color:#f92672">=</span> <span style="color:#ae81ff">4e-4</span>; <span style="color:#75715e"># 0.0004</span>
+
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;$x\n&#34;</span>);
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;$y\n&#34;</span>);
+</code></pre></div><p><strong>Saída:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">758.325
+0.0004
+</code></pre></div><p>Apesar de declararmos os números em notação científica, o Perl retornou os números em notação de ponto fixo.</p>
+<p>Também é possível indicar para o Perl que a representação dos números deve ser em notação científica.</p>
+<p>Para isso, use a função <code>printf</code> com o placeholder <code>%e</code>.</p>
+<p><strong>Exemplo:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
+<span style="color:#66d9ef">use</span> strict;
+<span style="color:#66d9ef">use</span> warnings;
+
+<span style="color:#66d9ef">my</span> $x <span style="color:#f92672">=</span> <span style="color:#ae81ff">7.58325e2</span>; <span style="color:#75715e"># 758.325</span>
+<span style="color:#66d9ef">my</span> $y <span style="color:#f92672">=</span> <span style="color:#ae81ff">4e-4</span>; <span style="color:#75715e"># 0.0004</span>
+
+printf(<span style="color:#e6db74">&#34;Valor de X em notação científica: %e\n&#34;</span>,  $x);
+printf(<span style="color:#e6db74">&#34;Valor de Y em notação científica: %e\n&#34;</span>,  $y);
+</code></pre></div><p><strong>Saída:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Valor de X em notação científica: 7.583250e+02
+Valor de Y em notação científica: 4.000000e-04
+</code></pre></div><h2 id="número-hexadecimal-em-perl">Número hexadecimal em Perl</h2>
+<p>O Perl permite que o usuário represente um número em formato hexadecimal.</p>
+<p>O sistema hexadecimal representa um número em base 16.</p>
+<p>O sistema hexadecimal possui 16 símbolos de 0 à 9 e de <code>a</code> à <code>f</code>, onde <code>a</code> é equivalente a 10 e <code>f</code> a 15.</p>
+<p>Em Perl, um número hexadecimal é precedido por <code>0x</code> e pode ser representado de forma positiva ou negativa.</p>
+<p><strong>Exemplo:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">$x <span style="color:#f92672">=</span> <span style="color:#ae81ff">0xa</span>; <span style="color:#75715e"># 10</span>
+$y <span style="color:#f92672">=</span> <span style="color:#ae81ff">0x3</span>; <span style="color:#75715e"># 3</span>
+$z <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">0xe</span>; <span style="color:#75715e"># -14</span>
+
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;$x\n&#34;</span>);
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;$y\n&#34;</span>);
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;$z\n&#34;</span>);
+</code></pre></div><p><strong>Saída:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#ae81ff">10</span>
+<span style="color:#ae81ff">3</span>
+-14
+</code></pre></div><p>Para representar o número em formato hexadecimal, use a função <code>printf</code> com o placeholder <code>%x</code>.</p>
+<p><strong>Exemplo:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">$x <span style="color:#f92672">=</span> <span style="color:#ae81ff">0xa</span>; <span style="color:#75715e"># 10</span>
+$y <span style="color:#f92672">=</span> <span style="color:#ae81ff">0x3</span>; <span style="color:#75715e"># 3</span>
+
+printf(<span style="color:#e6db74">&#34;Valor de X em hexadecimal: %x\n&#34;</span>, $x);
+printf(<span style="color:#e6db74">&#34;Valor de Y em hexadecimal: %x\n&#34;</span>, $y);
+</code></pre></div><p><strong>Saída:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Valor de X em hexadecimal: a
+Valor de Y em hexadecimal: <span style="color:#ae81ff">3</span>
+</code></pre></div><blockquote>
+<p><strong>Veja também:</strong><br>
+<a href='https://pt.wikipedia.org/wiki/Sistema_de_numera%C3%A7%C3%A3o_hexadecimal' target="_blank" rel="nofollow noopener" title="Sistema de numeração hexadecimal (Wikipedia)">Sistema de numeração hexadecimal (Wikipedia)&nbsp;<i class="fas fa-external-link-alt outter-link"></i>
+</a></p>
+</blockquote>
+<h2 id="número-octal-em-perl">Número octal em Perl</h2>
+<p>Para representar números em notação octal, preceda o número com <code>0</code> seguido do valor em base 8.</p>
+<p>Em Perl, os números octais podem ser positivos ou negativos.</p>
+<p><strong>Exemplo:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">$x <span style="color:#f92672">=</span> <span style="color:#ae81ff">032</span>; <span style="color:#75715e"># 26</span>
+$y <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">0467</span>; <span style="color:#75715e"># -311</span>
+
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;$x\n&#34;</span>);
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;$y\n&#34;</span>);
+</code></pre></div><p><strong>Saída:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#ae81ff">26</span>
+-311
+</code></pre></div><p>Para que o formato de saída dos números seja em octal, use a função <code>printf</code> com o placeholder <code>%o</code>.</p>
+<p><strong>Exemplo:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">$x <span style="color:#f92672">=</span> <span style="color:#ae81ff">032</span>; <span style="color:#75715e"># 26</span>
+$y <span style="color:#f92672">=</span> <span style="color:#ae81ff">0171</span>; <span style="color:#75715e"># 121</span>
+
+printf(<span style="color:#e6db74">&#34;Valor de X em octal: %o\n&#34;</span>, $x);
+printf(<span style="color:#e6db74">&#34;Valor de Y em octal: %o\n&#34;</span>, $y);
+</code></pre></div><p><strong>Saída:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Valor de X em octal: <span style="color:#ae81ff">32</span>
+Valor de Y em octal: <span style="color:#ae81ff">171</span>
+</code></pre></div><blockquote>
+<p><strong>Veja também:</strong><br>
+<a href='https://pt.wikipedia.org/wiki/Sistema_octal' target="_blank" rel="nofollow noopener" title="Sistema octal (Wikipedia)">Sistema octal (Wikipedia)&nbsp;<i class="fas fa-external-link-alt outter-link"></i>
+</a></p>
+</blockquote>
+<h2 id="número-binário-em-perl">Número binário em Perl</h2>
+<p>O sistema binário representa números em base 2. O sistema possui somente dois valores, 0 e 1.</p>
+<p>Para criar um número binário em Perl, coloque <code>0b</code> antes do valor binário a ser representado.</p>
+<p>Os números podem ser positivos ou negativos.</p>
+<p><strong>Exemplo:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">$x <span style="color:#f92672">=</span> <span style="color:#ae81ff">0b01110101</span>; <span style="color:#75715e"># 117</span>
+$y <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">0b110100</span>; <span style="color:#75715e"># -52</span>
+
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;$x\n&#34;</span>);
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;$y\n&#34;</span>);
+</code></pre></div><p><strong>Saída:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#ae81ff">117</span>
+-52
+</code></pre></div><p>Para converter a saída do número em binário, use a função <code>printf</code> e o placeholder <code>%b</code>.</p>
+<p><strong>Exemplo:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">$x <span style="color:#f92672">=</span> <span style="color:#ae81ff">0b01110101</span>; <span style="color:#75715e"># 117</span>
+
+printf(<span style="color:#e6db74">&#34;Valor de X em octal: %b\n&#34;</span>, $x);
+</code></pre></div><p><strong>Saída:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Valor de X em binário: <span style="color:#ae81ff">1110101</span>
+</code></pre></div><blockquote>
+<p><strong>Veja também:</strong><br>
+<a href='https://pt.wikipedia.org/wiki/Sistema_de_numera%C3%A7%C3%A3o_bin%C3%A1rio' target="_blank" rel="nofollow noopener" title="Sistema de numeração binário (Wikipedia)">Sistema de numeração binário (Wikipedia)&nbsp;<i class="fas fa-external-link-alt outter-link"></i>
+</a></p>
+</blockquote>
+<h2 id="gerando-um-número-aleatório-em-perl">Gerando um número aleatório em Perl</h2>
+<p>O Perl possui a função interna <code>rand</code> para gerar número aleatórios.</p>
+<p>A função pode receber um número positivo ou negativo.</p>
+<p>O retorno é um número aleatório de ponto flutuante entre 0 e o número passado como argumento para a função.</p>
+<p><strong>Exemplo:</strong></p>
+<blockquote>
+<p>O código abaixo retorna um número aleatório de ponto flutuante entre 0 e 10.</p>
+</blockquote>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
+<span style="color:#66d9ef">use</span> strict;
+<span style="color:#66d9ef">use</span> warnings;
+
+<span style="color:#66d9ef">my</span> $random <span style="color:#f92672">=</span> rand(<span style="color:#ae81ff">10</span>);
+
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Número aleatório entre 0 e 10: $random\n&#34;</span>);
+</code></pre></div><p><strong>Saída:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Número aleatório entre <span style="color:#ae81ff">0</span> e 10: 2.178205233804
+</code></pre></div><p>É possível converter o número aleatório de ponto flutuante para um número inteiro.</p>
+<p>Para isso, use a função interna do Perl <code>int</code>.</p>
+<p>A função <code>int</code> do Perl retorna apenas a parte inteira do número. A função <code>int</code> não executa nenhum tipo de arredondamento do número.</p>
+<p><strong>Exemplo:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
+<span style="color:#66d9ef">use</span> strict;
+<span style="color:#66d9ef">use</span> warnings;
+
+<span style="color:#66d9ef">my</span> $random_int <span style="color:#f92672">=</span> rand(<span style="color:#ae81ff">10</span>);
+
+$random_int <span style="color:#f92672">=</span> int($random_int);
+
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Número aleatório entre 0 e 10: $random_int\n&#34;</span>);
+</code></pre></div><p><strong>Saída:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Número aleatório entre <span style="color:#ae81ff">0</span> e 10: <span style="color:#ae81ff">6</span>
+</code></pre></div>
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/tutorial/variables/" title="Perl - Variáveis"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/reference/" title="Documentação Completa do Perl" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1641845038"></script>
+    <script src="/js/perfect-scrollbar.min.js?1641845038"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1641845038"></script>
+    <script src="/js/jquery.sticky.js?1641845038"></script>
+    <script src="/js/featherlight.min.js?1641845038"></script>
+    <script src="/js/highlight.pack.js?1641845038"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1641845038"></script>
+    <script src="/js/learn.js?1641845038"></script>
+    <script src="/js/hugo-learn.js?1641845038"></script>
+    
+    
+  </body>
+</html>
+
