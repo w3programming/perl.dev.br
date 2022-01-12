@@ -84,5 +84,17 @@ $x = 10; $y = 1200; $z = -2;  Números inteiros em Perl podem ser tanto positivo
  Quando o número inteiro é muito grande nós podemos usar a vírgula , para torná-lo mais legível, por exemplo 258,695,789.</description>
     </item>
     
+    <item>
+      <title>Perl - Strings</title>
+      <link>https://perl.dev.br/tutorial/strings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://perl.dev.br/tutorial/strings/</guid>
+      <description>Uma string em Perl é um conjunto de caracteres entre aspas simples &#39;&#39; ou dupla &amp;quot;&amp;quot;.
+Há diferença entre criar uma string usando aspas simples &#39;&#39; e aspas dupla &amp;quot;&amp;quot;. Mais sobre isso ao decorrer do tutorial.
+ Exemplo:
+&amp;#34;Olá, como vai você?&amp;#34; &amp;#34;Hoje é um belo dia.&amp;#34; &amp;#39;Perl é uma linguagem de programação bem fácil de aprender&amp;#39;  Vale lembrar que, o que realmente define uma string em Perl não são as aspas ao redor do conteúdo e sim a operação executada no valor.</description>
+    </item>
+    
   </channel>
 </rss>
