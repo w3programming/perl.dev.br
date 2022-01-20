@@ -6,5 +6,17 @@
     <description>Recent content in Tutorial on Perl Tutorial</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt</language><atom:link href="https://perl.dev.br/en/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Perl - Operators</title>
+      <link>https://perl.dev.br/en/tutorial/operators/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://perl.dev.br/en/tutorial/operators/</guid>
+      <description>Perl operators are symbols that represent a specific operation to be performed on one or more operands. Operators are used in expressions, which are statements that use values and operators to produce a value.
+ Operators are a hugely important part of programming.
+They tell your computer what you want it to do with a given input.
+Numeric operators Perl has a variety of numeric operators to help you manipulate numbers, including arithmetic, Boolean, and bitwise operations.</description>
+    </item>
+    
   </channel>
 </rss>

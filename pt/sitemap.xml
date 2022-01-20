@@ -32,6 +32,18 @@
   </url><url>
     <loc>https://perl.dev.br/tutorial/strings/</loc>
   </url><url>
+    <loc>https://perl.dev.br/tutorial/operators/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://perl.dev.br/en/tutorial/operators/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://perl.dev.br/tutorial/operators/"
+                />
+  </url><url>
     <loc>https://perl.dev.br/</loc>
     <xhtml:link
                 rel="alternate"

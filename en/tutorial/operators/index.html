@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.84.2" />
+    <meta name="description" content="Complete Perl tutorial. Learn all the fundamental Perl concepts to start off your programming career.">
+<meta name="author" content="w3empire.com">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Perl - Operators | Perl Tutorial</title>
+
+    
+    <link href="/css/nucleus.css?1642701145" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1642701145" rel="stylesheet">
+    <link href="/css/hybrid.css?1642701145" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1642701145" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1642701145" rel="stylesheet">
+    <link href="/css/auto-complete.css?1642701145" rel="stylesheet">
+    
+    <link href="/css/github-dark.min.css?1642701145" rel="stylesheet">
+    <link href="/css/theme.css?1642701145" rel="stylesheet">
+    <link href="/css/tabs.css?1642701145" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1642701145" rel="stylesheet">
+    
+    <link href="/css/theme-dark-gray.css?1642701145" rel="stylesheet">
+    
+    <link href="/css/app.css?1642701145" rel="stylesheet">
+
+    <script src="/js/jquery-3.3.1.min.js?1642701145"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-41KQMP58BQ"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    
+    gtag('config', 'G-41KQMP58BQ'); 
+    
+</script>
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3427355473051563" crossorigin="anonymous"></script>
+  </head>
+  <body class="" data-url="/en/tutorial/operators/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      
+
+
+
+
+
+
+
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1642701145"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1642701145"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/perl.dev.br\/\/en";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1642701145"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/en/'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/en/tutorial/" title="Tutorial" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/en/tutorial/">
+          Tutorial
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/tutorial/operators/" title="Perl - Operators" class="dd-item active">
+        <a href="/en/tutorial/operators/">
+        Perl - Operators
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+          <div class="select-style">
+            <select id="select-language" onchange="location = this.value;">
+          
+          
+          
+              
+              
+                  
+                    
+                    
+                      <option id="pt" value="https://perl.dev.br/tutorial/operators/">Português</option>
+                    
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="en" value="https://perl.dev.br/en/tutorial/operators/" selected>English</option>
+                    
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+        </select>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+          <g>
+            <g id="arrow-drop-down">
+              <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+            </g>
+          </g>
+        </svg>
+        </div>
+        </a>
+        </li>
+      
+
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <small>
+    <a href="https://support.perl.dev.br/en/institutional/about/" target="_blank" rel="noopener">About&nbsp;us</a> | <a href="https://support.perl.dev.br/en/institutional/terms/" target="_blank" rel="noopener">Terms&nbsp;of&nbsp;use</a> | <a href="https://support.perl.dev.br/en/institutional/privacy-policy/" target="_blank" rel="noopener">Privacy&nbsp;policy</a> | <a href="https://support.perl.dev.br/en/institutional/cookie-policy/" target="_blank" rel="noopener">Cookie&nbsp;policy</a> | <a href="https://support.perl.dev.br/en/institutional/affiliate-disclosure/" target="_blank" rel="noopener">Affiliate&nbsp;disclosure</a>
+</small>
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://github.com/w3programming/perl.dev.br/edit/master/content/tutorial/operators/index.en.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/en/'>Perl Tutorial</a> > <a href='/en/tutorial/'>Tutorial</a> > Perl - Operators
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#numeric-operators">Numeric operators</a>
+      <ul>
+        <li><a href="#arithmetic-operators">Arithmetic operators</a></li>
+        <li><a href="#raising-a-number-to-the-power-of-another-number-in-perl">Raising a number to the power of another number in Perl</a></li>
+        <li><a href="#getting-the-remainder-of-the-division-in-perl">Getting the remainder of the division in Perl</a></li>
+        <li><a href="#comparing-numeric-values-in-perl">Comparing numeric values in Perl</a></li>
+      </ul>
+    </li>
+    <li><a href="#string-operators-in-perl">String operators in Perl</a>
+      <ul>
+        <li><a href="#string-comparison-operators">String comparison operators</a></li>
+        <li><a href="#string-concatenation-operators">String concatenation operators</a></li>
+      </ul>
+    </li>
+    <li><a href="#logical-operators">Logical operators</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+            
+<div class="affiliate-disclosure">This site contains affiliate links. If you buy something through a link on this site we may receive a small commission at no additional cost to you. <a href="https://support.perl.dev.br/en/institutional/affiliate-disclosure/" target="blank" rel="noopener">Learn more</a></div>
+          
+            <h1>
+              
+              Perl - Operators
+            </h1>
+          
+
+        
+
+
+<blockquote>
+<p>Perl operators are symbols that represent a specific operation to be performed on one or more operands. Operators are used in expressions, which are statements that use values and operators to produce a value.</p>
+</blockquote>
+<p>Operators are a hugely important part of programming.</p>
+<p>They tell your computer what you want it to do with a given input.</p>
+<h2 id="numeric-operators">Numeric operators</h2>
+<p>Perl has a variety of numeric operators to help you manipulate numbers, including arithmetic, Boolean, and bitwise operations.</p>
+<h3 id="arithmetic-operators">Arithmetic operators</h3>
+<p>Perl has many built-in math operators that are used for basic arithmetic, such as addition <code>+</code>, subtraction <code>-</code>, multiplication <code>*</code>, and division <code>/</code>.</p>
+<p>These operators can be used with numbers or strings of text to perform specific tasks.</p>
+<p><strong>Example:</strong></p>
+<p>Adding and subtracting values.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
+<span style="color:#66d9ef">use</span> strict;
+<span style="color:#66d9ef">use</span> warnings;
+
+<span style="color:#66d9ef">print</span>(<span style="color:#ae81ff">10</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">10</span>, <span style="color:#e6db74">&#34;\n&#34;</span>);
+<span style="color:#66d9ef">print</span>(<span style="color:#ae81ff">120</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">30</span>, <span style="color:#e6db74">&#34;\n&#34;</span>);
+<span style="color:#66d9ef">print</span>(<span style="color:#ae81ff">1280</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">3567</span>, <span style="color:#e6db74">&#34;\n&#34;</span>);
+<span style="color:#66d9ef">print</span>(<span style="color:#ae81ff">123</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">2866</span>, <span style="color:#e6db74">&#34;\n&#34;</span>);
+</code></pre></div><p><strong>Output:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#ae81ff">20</span>
+<span style="color:#ae81ff">90</span>
+<span style="color:#ae81ff">4847</span>
+-2743
+</code></pre></div><p>When you divide or multiply numbers in Perl, you use the divide <strong>/</strong> symbol and the multiply <strong>*</strong> symbol.</p>
+<p>The order in which they are entered does not matter.</p>
+<p><strong>Example:</strong></p>
+<p>Multiplying and dividing values.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
+<span style="color:#66d9ef">use</span> strict;
+<span style="color:#66d9ef">use</span> warnings;
+
+<span style="color:#66d9ef">print</span>(<span style="color:#ae81ff">10</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">10</span>, <span style="color:#e6db74">&#34;\n&#34;</span>);
+<span style="color:#66d9ef">print</span>(<span style="color:#ae81ff">120</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">10</span>, <span style="color:#e6db74">&#34;\n&#34;</span>);
+<span style="color:#66d9ef">print</span>(<span style="color:#ae81ff">1280</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1.234</span>, <span style="color:#e6db74">&#34;\n&#34;</span>);
+<span style="color:#66d9ef">print</span>(<span style="color:#ae81ff">123</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2866</span>, <span style="color:#e6db74">&#34;\n&#34;</span>);
+</code></pre></div><p><strong>Output:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#ae81ff">100</span>
+<span style="color:#ae81ff">12</span>
+1579.52
+0.0429169574319609
+</code></pre></div><p>The multiplication and division operators have higher precedence than the add or subtract operators in Perl, therefore, when dealing with these two types of operations it will perform the calculations in order.</p>
+<p>In order to understand what the interpreter is going to do when it executes a mathematical operation, you must know the order that it will perform operations in. This is known as operator precedence.</p>
+<p>In computing, operator precedence is a set of rules that determines which operations should be performed first when multiple operations are performed at the same time.</p>
+<p><strong>Example:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
+<span style="color:#66d9ef">use</span> strict;
+<span style="color:#66d9ef">use</span> warnings;
+
+<span style="color:#66d9ef">print</span>(<span style="color:#ae81ff">10</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">10</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">3</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">14</span>, <span style="color:#e6db74">&#34;\n&#34;</span>);
+</code></pre></div><p><strong>Output:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">113.333333333333
+</code></pre></div><p>You can use parentesis to force Perl to perform the calculation you want first.</p>
+<p><strong>Example:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
+<span style="color:#66d9ef">use</span> strict;
+<span style="color:#66d9ef">use</span> warnings;
+
+<span style="color:#66d9ef">print</span>(<span style="color:#ae81ff">10</span> <span style="color:#f92672">*</span> (<span style="color:#ae81ff">10</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">2</span>) <span style="color:#f92672">/</span> (<span style="color:#ae81ff">3</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">14</span>), <span style="color:#e6db74">&#34;\n&#34;</span>);
+</code></pre></div><p><strong>Output:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">4.70588235294118
+</code></pre></div><h3 id="raising-a-number-to-the-power-of-another-number-in-perl">Raising a number to the power of another number in Perl</h3>
+<p>When you want to raise a number to the power of another number, you use the exponentiation operator **.</p>
+<p><strong>Example:</strong></p>
+<p>In this example, we want to raise 2 to the power of 4.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
+<span style="color:#66d9ef">use</span> strict;
+<span style="color:#66d9ef">use</span> warnings;
+
+<span style="color:#66d9ef">print</span>(<span style="color:#ae81ff">2</span> <span style="color:#f92672">**</span> <span style="color:#ae81ff">4</span>, <span style="color:#e6db74">&#34;\n&#34;</span>); <span style="color:#75715e"># 2 * 2 * 2 * 2 = 16</span>
+</code></pre></div><p><strong>Output:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#ae81ff">16</span>
+</code></pre></div><h3 id="getting-the-remainder-of-the-division-in-perl">Getting the remainder of the division in Perl</h3>
+<p>A common mathematical operator we use every day is the modulo operator.</p>
+<p>The modulo operator % is used to get the remainder of the division of one number by another.</p>
+<p><strong>Example:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
+<span style="color:#66d9ef">use</span> strict;
+<span style="color:#66d9ef">use</span> warnings;
+
+<span style="color:#66d9ef">print</span>(<span style="color:#ae81ff">13</span> % 4, <span style="color:#e6db74">&#34;\n&#34;</span>);
+<span style="color:#66d9ef">print</span>(<span style="color:#ae81ff">20</span> % 7, <span style="color:#e6db74">&#34;\n&#34;</span>);
+<span style="color:#66d9ef">print</span>(<span style="color:#ae81ff">100</span> % 13, <span style="color:#e6db74">&#34;\n&#34;</span>);
+</code></pre></div><p><strong>Output:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#ae81ff">1</span>
+<span style="color:#ae81ff">6</span>
+<span style="color:#ae81ff">9</span>
+</code></pre></div><p>The modulo operator can be used to discover if a number is odd or even.</p>
+<p>The remainder of an integer divided by two is 0 if the integer is even, and 1 if the integer is odd.</p>
+<p><strong>Example:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
+<span style="color:#66d9ef">use</span> strict;
+<span style="color:#66d9ef">use</span> warnings;
+
+<span style="color:#66d9ef">print</span>(<span style="color:#ae81ff">10</span> % 2, <span style="color:#e6db74">&#34;\n&#34;</span>); <span style="color:#75715e"># 0 - Even</span>
+<span style="color:#66d9ef">print</span>(<span style="color:#ae81ff">13</span> % 2, <span style="color:#e6db74">&#34;\n&#34;</span>); <span style="color:#75715e"># 1 - Odd</span>
+</code></pre></div><p><strong>Output:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#ae81ff">0</span>
+<span style="color:#ae81ff">1</span>
+</code></pre></div><h3 id="comparing-numeric-values-in-perl">Comparing numeric values in Perl</h3>
+<p>The Perl programming language provides all of the comparison operators for numbers.</p>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Description</th>
+<th>Example</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>==</td>
+<td>Equal</td>
+<td>10 == 10</td>
+<td>true</td>
+</tr>
+<tr>
+<td>!=</td>
+<td>Not Equal</td>
+<td>10 != 10</td>
+<td>false</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>Less than</td>
+<td>10 &lt; 130</td>
+<td>true</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>Greater than</td>
+<td>10 &gt; 130</td>
+<td>false</td>
+</tr>
+<tr>
+<td>&lt;=</td>
+<td>Less than or equal</td>
+<td>10 &lt;= 10</td>
+<td>true</td>
+</tr>
+<tr>
+<td>&gt;=</td>
+<td>Greater than or equal</td>
+<td>10 &gt;= 2</td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+<p>There is one more operator in Perl used for numerical comparisons, the spaceship operator &lt;=&gt;.</p>
+<p>Also known as the combined comparison operator, it returns 0 if the numbers are equal, 1 if the first one is greater, and -1 if the second one is greater.</p>
+<p><strong>Example:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
+<span style="color:#66d9ef">use</span> strict;
+<span style="color:#66d9ef">use</span> warnings;
+
+<span style="color:#66d9ef">my</span> $x <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
+<span style="color:#66d9ef">my</span> $y <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>;
+
+<span style="color:#66d9ef">print</span>($x <span style="color:#e6db74">&lt;=&gt;</span> $y, <span style="color:#e6db74">&#34;\n&#34;</span>);
+
+$y <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
+<span style="color:#66d9ef">print</span>($x <span style="color:#e6db74">&lt;=&gt;</span> $y, <span style="color:#e6db74">&#34;\n&#34;</span>);
+
+$y <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>;
+<span style="color:#66d9ef">print</span>($x <span style="color:#e6db74">&lt;=&gt;</span> $y, <span style="color:#e6db74">&#34;\n&#34;</span>);
+</code></pre></div><p><strong>Output:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">-1
+<span style="color:#ae81ff">0</span>
+<span style="color:#ae81ff">1</span>
+</code></pre></div><h2 id="string-operators-in-perl">String operators in Perl</h2>
+<p>String operators in Perl are used to manipulate and examine text strings.</p>
+<h3 id="string-comparison-operators">String comparison operators</h3>
+<p>Perl has many string comparison operators to compare one string with another.</p>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Description</th>
+<th>Example</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>eq</td>
+<td>Equal</td>
+<td>&ldquo;abc&rdquo; eq &ldquo;xyz&rdquo;</td>
+<td>false</td>
+</tr>
+<tr>
+<td>ne</td>
+<td>Not Equal</td>
+<td>&ldquo;abc&rdquo; ne &ldquo;xyz&rdquo;</td>
+<td>true</td>
+</tr>
+<tr>
+<td>lt</td>
+<td>Less than</td>
+<td>&ldquo;abc&rdquo; lt &ldquo;xyz&rdquo;</td>
+<td>true</td>
+</tr>
+<tr>
+<td>gt</td>
+<td>Greater than</td>
+<td>&ldquo;abc&rdquo; gt &ldquo;xyz&rdquo;</td>
+<td>false</td>
+</tr>
+<tr>
+<td>le</td>
+<td>Less than or equal</td>
+<td>&ldquo;abc&rdquo; le &ldquo;xyz&rdquo;</td>
+<td>true</td>
+</tr>
+<tr>
+<td>ge</td>
+<td>Greater than or equal</td>
+<td>&ldquo;abc&rdquo; ge &ldquo;xyz&rdquo;</td>
+<td>false</td>
+</tr>
+<tr>
+<td>cmp</td>
+<td>Comparison</td>
+<td>&ldquo;abc&rdquo; cmp &ldquo;xyz&rdquo;</td>
+<td>-1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="string-concatenation-operators">String concatenation operators</h3>
+<p>String concatenation operators in Perl allow you to combine strings of text into a single string.</p>
+<p><strong>Example:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
+<span style="color:#66d9ef">use</span> strict;
+<span style="color:#66d9ef">use</span> warnings;
+
+<span style="color:#66d9ef">my</span> $str1 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Good&#34;</span>;
+<span style="color:#66d9ef">my</span> $str2 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Morning.&#34;</span>;
+
+<span style="color:#66d9ef">print</span>($str1 <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34; &#34;</span> <span style="color:#f92672">.</span>  $str2, <span style="color:#e6db74">&#34;\n&#34;</span>);
+</code></pre></div><p><strong>Output:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Good Morning.
+</code></pre></div><p>The &ldquo;x&rdquo; operator in Perl is a repetition operator. It repeats the given token or group of tokens x number of times.</p>
+<p><strong>Example:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
+<span style="color:#66d9ef">use</span> strict;
+<span style="color:#66d9ef">use</span> warnings;
+
+<span style="color:#66d9ef">my</span> $str1 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Perl&#34;</span>;
+
+<span style="color:#66d9ef">print</span>($str1 x <span style="color:#ae81ff">4</span>, <span style="color:#e6db74">&#34;\n&#34;</span>);
+</code></pre></div><p><strong>Output:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">PerlPerlPerlPerl
+</code></pre></div><h2 id="logical-operators">Logical operators</h2>
+<p>Logical operators are used for evaluating statements to produce a true or false value.</p>
+<p>The following table lists the logical operators that Perl provides:</p>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&amp;&amp;</td>
+<td>AND</td>
+<td>Evaluates its left operand and if it is true, evaluates its right operand, and returns the value of the right operand. If the left operand is false, it will not evaluate or return anything.</td>
+</tr>
+<tr>
+<td>||</td>
+<td>OR</td>
+<td>Evaluates its left operand and if it is false, evaluates its right operand, and returns the value of the right operand. If the left operand is true, it will return the left operand value.</td>
+</tr>
+<tr>
+<td>!</td>
+<td>NOT</td>
+<td>Negates a statement that follows it. For example: !(3 &gt; 2) would return false because 3 is greater than two, which returns true, so when using the NOT operator ! this value is inverted to false.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
+<span style="color:#66d9ef">use</span> warnings;
+<span style="color:#66d9ef">use</span> strict;
+
+<span style="color:#66d9ef">print</span>(<span style="color:#ae81ff">1</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#ae81ff">0</span>, <span style="color:#e6db74">&#34;\n&#34;</span>); <span style="color:#75715e"># false or 0</span>
+<span style="color:#66d9ef">print</span>(<span style="color:#ae81ff">1</span> <span style="color:#f92672">||</span> <span style="color:#ae81ff">0</span>, <span style="color:#e6db74">&#34;\n&#34;</span>); <span style="color:#75715e"># true or 1</span>
+<span style="color:#66d9ef">print</span>( <span style="color:#f92672">!</span>(<span style="color:#ae81ff">1</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>) , <span style="color:#e6db74">&#34;\n&#34;</span>); <span style="color:#75715e"># false or empty</span>
+</code></pre></div><p><strong>Output:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#ae81ff">0</span>
+<span style="color:#ae81ff">1</span>
+
+</code></pre></div><p>In this tutorial, you learned about the fundamentals of Perl operators.</p>
+<p>These operators are used in programming languages to manipulate data.</p>
+<p>It&rsquo;s important to understand them because they are used all the time in software development.</p>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/en/tutorial/" title="Tutorial"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1642701145"></script>
+    <script src="/js/perfect-scrollbar.min.js?1642701145"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1642701145"></script>
+    <script src="/js/jquery.sticky.js?1642701145"></script>
+    <script src="/js/featherlight.min.js?1642701145"></script>
+    <script src="/js/highlight.pack.js?1642701145"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1642701145"></script>
+    <script src="/js/learn.js?1642701145"></script>
+    <script src="/js/hugo-learn.js?1642701145"></script>
+    
+    
+  </body>
+</html>
+

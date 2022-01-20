@@ -96,5 +96,17 @@ Há diferença entre criar uma string usando aspas simples &#39;&#39; e aspas du
 &amp;#34;Olá, como vai você?&amp;#34; &amp;#34;Hoje é um belo dia.&amp;#34; &amp;#39;Perl é uma linguagem de programação bem fácil de aprender&amp;#39;  Vale lembrar que, o que realmente define uma string em Perl não são as aspas ao redor do conteúdo e sim a operação executada no valor.</description>
     </item>
     
+    <item>
+      <title>Perl - Operadores</title>
+      <link>https://perl.dev.br/tutorial/operators/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://perl.dev.br/tutorial/operators/</guid>
+      <description>Os operadores Perl são símbolos que representam uma operação específica a ser executada em um ou mais operandos. Os operadores são usados ​​em expressões, que são instruções que usam valores e operadores para produzir um valor.
+ Os operadores são uma parte extremamente importante da programação.
+Eles dizem ao seu computador o que você deseja que ele faça com uma determinada entrada.
+Operadores numéricos Perl tem uma variedade de operadores numéricos para ajudá-lo a manipular números, incluindo operações aritméticas, booleanas e bit a bit.</description>
+    </item>
+    
   </channel>
 </rss>
