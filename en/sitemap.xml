@@ -10,8 +10,124 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="es"
+                href="https://perl.dev.br/es/tutorial/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://perl.dev.br/zh-cn/tutorial/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://perl.dev.br/ja/tutorial/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://perl.dev.br/ru/tutorial/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="https://perl.dev.br/en/tutorial/"
+                />
+  </url><url>
+    <loc>https://perl.dev.br/en/tutorial/introduction/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://perl.dev.br/tutorial/introduction/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://perl.dev.br/es/tutorial/introduction/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://perl.dev.br/zh-cn/tutorial/introduction/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://perl.dev.br/ja/tutorial/introduction/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://perl.dev.br/ru/tutorial/introduction/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://perl.dev.br/en/tutorial/introduction/"
+                />
+  </url><url>
+    <loc>https://perl.dev.br/en/tutorial/development-environment/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://perl.dev.br/tutorial/development-environment/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://perl.dev.br/es/tutorial/development-environment/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://perl.dev.br/zh-cn/tutorial/development-environment/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://perl.dev.br/ja/tutorial/development-environment/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://perl.dev.br/ru/tutorial/development-environment/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://perl.dev.br/en/tutorial/development-environment/"
+                />
+  </url><url>
+    <loc>https://perl.dev.br/en/tutorial/first-program/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://perl.dev.br/tutorial/first-program/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://perl.dev.br/es/tutorial/first-program/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://perl.dev.br/zh-cn/tutorial/first-program/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://perl.dev.br/ja/tutorial/first-program/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://perl.dev.br/ru/tutorial/first-program/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://perl.dev.br/en/tutorial/first-program/"
                 />
   </url><url>
     <loc>https://perl.dev.br/en/tutorial/operators/</loc>
@@ -26,11 +142,33 @@
                 href="https://perl.dev.br/en/tutorial/operators/"
                 />
   </url><url>
+    <loc>https://perl.dev.br/en/tutorial/list/</loc>
+  </url><url>
     <loc>https://perl.dev.br/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
                 href="https://perl.dev.br/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://perl.dev.br/es/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://perl.dev.br/zh-cn/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://perl.dev.br/ja/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://perl.dev.br/ru/categories/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -46,6 +184,26 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="es"
+                href="https://perl.dev.br/es/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://perl.dev.br/zh-cn/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://perl.dev.br/ja/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://perl.dev.br/ru/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="https://perl.dev.br/en/"
                 />
@@ -55,6 +213,26 @@
                 rel="alternate"
                 hreflang="pt"
                 href="https://perl.dev.br/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://perl.dev.br/es/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://perl.dev.br/zh-cn/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://perl.dev.br/ja/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://perl.dev.br/ru/tags/"
                 />
     <xhtml:link
                 rel="alternate"

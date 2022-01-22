@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>教程 on Perl教程</title>
+    <link>https://perl.dev.br/zh-cn/tutorial/</link>
+    <description>Recent content in 教程 on Perl教程</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt</language><atom:link href="https://perl.dev.br/zh-cn/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Perl 简介</title>
+      <link>https://perl.dev.br/zh-cn/tutorial/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://perl.dev.br/zh-cn/tutorial/introduction/</guid>
+      <description>在本文中，您将了解 Perl 编程语言的一些重要方面。这是与构成该语言的特征的第一次接触。
+Perl 特性——语言的重要方面 Perl 是市场上最流行、功能最丰富的编程语言之一。它经过二十多年的发展和改进。它在其发展过程中拥有一个积极参与的社区。
+Perl 可以在大量的平台上运行。兼容大多数流行的操作系统，如 Windows、Linux 和 MacOS，对于需要跨平台可移植性的任何人来说，它都是明智的选择。
+Perl 目前支持超过 100 种不同的平台。
+但是 Perl 可以用来做什么呢？
+Perl 是一种通用语言。它既可以用于任务关键型项目，也可以用于小型项目，甚至可以用于非常简单的单行脚本。
+Perl 最重要的特性——语言亮点 1. 可扩展的编程语言 Perl 有一个名为CPAN&amp;nbsp;的模块存储库 ， Comprehensive Perl Archive Network的缩写，在其中您可以找到该语言的数十万个扩展。
+如果您需要一个执行特定任务的模块，很可能社区中的某个人已经开发了它。
+模块范围从图形用户界面 UI 到与最流行的数据库管理器的集成。
+Perl 为MySQL、Oracle、PostgresSQL等程序员提供最流行的数据库支持。
+2. 易于使用和学习 尽管 Perl 存在一些争议，但该语言非常容易学习。
+除了拥有庞大而乐于助人的社区&amp;nbsp;，您仍然可以在互联网上免费找到数千个教程。
+Perl 也有文档&amp;nbsp;非常详细且易于理解。该语言以其在执行复杂任务方面的效率而著称。
+3. 多功能性 任何编程语言最重要的特性之一是它在编程范式方面的多功能性。
+Perl 支持面向对象、过程式编程或函数式编程，所有这些编程范例。
+这允许程序员使用最适合他们项目的范例自由地开发他们的程序。
+4.正则表达式 当我们谈论文本操作时，Perl 处于另一个层次。可以说，语言是正则表达式的先驱。
+正则表达式或正则表达式是一个强大的系统，用于在各种类型的内容中查找文本出现。随着教程的进行，您将了解更多有关此系统的信息。
+Perl 有一组专门用于文本处理的内置 API。有了它们，操作由 XML 和 HTML 等标记语言生成的文件要容易得多。
+Perl 的正则表达式引擎不需要注释。凭借强大的系统，Perl 的正则表达式可用于通过复杂的组合查找系统上的特定文件。
+5. 开源 开源项目允许用户自由、自由地访问、更改甚至分发它。</description>
+    </item>
+    
+    <item>
+      <title>设置 Perl 开发环境</title>
+      <link>https://perl.dev.br/zh-cn/tutorial/development-environment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://perl.dev.br/zh-cn/tutorial/development-environment/</guid>
+      <description>在本教程中，我们将安装 Perl 以及开始使用这种语言编程所需的一切。
+要在 Perl 中编程，必须安装编程语言分发应用程序和一个简单的文本编辑器。
+Strawberry Perl — 它是什么以及如何下载它 Strawberry Perl 是 Microsoft Windows 的 Perl 开发环境。
+Strawberry Perl 包含运行 Perl 脚本所需的所有要求。
+Strawberry Perl 可以直接从官网下载https://strawberryperl.com&amp;nbsp;。
+下载后，只需运行安装程序应用程序。
+在 Windows 上安装 Strawberry Perl — 使用图像一步一步  运行 Strawberry Perl 安装程序后，立即出现以下窗口。单击下一步按钮继续。  单击“我接受许可协议中的条款”复选框，然后单击“下一步”按钮，阅读并接受计划条款  选择应用程序安装位置。默认情况下，建议将 Strawberry Perl 安装在 C:\Strawberry 文件夹中。如果不确定安装位置，请保留此默认文件夹。  配置好整个系统后，只需单击安装按钮即可开始软件安装。  现在，只需等待安装完成。  完成 Strawberry Perl 安装后，将出现以下屏幕。单击“完成”按钮完成安装程序。  Perl 安装确认 要确认 Perl 已正确安装在您的计算机上，请执行以下步骤：</description>
+    </item>
+    
+    <item>
+      <title>用 Perl 开发第一个程序</title>
+      <link>https://perl.dev.br/zh-cn/tutorial/first-program/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://perl.dev.br/zh-cn/tutorial/first-program/</guid>
+      <description>Perl 脚本是纯文本。
+ 尽管它很简单，但 Perl 脚本可以执行复杂的任务。
+ 首先，在 C: 根目录中创建一个名为 PERL-SCRIPTS 的文件夹。 打开您喜欢的文本编辑器以创建第一个 Perl 脚本。 创建一个新文件并输入以下代码：  #!/usr/bin/perl use warnings; print(&amp;#34;你好世界！\n&amp;#34;);  将名为 hello.pl 的文件保存到 perl-scripts 文件夹。  在 Perl 中运行脚本 要运行 Perl 脚本，请在 Windows 中打开命令提示符。
+导航到脚本所在的文件夹。
+在我们的例子中，文件夹位于 c:\perl-scripts。要将提示放在此文件夹中，请键入命令 cd c:\perl-scripts 并按 Enter 键。
+ 运行命令：
+perl hello.pl 输出：
+你好世界！ 如果您在屏幕上看到此结果，那么恭喜您刚刚创建并成功运行了您的第一个 Perl 脚本。
+解释脚本 - 详细 让我们通过第一个 Perl 程序的每一行来了解它是如何工作的。
+#!/usr/bin/perl 第一行告诉 shell 这个脚本应该使用 Perl 解释器运行。
+地址 /usr/bin/perl 正是解释器所在的位置。
+use warnings; 脚本的第二行包含一个 Pragma。</description>
+    </item>
+    
+  </channel>
+</rss>

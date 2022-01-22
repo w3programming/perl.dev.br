@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.84.2" />
+    <meta name="description" content="Complete Perl tutorial. Learn all the fundamental Perl concepts to start off your programming career.">
+<meta name="author" content="w3empire.com">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Perl - List | Perl Tutorial</title>
+
+    
+    <link href="/css/nucleus.css?1642875192" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1642875192" rel="stylesheet">
+    <link href="/css/hybrid.css?1642875192" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1642875192" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1642875192" rel="stylesheet">
+    <link href="/css/auto-complete.css?1642875192" rel="stylesheet">
+    
+    <link href="/css/github-dark.min.css?1642875192" rel="stylesheet">
+    <link href="/css/theme.css?1642875192" rel="stylesheet">
+    <link href="/css/tabs.css?1642875192" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1642875192" rel="stylesheet">
+    
+    <link href="/css/theme-dark-gray.css?1642875192" rel="stylesheet">
+    
+    <link href="/css/app.css?1642875192" rel="stylesheet">
+
+    <script src="/js/jquery-3.3.1.min.js?1642875192"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-41KQMP58BQ"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    
+    gtag('config', 'G-41KQMP58BQ'); 
+    
+</script>
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3427355473051563" crossorigin="anonymous"></script>
+  </head>
+  <body class="" data-url="/en/tutorial/list/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      
+
+
+
+
+
+
+
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1642875192"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1642875192"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/perl.dev.br\/\/en";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1642875192"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/en/'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/en/tutorial/" title="Tutorial" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/en/tutorial/">
+          Tutorial
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/tutorial/introduction/" title="Introduction to Perl" class="dd-item ">
+        <a href="/en/tutorial/introduction/">
+        Perl - Introduction
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/tutorial/development-environment/" title="Setting Up the Perl Development Environment" class="dd-item ">
+        <a href="/en/tutorial/development-environment/">
+        Perl - Development Environment
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/tutorial/first-program/" title="Developing the First Program in Perl" class="dd-item ">
+        <a href="/en/tutorial/first-program/">
+        Perl - First Program
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/tutorial/operators/" title="Perl - Operators" class="dd-item ">
+        <a href="/en/tutorial/operators/">
+        Perl - Operators
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/tutorial/list/" title="Perl - List" class="dd-item active">
+        <a href="/en/tutorial/list/">
+        Perl - List
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+          <div class="select-style">
+            <select id="select-language" onchange="location = this.value;">
+          
+          
+          
+              
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="en" value="https://perl.dev.br/en/tutorial/list/" selected>English</option>
+                    
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+        </select>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+          <g>
+            <g id="arrow-drop-down">
+              <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+            </g>
+          </g>
+        </svg>
+        </div>
+        </a>
+        </li>
+      
+
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <small>
+    <a href="https://support.perl.dev.br/en/institutional/about/" target="_blank" rel="noopener">About&nbsp;us</a> | <a href="https://support.perl.dev.br/en/institutional/terms/" target="_blank" rel="noopener">Terms&nbsp;of&nbsp;use</a> | <a href="https://support.perl.dev.br/en/institutional/privacy-policy/" target="_blank" rel="noopener">Privacy&nbsp;policy</a> | <a href="https://support.perl.dev.br/en/institutional/cookie-policy/" target="_blank" rel="noopener">Cookie&nbsp;policy</a> | <a href="https://support.perl.dev.br/en/institutional/affiliate-disclosure/" target="_blank" rel="noopener">Affiliate&nbsp;disclosure</a>
+</small>
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://github.com/w3programming/perl.dev.br/edit/master/content/tutorial/list/index.en.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/en/'>Learn Perl</a> > <a href='/en/tutorial/'>Tutorial</a> > Perl - List
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#simple-perl-list">Simple Perl list</a></li>
+    <li><a href="#complex-perl-list">Complex Perl list</a></li>
+    <li><a href="#flattening-lists-in-perl">Flattening lists in Perl</a></li>
+    <li><a href="#accessing-list-elements-in-perl">Accessing list elements in Perl</a></li>
+    <li><a href="#build-a-list-based-on-a-range">Build a list based on a range</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+            
+<div class="affiliate-disclosure">This site contains affiliate links. If you buy something through a link on this site we may receive a small commission at no additional cost to you. <a href="https://support.perl.dev.br/en/institutional/affiliate-disclosure/" target="blank" rel="noopener">Learn more</a></div>
+          
+            <h1>
+              
+              Perl - List
+            </h1>
+          
+
+        
+
+
+<p>A Perl list is a data type that can store an ordered sequence of values.</p>
+<p>A list is composed of items, called list elements.</p>
+<p>Each list element is a set of values, and these values are indexed and ordered.</p>
+<p><strong>Example:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">()
+(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>)
+(<span style="color:#e6db74">&#34;Perl&#34;</span>, <span style="color:#e6db74">&#34;Programming&#34;</span>, <span style="color:#e6db74">&#34;Code&#34;</span>)
+(<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>)
+(<span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#34;hi&#34;</span>)
+(<span style="color:#e6db74">&#34;hi&#34;</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#34;bye&#34;</span>)
+</code></pre></div><h2 id="simple-perl-list">Simple Perl list</h2>
+<h2 id="complex-perl-list">Complex Perl list</h2>
+<h2 id="flattening-lists-in-perl">Flattening lists in Perl</h2>
+<p>Flattening list in Perl is a process of converting nested lists to single-level lists.</p>
+<p><strong>The flattening process consists of two steps:</strong></p>
+<ol>
+<li><strong>Flattening:</strong> The first step is flattening the list into a new list.</li>
+<li><strong>Appending:</strong> The second step is appending the flattened list to the original list.</li>
+</ol>
+<p><strong>Example:</strong></p>
+<h2 id="accessing-list-elements-in-perl">Accessing list elements in Perl</h2>
+<p>The index of a list is the number that you use to access an element in the list.</p>
+<p>If you want to access the second element in a list, then you would use an index of 1.</p>
+<p>This system is called zero-based indexing, and it is used instead of one-based indexing because with zero-based indexing, lists can be indexed from 0 to n - 1, where n is the total amount of elements inside the list.</p>
+<p><strong>Example:</strong></p>
+<p>$items = (&ldquo;apple&rdquo;, &ldquo;orange&rdquo;, &ldquo;banana&rdquo;);</p>
+<p>$item = $items[0];</p>
+<p>print(&ldquo;The first item in the list is: $item&rdquo;);</p>
+<p><strong>Output:</strong></p>
+<p>The first item in the list is: apple</p>
+<h2 id="build-a-list-based-on-a-range">Build a list based on a range</h2>
+<p>In Perl, you can build lists based on ranges of numbers or characters.</p>
+<p><strong>Example:</strong></p>
+<p>The following Perl code will generate a list (the number 1 through 10) and store it in the variable &ldquo;numbers&rdquo;.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#66d9ef">my</span> $number <span style="color:#f92672">=</span> (<span style="color:#ae81ff">1</span><span style="color:#f92672">..</span><span style="color:#ae81ff">10</span>);
+</code></pre></div><p><strong>Example:</strong></p>
+<p>The code below will generate the list (a-z) and store it in the variable &ldquo;letters&rdquo;.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#66d9ef">my</span> $number <span style="color:#f92672">=</span> (a<span style="color:#f92672">..</span>z);
+</code></pre></div>
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/en/tutorial/operators/" title="Perl - Operators"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/en/tutorial/introduction/" title="Introduction to Perl" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1642875192"></script>
+    <script src="/js/perfect-scrollbar.min.js?1642875192"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1642875192"></script>
+    <script src="/js/jquery.sticky.js?1642875192"></script>
+    <script src="/js/featherlight.min.js?1642875192"></script>
+    <script src="/js/highlight.pack.js?1642875192"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1642875192"></script>
+    <script src="/js/learn.js?1642875192"></script>
+    <script src="/js/hugo-learn.js?1642875192"></script>
+    
+    
+  </body>
+</html>
+

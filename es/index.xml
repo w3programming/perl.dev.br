@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Aprender Perl on Tutorial de Perl</title>
+    <link>https://perl.dev.br/es/</link>
+    <description>Recent content in Aprender Perl on Tutorial de Perl</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt</language><atom:link href="https://perl.dev.br/es/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introducción a Perl</title>
+      <link>https://perl.dev.br/es/tutorial/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://perl.dev.br/es/tutorial/introduction/</guid>
+      <description>En este artículo aprenderá sobre algunos aspectos importantes del lenguaje de programación Perl. Este es un primer contacto con las características que componen la lengua.
+Características de Perl: aspectos importantes del lenguaje Perl es uno de los lenguajes de programación más populares y ricos en funciones del mercado. Se ha desarrollado y mejorado durante más de dos décadas. Cuenta con una comunidad activa y participativa en su desarrollo.
+Perl puede ejecutarse en una cantidad increíble de plataformas.</description>
+    </item>
+    
+    <item>
+      <title>Configuración del Entorno de Desarrollo de Perl</title>
+      <link>https://perl.dev.br/es/tutorial/development-environment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://perl.dev.br/es/tutorial/development-environment/</guid>
+      <description>En este tutorial vamos a instalar Perl y todo lo necesario para empezar a programar en este lenguaje.
+Para programar en Perl es necesario instalar la aplicación de distribución del lenguaje de y un editor de texto sencillo.
+Strawberry Perl — Qué es y cómo descargarlo Strawberry Perl es un entorno de desarrollo Perl para Microsoft Windows.
+Strawberry Perl contiene todos los requisitos necesarios para ejecutar scripts de Perl.
+Strawberry Perl se puede descargar directamente desde el sitio web oficial https://strawberryperl.</description>
+    </item>
+    
+    <item>
+      <title>Desarrollo del Primer Programa en Perl</title>
+      <link>https://perl.dev.br/es/tutorial/first-program/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://perl.dev.br/es/tutorial/first-program/</guid>
+      <description>Los scripts de Perl son texto sin formato.
+ A pesar de su simplicidad, los scripts de Perl pueden realizar tareas complejas.
+ Primero, cree una carpeta llamada perl-scripts en el directorio raíz C:. Abra su editor de texto favorito para crear el primer script de Perl. Cree un nuevo archivo e ingrese el código a continuación:  #!/usr/bin/perl use warnings; print(&amp;#34;Hello, World!\n&amp;#34;);  Guarde el archivo con el nombre hello.</description>
+    </item>
+    
+  </channel>
+</rss>

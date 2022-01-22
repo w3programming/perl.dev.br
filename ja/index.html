@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="ja" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.84.2" />
+    <meta name="description" content="完全なPerlチュートリアル。 Perlの基本的な概念をすべて学び、キャリアをスタートさせましょう。">
+<meta name="author" content="w3empire.com">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Perlを学ぶ | Perlチュートリアル</title>
+
+    
+    <link href="/css/nucleus.css?1642875192" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1642875192" rel="stylesheet">
+    <link href="/css/hybrid.css?1642875192" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1642875192" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1642875192" rel="stylesheet">
+    <link href="/css/auto-complete.css?1642875192" rel="stylesheet">
+    
+    <link href="/css/github-dark.min.css?1642875192" rel="stylesheet">
+    <link href="/css/theme.css?1642875192" rel="stylesheet">
+    <link href="/css/tabs.css?1642875192" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1642875192" rel="stylesheet">
+    
+    <link href="/css/theme-dark-gray.css?1642875192" rel="stylesheet">
+    
+    <link href="/css/app.css?1642875192" rel="stylesheet">
+
+    <script src="/js/jquery-3.3.1.min.js?1642875192"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-41KQMP58BQ"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    
+    gtag('config', 'G-41KQMP58BQ'); 
+    
+</script>
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3427355473051563" crossorigin="anonymous"></script>
+  </head>
+  <body class="" data-url="/ja/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      
+
+
+
+
+
+
+
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="検索...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1642875192"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1642875192"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/perl.dev.br\/\/ja";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1642875192"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/ja/'><i class='fas fa-home'></i> ホームページへ行く</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/ja/tutorial/" title="チュートリアル" class="dd-item
+        
+        
+        
+        ">
+      <a href="/ja/tutorial/">
+          チュートリアル
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ja/tutorial/introduction/" title="Perlの紹介" class="dd-item ">
+        <a href="/ja/tutorial/introduction/">
+        Perl - はじめに
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ja/tutorial/development-environment/" title="Perl開発環境のセットアップ" class="dd-item ">
+        <a href="/ja/tutorial/development-environment/">
+        Perl - 開発環境
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ja/tutorial/first-program/" title="Perlでの最初のプログラムの開発" class="dd-item ">
+        <a href="/ja/tutorial/first-program/">
+        Perl - 最初のプログラム
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+          <div class="select-style">
+            <select id="select-language" onchange="location = this.value;">
+          
+          
+          
+              
+              
+                  
+                    
+                    
+                      <option id="pt" value="https://perl.dev.br/">Português</option>
+                    
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="en" value="https://perl.dev.br/en/">English</option>
+                    
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="es" value="https://perl.dev.br/es/">Español</option>
+                    
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="zh-cn" value="https://perl.dev.br/zh-cn/">中文</option>
+                    
+                  
+              
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="ja" value="https://perl.dev.br/ja/" selected>日本語</option>
+                    
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="ru" value="https://perl.dev.br/ru/">Pусский</option>
+                    
+                  
+              
+          
+        </select>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+          <g>
+            <g id="arrow-drop-down">
+              <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+            </g>
+          </g>
+        </svg>
+        </div>
+        </a>
+        </li>
+      
+
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> 履歴削除</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <small>
+    <a href="https://support.perl.dev.br/en/institutional/about/" target="_blank" rel="noopener">私たちに関しては</a> | <a href="https://support.perl.dev.br/en/institutional/terms/" target="_blank" rel="noopener">利用規約</a> | <a href="https://support.perl.dev.br/en/institutional/privacy-policy/" target="_blank" rel="noopener">プライバシーポリシー</a> | <a href="https://support.perl.dev.br/en/institutional/cookie-policy/" target="_blank" rel="noopener">クッキーポリシー</a> | <a href="https://support.perl.dev.br/en/institutional/affiliate-disclosure/" target="_blank" rel="noopener">アフィリエイト開示</a>
+</small>
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+            
+<div class="affiliate-disclosure">このサイトにはアフィリエイトリンクが含まれています。 このサイトのリンクから何かを購入した場合、追加費用なしで少額の手数料を受け取る場合があります。 <a href="https://support.perl.dev.br/en/institutional/affiliate-disclosure/" target="blank" rel="noopener">もっと詳しく知る</a></div>
+          
+
+        
+
+<span id="sidebar-toggle-span">
+<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
+</span>
+
+ 
+<h1 id="perlを学ぶ">Perlを学ぶ</h1>
+
+<div class="notices note" ><p>このチュートリアルでは、この強力で確立されたプログラミング言語の可能性を最大限に引き出す方法を学びたい人のために、Perlの最も基本的な側面について説明します。</p>
+</div>
+
+<p>Perlを使い始めたばかりでも、経験豊富なプログラマーでも、このチュートリアルはあなたにぴったりです。</p>
+<p>このチュートリアルは、Perlの基本から始まり、より専門的なレベルに進みます。Perlの習得は簡単なので、心配する必要はありません。レッスンは小さくて短いので、自分のペースで学ぶことができます。</p>
+	
+  
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+		
+			<a class="nav nav-next" href="/ja/tutorial/" title="チュートリアル" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1642875192"></script>
+    <script src="/js/perfect-scrollbar.min.js?1642875192"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1642875192"></script>
+    <script src="/js/jquery.sticky.js?1642875192"></script>
+    <script src="/js/featherlight.min.js?1642875192"></script>
+    <script src="/js/highlight.pack.js?1642875192"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1642875192"></script>
+    <script src="/js/learn.js?1642875192"></script>
+    <script src="/js/hugo-learn.js?1642875192"></script>
+    
+    
+  </body>
+</html>
+

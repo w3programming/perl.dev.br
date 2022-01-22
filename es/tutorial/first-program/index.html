@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="es" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.84.2" />
+    <meta name="description" content="Tutorial completo de Perl. Aprenda todos los conceptos fundamentales de Perl para comenzar su carrera.">
+<meta name="author" content="w3empire.com">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Desarrollo del Primer Programa en Perl | Tutorial de Perl</title>
+
+    
+    <link href="/css/nucleus.css?1642875192" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1642875192" rel="stylesheet">
+    <link href="/css/hybrid.css?1642875192" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1642875192" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1642875192" rel="stylesheet">
+    <link href="/css/auto-complete.css?1642875192" rel="stylesheet">
+    
+    <link href="/css/github-dark.min.css?1642875192" rel="stylesheet">
+    <link href="/css/theme.css?1642875192" rel="stylesheet">
+    <link href="/css/tabs.css?1642875192" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1642875192" rel="stylesheet">
+    
+    <link href="/css/theme-dark-gray.css?1642875192" rel="stylesheet">
+    
+    <link href="/css/app.css?1642875192" rel="stylesheet">
+
+    <script src="/js/jquery-3.3.1.min.js?1642875192"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-41KQMP58BQ"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    
+    gtag('config', 'G-41KQMP58BQ'); 
+    
+</script>
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3427355473051563" crossorigin="anonymous"></script>
+  </head>
+  <body class="" data-url="/es/tutorial/first-program/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      
+
+
+
+
+
+
+
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Búsqueda...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1642875192"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1642875192"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/perl.dev.br\/\/es";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1642875192"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/es/'><i class='fas fa-home'></i> Comienzo</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/es/tutorial/" title="Tutorial" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/es/tutorial/">
+          Tutorial
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/es/tutorial/introduction/" title="Introducción a Perl" class="dd-item ">
+        <a href="/es/tutorial/introduction/">
+        Perl - Introducción
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/es/tutorial/development-environment/" title="Configuración del Entorno de Desarrollo de Perl" class="dd-item ">
+        <a href="/es/tutorial/development-environment/">
+        Perl - Entorno de Desarrollo
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/es/tutorial/first-program/" title="Desarrollo del Primer Programa en Perl" class="dd-item active">
+        <a href="/es/tutorial/first-program/">
+        Perl - Primer Programa
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+          <div class="select-style">
+            <select id="select-language" onchange="location = this.value;">
+          
+          
+          
+              
+              
+                  
+                    
+                    
+                      <option id="pt" value="https://perl.dev.br/tutorial/first-program/">Português</option>
+                    
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="en" value="https://perl.dev.br/en/tutorial/first-program/">English</option>
+                    
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="es" value="https://perl.dev.br/es/tutorial/first-program/" selected>Español</option>
+                    
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="zh-cn" value="https://perl.dev.br/zh-cn/tutorial/first-program/">中文</option>
+                    
+                  
+              
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="ja" value="https://perl.dev.br/ja/tutorial/first-program/">日本語</option>
+                    
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="ru" value="https://perl.dev.br/ru/tutorial/first-program/">Pусский</option>
+                    
+                  
+              
+          
+        </select>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+          <g>
+            <g id="arrow-drop-down">
+              <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+            </g>
+          </g>
+        </svg>
+        </div>
+        </a>
+        </li>
+      
+
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Borrar el historial</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <small>
+    <a href="https://support.perl.dev.br/en/institutional/about/" target="_blank" rel="noopener">Sobre</a> | <a href="https://support.perl.dev.br/en/institutional/terms/" target="_blank" rel="noopener">Términos&nbsp;de&nbsp;uso</a> | <a href="https://support.perl.dev.br/en/institutional/privacy-policy/" target="_blank" rel="noopener">Política&nbsp;de&nbsp;privacidad</a> | <a href="https://support.perl.dev.br/en/institutional/cookie-policy/" target="_blank" rel="noopener">Política&nbsp;de&nbsp;cookies</a> | <a href="https://support.perl.dev.br/en/institutional/affiliate-disclosure/" target="_blank" rel="noopener">Divulgación&nbsp;de&nbsp;afiliados</a>
+</small>
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Editar esta página' href="https://github.com/w3programming/perl.dev.br/edit/master/content/tutorial/first-program/index.es.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Editar esta página</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/es/'>Aprender Perl</a> > <a href='/es/tutorial/'>Tutorial</a> > Desarrollo del Primer Programa en Perl
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#ejecutar-un-script-en-perl">Ejecutar un script en Perl</a></li>
+    <li><a href="#explicando-el-guión--en-detalle">Explicando el guión — En detalle</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+            
+<div class="affiliate-disclosure">Este sitio contiene enlaces de afiliados. Si compra algo a través de un enlace en este sitio, podemos recibir una pequeña comisión sin costo adicional para usted. <a href="https://support.perl.dev.br/en/institutional/affiliate-disclosure/" target="blank" rel="noopener">Obtener más información</a></div>
+          
+            <h1>
+              
+              Desarrollo del Primer Programa en Perl
+            </h1>
+          
+
+        
+
+
+<blockquote>
+<p>Los scripts de Perl son texto sin formato.</p>
+</blockquote>
+<p>A pesar de su simplicidad, los scripts de Perl pueden realizar tareas complejas.</p>
+<ul>
+<li>Primero, cree una carpeta llamada <code>perl-scripts</code> en el directorio raíz <code>C:</code>.</li>
+<li>Abra su editor de texto favorito para crear el primer script de Perl.</li>
+<li>Cree un nuevo archivo e ingrese el código a continuación:</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
+<span style="color:#66d9ef">use</span> warnings;
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Hello, World!\n&#34;</span>);
+</code></pre></div><ul>
+<li>Guarde el archivo con el nombre <code>hello.pl</code> en la carpeta <code>perl-scripts</code>.</li>
+</ul>
+<h2 id="ejecutar-un-script-en-perl">Ejecutar un script en Perl</h2>
+<p>Para ejecutar un script de Perl, abra un símbolo del sistema en Windows.</p>
+<p>Navegue a la carpeta donde se encuentra el script.</p>
+
+<div class="notices info" ><p>En nuestro caso, la carpeta se encuentra en <code>c:\perl-scripts</code>. Para colocar el indicador dentro de esta carpeta, escriba el comando <code>cd c:\perl-scripts</code> y presione la tecla <code>Enter</code>.</p>
+</div>
+
+<p><strong>Ejecute el comando:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">perl hello.pl
+</code></pre></div><p><strong>Salida:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Hello, World!
+</code></pre></div><p>Si ve este resultado en la pantalla, felicitaciones, acaba de crear y ejecutar con éxito su primer script Perl.</p>
+<h2 id="explicando-el-guión--en-detalle">Explicando el guión — En detalle</h2>
+<p>Repasemos cada línea de nuestro primer programa Perl para entender cómo funciona.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
+</code></pre></div><p>La primera línea le dice al shell que este script debe ejecutarse usando el intérprete de Perl.</p>
+<p>La dirección <code>/usr/bin/perl</code> es exactamente donde se encuentra el intérprete.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#66d9ef">use</span> warnings;
+</code></pre></div><p>La segunda línea del script incluye un <code>Pragma</code>.</p>
+<p>Este <code>Pragma</code> le dice al intérprete de Perl que se deben mostrar advertencias adicionales al usuario cuando algo sucede en el código.</p>
+
+<div class="notices tip" ><p>Otro <code>Pragma</code> muy importante utilizado en Perl es <code>use stricts</code>. Veremos más sobre esto a medida que avance el tutorial.</p>
+</div>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Hello, World!\n&#34;</span>);
+</code></pre></div><p>La tercera línea del script contiene una función llamada <code>print</code>.</p>
+<p>Esta función coloca un valor en la pantalla.</p>
+<p>En este caso, el valor es lo que está dentro de los paréntesis.</p>
+<p><code>&quot;Hello, World!\n&quot;</code> representa una string en Perl.</p>
+<p>Las strings en Perl están entre comillas <code>&quot;&quot;</code>.</p>
+<p>A lo largo del tutorial, aprenderá más sobre strings en Perl.</p>
+<p>La secuencia <code>\n</code> dentro de la string representa una nueva línea para el intérprete de Perl.</p>
+<p>El <code>\n</code> es conocido como el <em>escape sequence</em>.</p>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/es/tutorial/development-environment/" title="Configuración del Entorno de Desarrollo de Perl"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/es/tutorial/introduction/" title="Introducción a Perl" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1642875192"></script>
+    <script src="/js/perfect-scrollbar.min.js?1642875192"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1642875192"></script>
+    <script src="/js/jquery.sticky.js?1642875192"></script>
+    <script src="/js/featherlight.min.js?1642875192"></script>
+    <script src="/js/highlight.pack.js?1642875192"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1642875192"></script>
+    <script src="/js/learn.js?1642875192"></script>
+    <script src="/js/hugo-learn.js?1642875192"></script>
+    
+    
+  </body>
+</html>
+

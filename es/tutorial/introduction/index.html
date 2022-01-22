@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="es" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.84.2" />
+    <meta name="description" content="Tutorial completo de Perl. Aprenda todos los conceptos fundamentales de Perl para comenzar su carrera.">
+<meta name="author" content="w3empire.com">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Introducción a Perl | Tutorial de Perl</title>
+
+    
+    <link href="/css/nucleus.css?1642875192" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1642875192" rel="stylesheet">
+    <link href="/css/hybrid.css?1642875192" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1642875192" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1642875192" rel="stylesheet">
+    <link href="/css/auto-complete.css?1642875192" rel="stylesheet">
+    
+    <link href="/css/github-dark.min.css?1642875192" rel="stylesheet">
+    <link href="/css/theme.css?1642875192" rel="stylesheet">
+    <link href="/css/tabs.css?1642875192" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1642875192" rel="stylesheet">
+    
+    <link href="/css/theme-dark-gray.css?1642875192" rel="stylesheet">
+    
+    <link href="/css/app.css?1642875192" rel="stylesheet">
+
+    <script src="/js/jquery-3.3.1.min.js?1642875192"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-41KQMP58BQ"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    
+    gtag('config', 'G-41KQMP58BQ'); 
+    
+</script>
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3427355473051563" crossorigin="anonymous"></script>
+  </head>
+  <body class="" data-url="/es/tutorial/introduction/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      
+
+
+
+
+
+
+
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Búsqueda...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1642875192"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1642875192"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/perl.dev.br\/\/es";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1642875192"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/es/'><i class='fas fa-home'></i> Comienzo</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/es/tutorial/" title="Tutorial" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/es/tutorial/">
+          Tutorial
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/es/tutorial/introduction/" title="Introducción a Perl" class="dd-item active">
+        <a href="/es/tutorial/introduction/">
+        Perl - Introducción
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/es/tutorial/development-environment/" title="Configuración del Entorno de Desarrollo de Perl" class="dd-item ">
+        <a href="/es/tutorial/development-environment/">
+        Perl - Entorno de Desarrollo
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/es/tutorial/first-program/" title="Desarrollo del Primer Programa en Perl" class="dd-item ">
+        <a href="/es/tutorial/first-program/">
+        Perl - Primer Programa
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+          <div class="select-style">
+            <select id="select-language" onchange="location = this.value;">
+          
+          
+          
+              
+              
+                  
+                    
+                    
+                      <option id="pt" value="https://perl.dev.br/tutorial/introduction/">Português</option>
+                    
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="en" value="https://perl.dev.br/en/tutorial/introduction/">English</option>
+                    
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="es" value="https://perl.dev.br/es/tutorial/introduction/" selected>Español</option>
+                    
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="zh-cn" value="https://perl.dev.br/zh-cn/tutorial/introduction/">中文</option>
+                    
+                  
+              
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="ja" value="https://perl.dev.br/ja/tutorial/introduction/">日本語</option>
+                    
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="ru" value="https://perl.dev.br/ru/tutorial/introduction/">Pусский</option>
+                    
+                  
+              
+          
+        </select>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+          <g>
+            <g id="arrow-drop-down">
+              <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+            </g>
+          </g>
+        </svg>
+        </div>
+        </a>
+        </li>
+      
+
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Borrar el historial</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <small>
+    <a href="https://support.perl.dev.br/en/institutional/about/" target="_blank" rel="noopener">Sobre</a> | <a href="https://support.perl.dev.br/en/institutional/terms/" target="_blank" rel="noopener">Términos&nbsp;de&nbsp;uso</a> | <a href="https://support.perl.dev.br/en/institutional/privacy-policy/" target="_blank" rel="noopener">Política&nbsp;de&nbsp;privacidad</a> | <a href="https://support.perl.dev.br/en/institutional/cookie-policy/" target="_blank" rel="noopener">Política&nbsp;de&nbsp;cookies</a> | <a href="https://support.perl.dev.br/en/institutional/affiliate-disclosure/" target="_blank" rel="noopener">Divulgación&nbsp;de&nbsp;afiliados</a>
+</small>
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Editar esta página' href="https://github.com/w3programming/perl.dev.br/edit/master/content/tutorial/introduction/index.es.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Editar esta página</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/es/'>Aprender Perl</a> > <a href='/es/tutorial/'>Tutorial</a> > Introducción a Perl
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#características-de-perl-aspectos-importantes-del-lenguaje">Características de Perl: aspectos importantes del lenguaje</a></li>
+    <li><a href="#características-más-importantes-de-perl-aspectos-destacados-del-idioma">Características más importantes de Perl: aspectos destacados del idioma</a>
+      <ul>
+        <li><a href="#1-lenguaje-de-programación-extensible">1. Lenguaje de programación extensible</a></li>
+        <li><a href="#2-facilidad-de-uso-y-aprendizaje">2. Facilidad de uso y aprendizaje</a></li>
+        <li><a href="#3-versatilidad">3. Versatilidad</a></li>
+        <li><a href="#4-expresión-regular">4. Expresión regular</a></li>
+        <li><a href="#5-código-abierto">5. Código abierto</a></li>
+        <li><a href="#6-calidad-y-seguridad">6. Calidad y seguridad</a></li>
+      </ul>
+    </li>
+    <li><a href="#diferentes-versiones-de-perl-versión-5-x-versión-6">Diferentes versiones de Perl: versión 5 x versión 6</a></li>
+    <li><a href="#quién-inventó-perl">¿Quién inventó Perl?</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+            
+<div class="affiliate-disclosure">Este sitio contiene enlaces de afiliados. Si compra algo a través de un enlace en este sitio, podemos recibir una pequeña comisión sin costo adicional para usted. <a href="https://support.perl.dev.br/en/institutional/affiliate-disclosure/" target="blank" rel="noopener">Obtener más información</a></div>
+          
+            <h1>
+              
+              Introducción a Perl
+            </h1>
+          
+
+        
+
+
+<p>En este artículo aprenderá sobre algunos aspectos importantes del lenguaje de programación Perl. Este es un primer contacto con las características que componen la lengua.</p>
+<h2 id="características-de-perl-aspectos-importantes-del-lenguaje">Características de Perl: aspectos importantes del lenguaje</h2>
+<p>Perl es uno de los lenguajes de programación más populares y ricos en funciones del mercado. Se ha desarrollado y mejorado durante más de dos décadas. Cuenta con una comunidad activa y participativa en su desarrollo.</p>
+<p>Perl puede ejecutarse en una cantidad increíble de plataformas. Compatible con los sistemas operativos más populares como Windows, Linux y MacOS, se convierte en una buena elección para cualquier persona que necesite portabilidad multiplataforma.</p>
+<p>Perl actualmente admite más de 100 plataformas diferentes.</p>
+<p>Pero, ¿para qué se puede utilizar Perl?</p>
+<p>Perl es un lenguaje versátil. Se puede usar tanto en proyectos de misión crítica como en proyectos más pequeños, o incluso en scripts muy simples de una línea.</p>
+<h2 id="características-más-importantes-de-perl-aspectos-destacados-del-idioma">Características más importantes de Perl: aspectos destacados del idioma</h2>
+<h3 id="1-lenguaje-de-programación-extensible">1. Lenguaje de programación extensible</h3>
+<p>Perl tiene un repositorio de módulos llamado <a href='https://www.cpan.org/' target="_blank" rel="nofollow noopener" title="CPAN">CPAN&nbsp;<i class="fas fa-external-link-alt outter-link"></i>
+</a>, abreviatura de Comprehensive Perl Archive Network , en él se pueden encontrar cientos de miles de extensiones al lenguaje.</p>
+<p>Si necesita un módulo que realice una determinada tarea, lo más probable es que alguien de la comunidad ya lo haya desarrollado.</p>
+<p>Los módulos van desde interfaces de usuario gráficas hasta la integración con los administradores de bases de datos más populares .</p>
+<p>Perl brinda soporte para las bases de datos más populares para programadores como MySQL, Oracle, PostgresSQL y más.</p>
+<h3 id="2-facilidad-de-uso-y-aprendizaje">2. Facilidad de uso y aprendizaje</h3>
+<p>A pesar de algunas controversias con respecto a Perl, el lenguaje es muy fácil de aprender.</p>
+<p>Además de tener una <a href='https://www.perl.org/community.html' target="_blank" rel="nofollow noopener" title="comunidad enorme y útil">comunidad enorme y útil&nbsp;<i class="fas fa-external-link-alt outter-link"></i>
+</a>, aún puede encontrar miles de tutoriales disponibles de forma gratuita en Internet.</p>
+<p>Perl también tiene <a href='https://perldoc.perl.org/' target="_blank" rel="nofollow noopener" title="documentación">documentación&nbsp;<i class="fas fa-external-link-alt outter-link"></i>
+</a> muy detallado y fácil de entender. El lenguaje se destaca por su eficiencia en la realización de tareas complejas.</p>
+<h3 id="3-versatilidad">3. Versatilidad</h3>
+<p>Una de las características más importantes de cualquier lenguaje de programación es su versatilidad con respecto a los paradigmas de programación.</p>
+<p>Programación orientada a objetos, procedural o funcional , todos estos paradigmas de programación son compatibles con Perl.</p>
+<p>Esto permite al programador la libertad de desarrollar sus programas utilizando el paradigma que mejor se adapte a sus proyectos.</p>
+<h3 id="4-expresión-regular">4. Expresión regular</h3>
+<p>Cuando hablamos de manipulación de texto, Perl está en otro nivel. Podemos decir que el lenguaje es el precursor de las expresiones regulares.</p>
+<p>La expresión regular o regex es un poderoso sistema que se utiliza para encontrar ocurrencias de texto en varios tipos de contenido. Aprenderá mucho más sobre este sistema a medida que avance el tutorial.</p>
+<p>Perl tiene un conjunto de API integradas que se usan específicamente para el procesamiento de texto. Con ellos es mucho más fácil manipular archivos generados a partir de lenguajes de marcas como XML y HTML.</p>
+<p>El motor de expresiones regulares de Perl no necesita comentarios. Con un sistema robusto, la expresión regular de Perl se puede usar para encontrar archivos específicos en sistemas a través de combinaciones complejas.</p>
+<h3 id="5-código-abierto">5. Código abierto</h3>
+<p>Un proyecto de código abierto permite al usuario acceder, cambiar e incluso distribuirlo libre y libremente.</p>
+<p>Perl se ha desarrollado desde sus inicios como un proyecto de código abierto. Puede descargar Perl, cambiarlo y distribuirlo libremente utilizando una de las licencias GNU, GPL o artística.</p>
+<p>El lenguaje todavía tiene soporte para uso comercial.</p>
+<h3 id="6-calidad-y-seguridad">6. Calidad y seguridad</h3>
+<p>La seguridad del lenguaje es fundamental cuando hablamos de programación.</p>
+<p>Perl está certificado por Coverity libre de fallas de seguridad. El núcleo del idioma también tiene una baja densidad de defectos.</p>
+<p>Esto permite que el usuario tenga más confianza en el desarrollo de sus programas usando Perl.</p>
+<h2 id="diferentes-versiones-de-perl-versión-5-x-versión-6">Diferentes versiones de Perl: versión 5 x versión 6</h2>
+<p>Vale la pena señalar aquí que Perl tiene dos versiones principales que generan confusión entre los usuarios.</p>
+<p>Hasta la versión 5 de Perl, el lenguaje todavía se llama Perl. La versión 6, sin embargo, difería tanto de Perl que se convirtió en otro lenguaje, conocido como <a href='https://www.raku.org/' target="_blank" rel="nofollow noopener" title="Raku">Raku&nbsp;<i class="fas fa-external-link-alt outter-link"></i>
+</a>.</p>
+<p>Raku puede considerarse una implementación de Perl totalmente orientada a objetos.</p>
+<p>En nuestro tutorial vamos a utilizar la versión 5.3 de Perl.</p>
+<h2 id="quién-inventó-perl">¿Quién inventó Perl?</h2>
+<p>Perl fue presentado por primera vez en 1987 por el programador Larry Wall.</p>
+<p>Era administrador de sistemas en la NASA y necesitaba un lenguaje para procesar los informes de manera más eficiente. La primera versión de Perl se creó y ejecutó en el sistema operativo UNIX.</p>
+<p>Durante más de dos décadas, Perl ha sido desarrollado y mejorado por una comunidad activa y dedicada de programadores.</p>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/es/tutorial/" title="Tutorial"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/es/tutorial/development-environment/" title="Configuración del Entorno de Desarrollo de Perl" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1642875192"></script>
+    <script src="/js/perfect-scrollbar.min.js?1642875192"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1642875192"></script>
+    <script src="/js/jquery.sticky.js?1642875192"></script>
+    <script src="/js/featherlight.min.js?1642875192"></script>
+    <script src="/js/highlight.pack.js?1642875192"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1642875192"></script>
+    <script src="/js/learn.js?1642875192"></script>
+    <script src="/js/hugo-learn.js?1642875192"></script>
+    
+    
+  </body>
+</html>
+

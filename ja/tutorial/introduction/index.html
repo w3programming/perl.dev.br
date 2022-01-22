@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="ja" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.84.2" />
+    <meta name="description" content="完全なPerlチュートリアル。 Perlの基本的な概念をすべて学び、キャリアをスタートさせましょう。">
+<meta name="author" content="w3empire.com">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Perlの紹介 | Perlチュートリアル</title>
+
+    
+    <link href="/css/nucleus.css?1642875192" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1642875192" rel="stylesheet">
+    <link href="/css/hybrid.css?1642875192" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1642875192" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1642875192" rel="stylesheet">
+    <link href="/css/auto-complete.css?1642875192" rel="stylesheet">
+    
+    <link href="/css/github-dark.min.css?1642875192" rel="stylesheet">
+    <link href="/css/theme.css?1642875192" rel="stylesheet">
+    <link href="/css/tabs.css?1642875192" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1642875192" rel="stylesheet">
+    
+    <link href="/css/theme-dark-gray.css?1642875192" rel="stylesheet">
+    
+    <link href="/css/app.css?1642875192" rel="stylesheet">
+
+    <script src="/js/jquery-3.3.1.min.js?1642875192"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-41KQMP58BQ"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    
+    gtag('config', 'G-41KQMP58BQ'); 
+    
+</script>
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3427355473051563" crossorigin="anonymous"></script>
+  </head>
+  <body class="" data-url="/ja/tutorial/introduction/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      
+
+
+
+
+
+
+
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="検索...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1642875192"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1642875192"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/perl.dev.br\/\/ja";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1642875192"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/ja/'><i class='fas fa-home'></i> ホームページへ行く</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/ja/tutorial/" title="チュートリアル" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/ja/tutorial/">
+          チュートリアル
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ja/tutorial/introduction/" title="Perlの紹介" class="dd-item active">
+        <a href="/ja/tutorial/introduction/">
+        Perl - はじめに
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ja/tutorial/development-environment/" title="Perl開発環境のセットアップ" class="dd-item ">
+        <a href="/ja/tutorial/development-environment/">
+        Perl - 開発環境
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ja/tutorial/first-program/" title="Perlでの最初のプログラムの開発" class="dd-item ">
+        <a href="/ja/tutorial/first-program/">
+        Perl - 最初のプログラム
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+          <div class="select-style">
+            <select id="select-language" onchange="location = this.value;">
+          
+          
+          
+              
+              
+                  
+                    
+                    
+                      <option id="pt" value="https://perl.dev.br/tutorial/introduction/">Português</option>
+                    
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="en" value="https://perl.dev.br/en/tutorial/introduction/">English</option>
+                    
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="es" value="https://perl.dev.br/es/tutorial/introduction/">Español</option>
+                    
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="zh-cn" value="https://perl.dev.br/zh-cn/tutorial/introduction/">中文</option>
+                    
+                  
+              
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="ja" value="https://perl.dev.br/ja/tutorial/introduction/" selected>日本語</option>
+                    
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="ru" value="https://perl.dev.br/ru/tutorial/introduction/">Pусский</option>
+                    
+                  
+              
+          
+        </select>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+          <g>
+            <g id="arrow-drop-down">
+              <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+            </g>
+          </g>
+        </svg>
+        </div>
+        </a>
+        </li>
+      
+
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> 履歴削除</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <small>
+    <a href="https://support.perl.dev.br/en/institutional/about/" target="_blank" rel="noopener">私たちに関しては</a> | <a href="https://support.perl.dev.br/en/institutional/terms/" target="_blank" rel="noopener">利用規約</a> | <a href="https://support.perl.dev.br/en/institutional/privacy-policy/" target="_blank" rel="noopener">プライバシーポリシー</a> | <a href="https://support.perl.dev.br/en/institutional/cookie-policy/" target="_blank" rel="noopener">クッキーポリシー</a> | <a href="https://support.perl.dev.br/en/institutional/affiliate-disclosure/" target="_blank" rel="noopener">アフィリエイト開示</a>
+</small>
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='このページを編集' href="https://github.com/w3programming/perl.dev.br/edit/master/content/tutorial/introduction/index.ja.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">このページを編集</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/ja/'>Perlを学ぶ</a> > <a href='/ja/tutorial/'>チュートリアル</a> > Perlの紹介
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#perlの機能言語の重要な側面">Perlの機能—言語の重要な側面</a></li>
+    <li><a href="#perlの最も重要な機能言語のハイライト">Perlの最も重要な機能—言語のハイライト</a>
+      <ul>
+        <li><a href="#1拡張可能なプログラミング言語">1.拡張可能なプログラミング言語</a></li>
+        <li><a href="#2使いやすさと学習">2.使いやすさと学習</a></li>
+        <li><a href="#3汎用性">3.汎用性</a></li>
+        <li><a href="#4正規表現">4.正規表現</a></li>
+        <li><a href="#5オープンソース">5.オープンソース</a></li>
+        <li><a href="#6品質と安全性">6.品質と安全性</a></li>
+      </ul>
+    </li>
+    <li><a href="#さまざまなperlバージョンバージョン5xバージョン6">さまざまなPerlバージョン—バージョン5xバージョン6</a></li>
+    <li><a href="#perlを発明したのは誰ですか">Perlを発明したのは誰ですか？</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+            
+<div class="affiliate-disclosure">このサイトにはアフィリエイトリンクが含まれています。 このサイトのリンクから何かを購入した場合、追加費用なしで少額の手数料を受け取る場合があります。 <a href="https://support.perl.dev.br/en/institutional/affiliate-disclosure/" target="blank" rel="noopener">もっと詳しく知る</a></div>
+          
+            <h1>
+              
+              Perlの紹介
+            </h1>
+          
+
+        
+
+
+<p>この記事では、Perlプログラミング言語のいくつかの重要な側面について学びます。これは、言語を構成する特性との最初の接触です。</p>
+<h2 id="perlの機能言語の重要な側面">Perlの機能—言語の重要な側面</h2>
+<p>Perlは、市場で最も人気があり、機能が豊富なプログラミング言語の1つです。それは20年以上にわたって開発され、改善されてきました。その開発には活発で参加型のコミュニティがあります。</p>
+<p>Perlは非常に多くのプラットフォームで実行できます。Windows、Linux、MacOSなどの最も一般的なオペレーティングシステムと互換性があるため、クロスプラットフォームの移植性が必要な人にとっては賢明な選択になります。</p>
+<p>Perlは現在、100を超える異なるプラットフォームをサポートしています。</p>
+<p>しかし、Perlは何に使用できますか？</p>
+<p>Perlは用途の広い言語です。ミッションクリティカルなプロジェクトと小規模なプロジェクトの両方、または非常に単純な1行のスクリプトでも使用できます。</p>
+<h2 id="perlの最も重要な機能言語のハイライト">Perlの最も重要な機能—言語のハイライト</h2>
+<h3 id="1拡張可能なプログラミング言語">1.拡張可能なプログラミング言語</h3>
+<p><a href='https://www.cpan.org/' target="_blank" rel="nofollow noopener" title="PerlにはCPAN">PerlにはCPAN&nbsp;<i class="fas fa-external-link-alt outter-link"></i>
+</a> と呼ばれるモジュールリポジトリがあります 、 Comprehensive Perl Archive Networkの略で、その言語の何十万もの拡張機能を見つけることができます。</p>
+<p>特定のタスクを実行するモジュールが必要な場合は、コミュニティの誰かがすでにそれを開発している可能性があります。</p>
+<p>モジュールは、グラフィカルユーザーインターフェイスUIから、最も一般的なデータベースマネージャーとの統合にまで及びます。</p>
+<p>Perlは、MySQL、Oracle、PostgresSQLなどのプログラマーに最も人気のあるデータベースのサポートを提供します。</p>
+<h3 id="2使いやすさと学習">2.使いやすさと学習</h3>
+<p>Perlに関するいくつかの論争にもかかわらず、この言語は非常に簡単に習得できます。</p>
+<p><a href='https://www.perl.org/community.html' target="_blank" rel="nofollow noopener" title="巨大で役立つコミュニティ">巨大で役立つコミュニティ&nbsp;<i class="fas fa-external-link-alt outter-link"></i>
+</a> を持つことに加えて 、インターネット上で無料で利用できる何千ものチュートリアルをまだ見つけることができます。</p>
+<p>Perlにも<a href='https://perldoc.perl.org/' target="_blank" rel="nofollow noopener" title="ドキュメント があります">ドキュメント があります&nbsp;<i class="fas fa-external-link-alt outter-link"></i>
+</a>非常に詳細で理解しやすい。この言語は、複雑なタスクを実行する際の効率性で際立っています。</p>
+<h3 id="3汎用性">3.汎用性</h3>
+<p>プログラミング言語の最も重要な機能の1つは、プログラミングパラダイムに関するその多様性です。</p>
+<p>オブジェクト指向、手続き型プログラミング、または関数型プログラミング、これらのプログラミングパラダイムはすべてPerlでサポートされています。</p>
+<p>これにより、プログラマーは、プロジェクトに最適なパラダイムを使用してプログラムを自由に開発できます。</p>
+<h3 id="4正規表現">4.正規表現</h3>
+<p>テキスト操作について話すとき、Perlは別のレベルにあります。言語は正規表現の前身であると言えます。</p>
+<p>正規表現または正規表現は、さまざまなタイプのコンテンツで出現するテキストを見つけるために使用される強力なシステムです。チュートリアルが進むにつれて、このシステムについてさらに詳しく学ぶことができます。</p>
+<p>Perlには、特にテキスト処理に使用される一連の組み込みAPIがあります。それらを使用すると、XMLやHTMLなどのマークアップ言語から生成されたファイルを操作するのがはるかに簡単になります。</p>
+<p>Perlの正規表現エンジンにはコメントは必要ありません。堅牢なシステムでは、Perlの正規表現を使用して、複雑な組み合わせでシステム上の特定のファイルを見つけることができます。</p>
+<h3 id="5オープンソース">5.オープンソース</h3>
+<p>オープンソースプロジェクトにより、ユーザーはプロジェクトにアクセスし、変更し、さらには自由に配布することができます。</p>
+<p>Perlは、オープンソースプロジェクトとしての開始以来開発されてきました。Perlをダウンロードして変更し、GNU、GPL、またはArtisticライセンスのいずれかを使用して自由に配布できます。</p>
+<p>この言語はまだ商用利用をサポートしています。</p>
+<h3 id="6品質と安全性">6.品質と安全性</h3>
+<p>プログラミングについて話すとき、言語のセキュリティは不可欠です。</p>
+<p>Perlは、セキュリティ上の欠陥がないことをCoverityによって認定されています。言語コアの欠陥密度も低くなっています。</p>
+<p>これにより、ユーザーはPerlを使用してプログラムを開発することに自信を持つことができます。</p>
+<h2 id="さまざまなperlバージョンバージョン5xバージョン6">さまざまなPerlバージョン—バージョン5xバージョン6</h2>
+<p>ここで注目に値するのは、Perlにはユーザー間で混乱を引き起こす2つのメジャーバージョンがあるということです。</p>
+<p>Perlのバージョン5まで、この言語はまだPerlと呼ばれています。ただし、バージョン6はPerlとは大きく異なり、Raku と呼ばれる別の言語になりました。 。</p>
+<p><a href='https://www.raku.org/' target="_blank" rel="nofollow noopener" title="Raku">Raku&nbsp;<i class="fas fa-external-link-alt outter-link"></i>
+</a>は、Perlの完全なオブジェクト指向の実装と見なすことができます。</p>
+<p>このチュートリアルでは、Perlバージョン5.3を使用します。</p>
+<h2 id="perlを発明したのは誰ですか">Perlを発明したのは誰ですか？</h2>
+<p>Perlは、1987年にプログラマーのLarryWallによって最初に導入されました。</p>
+<p>彼はNASAのシステム管理者であり、レポートをより効率的に処理するための言語が必要でした。Perlの最初のバージョンは、UNIXオペレーティングシステムで作成および実行されました。</p>
+<p>20年以上の間、Perlは、活発で熱心なプログラマーのコミュニティによって開発され、改善されてきました。</p>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/ja/tutorial/" title="チュートリアル"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/ja/tutorial/development-environment/" title="Perl開発環境のセットアップ" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1642875192"></script>
+    <script src="/js/perfect-scrollbar.min.js?1642875192"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1642875192"></script>
+    <script src="/js/jquery.sticky.js?1642875192"></script>
+    <script src="/js/featherlight.min.js?1642875192"></script>
+    <script src="/js/highlight.pack.js?1642875192"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1642875192"></script>
+    <script src="/js/learn.js?1642875192"></script>
+    <script src="/js/hugo-learn.js?1642875192"></script>
+    
+    
+  </body>
+</html>
+

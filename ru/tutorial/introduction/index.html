@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="ru" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.84.2" />
+    <meta name="description" content="Полное руководство по Perl. Изучите все фундаментальные концепции Perl, чтобы начать свою карьеру.">
+<meta name="author" content="w3empire.com">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Введение в Perl | Учебник по Perl</title>
+
+    
+    <link href="/css/nucleus.css?1642875192" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1642875192" rel="stylesheet">
+    <link href="/css/hybrid.css?1642875192" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1642875192" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1642875192" rel="stylesheet">
+    <link href="/css/auto-complete.css?1642875192" rel="stylesheet">
+    
+    <link href="/css/github-dark.min.css?1642875192" rel="stylesheet">
+    <link href="/css/theme.css?1642875192" rel="stylesheet">
+    <link href="/css/tabs.css?1642875192" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1642875192" rel="stylesheet">
+    
+    <link href="/css/theme-dark-gray.css?1642875192" rel="stylesheet">
+    
+    <link href="/css/app.css?1642875192" rel="stylesheet">
+
+    <script src="/js/jquery-3.3.1.min.js?1642875192"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-41KQMP58BQ"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    
+    gtag('config', 'G-41KQMP58BQ'); 
+    
+</script>
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3427355473051563" crossorigin="anonymous"></script>
+  </head>
+  <body class="" data-url="/ru/tutorial/introduction/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      
+
+
+
+
+
+
+
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Поиск...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1642875192"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1642875192"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/perl.dev.br\/\/ru";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1642875192"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/ru/'><i class='fas fa-home'></i> Перейти на главную</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/ru/tutorial/" title="Руководство" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/ru/tutorial/">
+          Руководство
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ru/tutorial/introduction/" title="Введение в Perl" class="dd-item active">
+        <a href="/ru/tutorial/introduction/">
+        Perl - Введение
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ru/tutorial/development-environment/" title="Настройка среды разработки Perl" class="dd-item ">
+        <a href="/ru/tutorial/development-environment/">
+        Perl — среда разработки
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ru/tutorial/first-program/" title="Разработка первой программы на Perl" class="dd-item ">
+        <a href="/ru/tutorial/first-program/">
+        Perl - первая программа
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+          <div class="select-style">
+            <select id="select-language" onchange="location = this.value;">
+          
+          
+          
+              
+              
+                  
+                    
+                    
+                      <option id="pt" value="https://perl.dev.br/tutorial/introduction/">Português</option>
+                    
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="en" value="https://perl.dev.br/en/tutorial/introduction/">English</option>
+                    
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="es" value="https://perl.dev.br/es/tutorial/introduction/">Español</option>
+                    
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="zh-cn" value="https://perl.dev.br/zh-cn/tutorial/introduction/">中文</option>
+                    
+                  
+              
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="ja" value="https://perl.dev.br/ja/tutorial/introduction/">日本語</option>
+                    
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="ru" value="https://perl.dev.br/ru/tutorial/introduction/" selected>Pусский</option>
+                    
+                  
+              
+          
+        </select>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+          <g>
+            <g id="arrow-drop-down">
+              <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+            </g>
+          </g>
+        </svg>
+        </div>
+        </a>
+        </li>
+      
+
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Очистить историю</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <small>
+    <a href="https://support.perl.dev.br/en/institutional/about/" target="_blank" rel="noopener">О&nbsp;нас</a> | <a href="https://support.perl.dev.br/en/institutional/terms/" target="_blank" rel="noopener">Условия&nbsp;эксплуатации</a> | <a href="https://support.perl.dev.br/en/institutional/privacy-policy/" target="_blank" rel="noopener">Политика&nbsp;конфиденциальности</a> | <a href="https://support.perl.dev.br/en/institutional/cookie-policy/" target="_blank" rel="noopener">Политика&nbsp;использования&nbsp;файлов&nbsp;cookie</a> | <a href="https://support.perl.dev.br/en/institutional/affiliate-disclosure/" target="_blank" rel="noopener">Партнерское&nbsp;раскрытие</a>
+</small>
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Редактировать' href="https://github.com/w3programming/perl.dev.br/edit/master/content/tutorial/introduction/index.ru.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Редактировать</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/ru/'>Узнать Perl</a> > <a href='/ru/tutorial/'>Руководство</a> > Введение в Perl
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#возможности-perl--важные-аспекты-языка">Возможности Perl — важные аспекты языка</a></li>
+    <li><a href="#наиболее-важные-функции-perl--особенности-языка">Наиболее важные функции Perl — особенности языка</a>
+      <ul>
+        <li><a href="#1-расширяемый-язык-программирования">1. Расширяемый язык программирования</a></li>
+        <li><a href="#2-простота-использования-и-обучения">2. Простота использования и обучения</a></li>
+        <li><a href="#3-универсальность">3. Универсальность</a></li>
+        <li><a href="#4-регулярное-выражение">4. Регулярное выражение</a></li>
+        <li><a href="#5-открытый-исходный-код">5. Открытый исходный код</a></li>
+        <li><a href="#6-качество-и-безопасность">6. Качество и безопасность</a></li>
+      </ul>
+    </li>
+    <li><a href="#различные-версии-perl--версия-5-x-версия-6">Различные версии Perl — версия 5 x версия 6</a></li>
+    <li><a href="#кто-изобрел-perl">Кто изобрел Perl?</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+            
+<div class="affiliate-disclosure">Этот сайт содержит партнерские ссылки. Если вы покупаете что-то по ссылке на этом сайте, мы можем получить небольшую комиссию без каких-либо дополнительных затрат для вас. <a href="https://support.perl.dev.br/en/institutional/affiliate-disclosure/" target="blank" rel="noopener">Выучить больше</a></div>
+          
+            <h1>
+              
+              Введение в Perl
+            </h1>
+          
+
+        
+
+
+<p>В этой статье вы узнаете о некоторых важных аспектах языка программирования Perl. Это первый контакт с характеристиками, которые составляют язык.</p>
+<h2 id="возможности-perl--важные-аспекты-языка">Возможности Perl — важные аспекты языка</h2>
+<p>Perl — один из самых популярных и многофункциональных языков программирования на рынке. Он разрабатывался и совершенствовался более двух десятков лет. Он имеет активное и участвующее сообщество в своем развитии.</p>
+<p>Perl может работать на безумном количестве платформ. Совместимость с большинством популярных операционных систем, таких как Windows, Linux и MacOS, делает ее разумным выбором для всех, кому нужна кросс-платформенная переносимость.</p>
+<p>В настоящее время Perl поддерживает более 100 различных платформ.</p>
+<p>Но для чего можно использовать Perl?</p>
+<p>Perl — универсальный язык. Его можно использовать как в критически важных, так и в небольших проектах или даже в очень простых однострочных сценариях.</p>
+<h2 id="наиболее-важные-функции-perl--особенности-языка">Наиболее важные функции Perl — особенности языка</h2>
+<h3 id="1-расширяемый-язык-программирования">1. Расширяемый язык программирования</h3>
+<p>Perl имеет репозиторий модулей под названием <a href='https://www.cpan.org/' target="_blank" rel="nofollow noopener" title="CPAN">CPAN&nbsp;<i class="fas fa-external-link-alt outter-link"></i>
+</a>, сокращение от Comprehensive Perl Archive Network , в нём можно найти сотни тысяч расширений к языку.</p>
+<p>Если вам нужен модуль, выполняющий определенную задачу, скорее всего, кто-то в сообществе уже разработал его.</p>
+<p>Модули варьируются от графического пользовательского интерфейса до интеграции с наиболее популярными менеджерами баз данных .</p>
+<p>Perl обеспечивает поддержку самых популярных среди программистов баз данных, таких как MySQL, Oracle, PostgresSQL и других.</p>
+<h3 id="2-простота-использования-и-обучения">2. Простота использования и обучения</h3>
+<p>Несмотря на некоторые разногласия по поводу Perl, этот язык очень прост в изучении.</p>
+<p>В дополнение к <a href='https://www.perl.org/community.html' target="_blank" rel="nofollow noopener" title="огромному и полезному сообществу">огромному и полезному сообществу&nbsp;<i class="fas fa-external-link-alt outter-link"></i>
+</a>, вы по-прежнему можете найти тысячи бесплатных руководств в Интернете.</p>
+<p>Perl также имеет <a href='https://perldoc.perl.org/' target="_blank" rel="nofollow noopener" title="документацию">документацию&nbsp;<i class="fas fa-external-link-alt outter-link"></i>
+</a> очень подробно и понятно. Язык выделяется своей эффективностью при выполнении сложных задач.</p>
+<h3 id="3-универсальность">3. Универсальность</h3>
+<p>Одной из наиболее важных особенностей любого языка программирования является его универсальность в отношении парадигм программирования.</p>
+<p>Объектно-ориентированное, процедурное или функциональное программирование — все эти парадигмы программирования поддерживаются Perl.</p>
+<p>Это дает программисту свободу разрабатывать свои программы, используя парадигму, которая лучше всего подходит для их проектов.</p>
+<h3 id="4-регулярное-выражение">4. Регулярное выражение</h3>
+<p>Когда мы говорим о манипулировании текстом, Perl находится на другом уровне. Можно сказать, что язык является предшественником регулярных выражений.</p>
+<p>Регулярное выражение или регулярное выражение — это мощная система, используемая для поиска вхождений текста в различных типах контента. Вы узнаете гораздо больше об этой системе по ходу обучения.</p>
+<p>Perl имеет набор встроенных API, используемых специально для обработки текста. С ними гораздо проще манипулировать файлами, сгенерированными из языков разметки, таких как XML и HTML.</p>
+<p>Механизм регулярных выражений Perl не нуждается в комментариях. В надежной системе регулярное выражение Perl можно использовать для поиска определенных файлов в системах с помощью сложных комбинаций.</p>
+<h3 id="5-открытый-исходный-код">5. Открытый исходный код</h3>
+<p>Проект с открытым исходным кодом позволяет пользователю получать доступ, изменять и даже распространять его свободно и свободно.</p>
+<p>Perl с самого начала разрабатывался как проект с открытым исходным кодом. Вы можете скачать Perl, изменить его и свободно распространять, используя одну из лицензий GNU, GPL или художественную лицензию.</p>
+<p>Язык по-прежнему поддерживает коммерческое использование.</p>
+<h3 id="6-качество-и-безопасность">6. Качество и безопасность</h3>
+<p>Языковая безопасность важна, когда мы говорим о программировании.</p>
+<p>Perl сертифицирован Coverity и не содержит недостатков безопасности. Языковое ядро ​​также имеет низкую плотность дефектов.</p>
+<p>Это позволяет пользователю быть более уверенным в разработке своих программ с использованием Perl.</p>
+<h2 id="различные-версии-perl--версия-5-x-версия-6">Различные версии Perl — версия 5 x версия 6</h2>
+<p>Здесь стоит отметить, что у Perl есть две основные версии, которые вызывают путаницу у пользователей.</p>
+<p>До версии 5 Perl язык по-прежнему назывался Perl. Однако версия 6 настолько отличалась от Perl, что стала другим языком, известным как <a href='https://www.raku.org/' target="_blank" rel="nofollow noopener" title="Raku">Raku&nbsp;<i class="fas fa-external-link-alt outter-link"></i>
+</a>.</p>
+<p>Raku можно считать полностью объектно-ориентированной реализацией Perl.</p>
+<p>В нашем уроке мы будем использовать Perl версии 5.3.</p>
+<h2 id="кто-изобрел-perl">Кто изобрел Perl?</h2>
+<p>Впервые Perl был представлен в 1987 году программистом Ларри Уоллом.</p>
+<p>Он был системным администратором в НАСА и нуждался в языке для более эффективной обработки отчетов. Первая версия Perl была создана и работала в операционной системе UNIX.</p>
+<p>Более двух десятилетий Perl разрабатывался и улучшался активным и преданным делу сообществом программистов.</p>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/ru/tutorial/" title="Руководство"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/ru/tutorial/development-environment/" title="Настройка среды разработки Perl" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1642875192"></script>
+    <script src="/js/perfect-scrollbar.min.js?1642875192"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1642875192"></script>
+    <script src="/js/jquery.sticky.js?1642875192"></script>
+    <script src="/js/featherlight.min.js?1642875192"></script>
+    <script src="/js/highlight.pack.js?1642875192"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1642875192"></script>
+    <script src="/js/learn.js?1642875192"></script>
+    <script src="/js/hugo-learn.js?1642875192"></script>
+    
+    
+  </body>
+</html>
+

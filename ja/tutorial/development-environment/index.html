@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="ja" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.84.2" />
+    <meta name="description" content="完全なPerlチュートリアル。 Perlの基本的な概念をすべて学び、キャリアをスタートさせましょう。">
+<meta name="author" content="w3empire.com">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Perl開発環境のセットアップ | Perlチュートリアル</title>
+
+    
+    <link href="/css/nucleus.css?1642875192" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1642875192" rel="stylesheet">
+    <link href="/css/hybrid.css?1642875192" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1642875192" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1642875192" rel="stylesheet">
+    <link href="/css/auto-complete.css?1642875192" rel="stylesheet">
+    
+    <link href="/css/github-dark.min.css?1642875192" rel="stylesheet">
+    <link href="/css/theme.css?1642875192" rel="stylesheet">
+    <link href="/css/tabs.css?1642875192" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1642875192" rel="stylesheet">
+    
+    <link href="/css/theme-dark-gray.css?1642875192" rel="stylesheet">
+    
+    <link href="/css/app.css?1642875192" rel="stylesheet">
+
+    <script src="/js/jquery-3.3.1.min.js?1642875192"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-41KQMP58BQ"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    
+    gtag('config', 'G-41KQMP58BQ'); 
+    
+</script>
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3427355473051563" crossorigin="anonymous"></script>
+  </head>
+  <body class="" data-url="/ja/tutorial/development-environment/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      
+
+
+
+
+
+
+
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="検索...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1642875192"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1642875192"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/perl.dev.br\/\/ja";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1642875192"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/ja/'><i class='fas fa-home'></i> ホームページへ行く</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/ja/tutorial/" title="チュートリアル" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/ja/tutorial/">
+          チュートリアル
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ja/tutorial/introduction/" title="Perlの紹介" class="dd-item ">
+        <a href="/ja/tutorial/introduction/">
+        Perl - はじめに
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ja/tutorial/development-environment/" title="Perl開発環境のセットアップ" class="dd-item active">
+        <a href="/ja/tutorial/development-environment/">
+        Perl - 開発環境
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ja/tutorial/first-program/" title="Perlでの最初のプログラムの開発" class="dd-item ">
+        <a href="/ja/tutorial/first-program/">
+        Perl - 最初のプログラム
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+          <div class="select-style">
+            <select id="select-language" onchange="location = this.value;">
+          
+          
+          
+              
+              
+                  
+                    
+                    
+                      <option id="pt" value="https://perl.dev.br/tutorial/development-environment/">Português</option>
+                    
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="en" value="https://perl.dev.br/en/tutorial/development-environment/">English</option>
+                    
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="es" value="https://perl.dev.br/es/tutorial/development-environment/">Español</option>
+                    
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="zh-cn" value="https://perl.dev.br/zh-cn/tutorial/development-environment/">中文</option>
+                    
+                  
+              
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="ja" value="https://perl.dev.br/ja/tutorial/development-environment/" selected>日本語</option>
+                    
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="ru" value="https://perl.dev.br/ru/tutorial/development-environment/">Pусский</option>
+                    
+                  
+              
+          
+        </select>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+          <g>
+            <g id="arrow-drop-down">
+              <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+            </g>
+          </g>
+        </svg>
+        </div>
+        </a>
+        </li>
+      
+
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> 履歴削除</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <small>
+    <a href="https://support.perl.dev.br/en/institutional/about/" target="_blank" rel="noopener">私たちに関しては</a> | <a href="https://support.perl.dev.br/en/institutional/terms/" target="_blank" rel="noopener">利用規約</a> | <a href="https://support.perl.dev.br/en/institutional/privacy-policy/" target="_blank" rel="noopener">プライバシーポリシー</a> | <a href="https://support.perl.dev.br/en/institutional/cookie-policy/" target="_blank" rel="noopener">クッキーポリシー</a> | <a href="https://support.perl.dev.br/en/institutional/affiliate-disclosure/" target="_blank" rel="noopener">アフィリエイト開示</a>
+</small>
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='このページを編集' href="https://github.com/w3programming/perl.dev.br/edit/master/content/tutorial/development-environment/index.ja.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">このページを編集</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/ja/'>Perlを学ぶ</a> > <a href='/ja/tutorial/'>チュートリアル</a> > Perl開発環境のセットアップ
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#strawberry-perl-それは何ですかそしてそれをダウンロードする方法">Strawberry Perl —それは何ですかそしてそれをダウンロードする方法</a></li>
+    <li><a href="#windowsへのstrawberryperlのインストール画像を使ったステップバイステップ">WindowsへのStrawberryPerlのインストール—画像を使ったステップバイステップ</a></li>
+    <li><a href="#perlのインストール確認">Perlのインストール確認</a></li>
+    <li><a href="#テキストエディタのインストールコードエディタとも呼ばれます">テキストエディタのインストール—コードエディタとも呼ばれます</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+            
+<div class="affiliate-disclosure">このサイトにはアフィリエイトリンクが含まれています。 このサイトのリンクから何かを購入した場合、追加費用なしで少額の手数料を受け取る場合があります。 <a href="https://support.perl.dev.br/en/institutional/affiliate-disclosure/" target="blank" rel="noopener">もっと詳しく知る</a></div>
+          
+            <h1>
+              
+              Perl開発環境のセットアップ
+            </h1>
+          
+
+        
+
+
+<p>このチュートリアルでは、Perlと、この言語でプログラミングを開始するために必要なその他すべてをインストールします。</p>
+<p>Perlでプログラミングするには、プログラミング言語配布アプリケーションと単純なテキストエディタをインストールする必要があります。</p>
+<h2 id="strawberry-perl-それは何ですかそしてそれをダウンロードする方法">Strawberry Perl —それは何ですかそしてそれをダウンロードする方法</h2>
+<p>Strawberry Perlは、MicrosoftWindows用のPerl開発環境です。</p>
+<p>Strawberry Perlには、Perlスクリプトを実行するために必要なすべての要件が含まれています。</p>
+<p>Strawberry Perlは、公式Webサイト<a href='https://strawberryperl.com' target="_blank" rel="nofollow noopener" title="StrawberryPerlの公式ウェブサイトにアクセスするにはクリックしてください">https://strawberryperl.com&nbsp;<i class="fas fa-external-link-alt outter-link"></i>
+</a>から直接ダウンロードできます。</p>
+<p>ダウンロードしたら、インストーラーアプリケーションを実行するだけです。</p>
+<h2 id="windowsへのstrawberryperlのインストール画像を使ったステップバイステップ">WindowsへのStrawberryPerlのインストール—画像を使ったステップバイステップ</h2>
+<ol>
+<li>Strawberry Perlインストーラーを実行した直後に、以下のウィンドウが表示されます。[次へ]ボタンをクリックして続行します。</li>
+</ol>
+<p>
+    <a href="/images/install-perl-strawberry-1.png" data-featherlight="image">
+        <img src="/images/install-perl-strawberry-1.png" alt="Perl開発環境のセットアップ" title="Perl開発環境のセットアップ" style="width: auto; height: auto;" />
+    </a>
+</p>
+<ol start="2">
+<li>[使用許諾契約書の条項に同意します]チェックボックスをクリックしてから[次へ]ボタンをクリックして、プログラムの条項を読み、同意します。</li>
+</ol>
+<p>
+    <a href="/images/install-perl-strawberry-2.png" data-featherlight="image">
+        <img src="/images/install-perl-strawberry-2.png" alt="Perl開発環境のセットアップ" title="Perl開発環境のセットアップ" style="width: auto; height: auto;" />
+    </a>
+</p>
+<ol start="3">
+<li>アプリケーションのインストール場所を選択します。デフォルトでは、Strawberry Perlを<code>C:\Strawberry</code>フォルダーにインストールすることをお勧めします。インストール先がわからない場合は、このデフォルトのフォルダのままにしてください。</li>
+</ol>
+<p>
+    <a href="/images/install-perl-strawberry-3.png" data-featherlight="image">
+        <img src="/images/install-perl-strawberry-3.png" alt="Perl開発環境のセットアップ" title="Perl開発環境のセットアップ" style="width: auto; height: auto;" />
+    </a>
+</p>
+<ol start="4">
+<li>システム全体を構成したら、[インストール]ボタンをクリックしてソフトウェアのインストールを開始します。</li>
+</ol>
+<p>
+    <a href="/images/install-perl-strawberry-4.png" data-featherlight="image">
+        <img src="/images/install-perl-strawberry-4.png" alt="Perl開発環境のセットアップ" title="Perl開発環境のセットアップ" style="width: auto; height: auto;" />
+    </a>
+</p>
+<ol start="5">
+<li>ここで、インストールが完了するのを待ちます。</li>
+</ol>
+<p>
+    <a href="/images/install-perl-strawberry-5.png" data-featherlight="image">
+        <img src="/images/install-perl-strawberry-5.png" alt="Perl開発環境のセットアップ" title="Perl開発環境のセットアップ" style="width: auto; height: auto;" />
+    </a>
+</p>
+<ol start="6">
+<li>Strawberry Perlのインストールが完了すると、次の画面が表示されます。[完了]ボタンをクリックして、インストーラーを終了します。</li>
+</ol>
+<p>
+    <a href="/images/install-perl-strawberry-6.png" data-featherlight="image">
+        <img src="/images/install-perl-strawberry-6.png" alt="Perl開発環境のセットアップ" title="Perl開発環境のセットアップ" style="width: auto; height: auto;" />
+    </a>
+</p>
+<h2 id="perlのインストール確認">Perlのインストール確認</h2>
+<p>Perlがコンピューターに正しくインストールされていることを確認するには、次の手順に従います。</p>
+<ol>
+<li>Windowsコマンドプロンプトを開き、コマンド<code>perl -v</code>を入力します。</li>
+<li><code>Enter</code>キーを押してコマンドを実行します。</li>
+<li>次の図に示すように、コマンドがコンピューターにインストールされているPerlのバージョンを出力するかどうかを確認します。</li>
+</ol>
+<p>
+    <a href="/images/perl-v.png" data-featherlight="image">
+        <img src="/images/perl-v.png" alt="Perl開発環境のセットアップ" title="Perl開発環境のセットアップ" style="width: auto; height: auto;" />
+    </a>
+</p>
+<p>コマンドが次のようなものを返す場合：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#e6db74">&#39;perl&#39;</span>は、内部または外部コマンド、操作可能なプログラム、またはバッチファイルとして認識されません。
+</code></pre></div><p>また</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#e6db74">&#39;perl&#39;</span>は内部コマンドとして認識されません...
+</code></pre></div><p>…ディレクトリ<code>C:\Strawberry\perl\bin</code>がWindowsのPATH環境変数に追加されているかどうかを確認する必要があります。</p>
+<p>次のコマンドを使用して、PATH環境変数にPerlディレクトリを追加できます。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">setx path <span style="color:#e6db74">&#34;%path%;C:\Strawberry\perl\bin&#34;</span>
+</code></pre></div><h2 id="テキストエディタのインストールコードエディタとも呼ばれます">テキストエディタのインストール—コードエディタとも呼ばれます</h2>
+<p>Perlスクリプトはプレーンテキストです。</p>
+<p>Perlスクリプトは、任意のプレーンテキストエディタで編集できます。</p>
+<p>Perlでのプログラミングを容易にするために、構文の強調表示やオートコンプリートなどの機能を備えたエディターをインストールすることをお勧めします。</p>
+<p>エディターのオプションはたくさんあります。Visual StudioCodeの使用をお勧めします。</p>
+<p>ダウンロードするには、公式Webサイト<a href='https://code.visualstudio.com' target="_blank" rel="nofollow noopener" title="クリックしてVisualStudioCodeの公式Webサイトにアクセスします">https://code.visualstudio.com&nbsp;<i class="fas fa-external-link-alt outter-link"></i>
+</a>にアクセスしてください。</p>
+
+<div class="notices info" ><p>Visual StudioCodeのインストールは非常に簡単で簡単です。インストーラーを実行し、プログラムによって提示された手順に従います。</p>
+</div>
+
+<blockquote>
+<p>他のエディターオプションを試したい場合は、<a href='https://www.sublimetext.com/' target="_blank" rel="nofollow noopener" title="Sublime Text公式ウェブサイト">Sublime Text&nbsp;<i class="fas fa-external-link-alt outter-link"></i>
+</a>を試すことができます または<a href='https://atom.io/' target="_blank" rel="nofollow noopener" title="Atom公式サイト">Atom&nbsp;<i class="fas fa-external-link-alt outter-link"></i>
+</a>。プログラマーの間で最も人気のある2つのコードエディター。 <a href='https://notepad-plus-plus.org/downloads/' target="_blank" rel="nofollow noopener" title="Notepad&#43;&#43;公式ウェブサイト">Notepad&#43;&#43;&nbsp;<i class="fas fa-external-link-alt outter-link"></i>
+</a>また、良いオプションです。</p>
+</blockquote>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/ja/tutorial/introduction/" title="Perlの紹介"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/ja/tutorial/first-program/" title="Perlでの最初のプログラムの開発" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1642875192"></script>
+    <script src="/js/perfect-scrollbar.min.js?1642875192"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1642875192"></script>
+    <script src="/js/jquery.sticky.js?1642875192"></script>
+    <script src="/js/featherlight.min.js?1642875192"></script>
+    <script src="/js/highlight.pack.js?1642875192"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1642875192"></script>
+    <script src="/js/learn.js?1642875192"></script>
+    <script src="/js/hugo-learn.js?1642875192"></script>
+    
+    
+  </body>
+</html>
+

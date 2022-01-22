@@ -30,26 +30,26 @@ Uma palavra-chave representa um termo reservado da linguagem de programação.
     </item>
     
     <item>
-      <title>Configurando o ambiente de desenvolvimento do Perl</title>
+      <title>Configurando o Ambiente de Desenvolvimento do Perl</title>
       <link>https://perl.dev.br/tutorial/development-environment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://perl.dev.br/tutorial/development-environment/</guid>
       <description>Nesse tutorial nós vamos instalar o Perl e tudo o que for necessário para começar a programar nesta linguagem.
-Para programar em Pel é necessário instalar o aplicativo de distribuição da linguagem e um editor de texto simples.
+Para programar em Perl é necessário instalar o aplicativo de distribuição da linguagem de programação e um editor de texto simples.
 Strawberry Perl — O que é e como baixá-lo O Strawberry Perl é um ambiente de desenvolvimento Perl para o Microsoft Windows.
 O Strawberry Perl contém todos os requisitos necessários para executar scripts em Perl.</description>
     </item>
     
     <item>
-      <title>Desenvolvendo o primeiro programa em Perl</title>
+      <title>Desenvolvendo o Primeiro Programa em Perl</title>
       <link>https://perl.dev.br/tutorial/first-program/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://perl.dev.br/tutorial/first-program/</guid>
       <description>Os programas em Perl são textos simples.
  Apesar da simplicidade, os scripts em Perl podem executar tarefas complexas.
- Primeiro, crie uma pasta chamada scripts-perl no diretório raiz c:. Abre o seu editor de texto preferido para criarmos o primeiro script em Perl. Crie um novo arquivo e insira o código abaixo:  #!/usr/bin/perl use warnings; print(&amp;#34;Olá, Mundo!\n&amp;#34;);  Salve o arquivo com o nome hello.pl dentro do diretório scripts-perl.</description>
+ Primeiro, crie uma pasta chamada perl-scripts no diretório raiz C:. Abre o seu editor de texto preferido para criarmos o primeiro script em Perl. Crie um novo arquivo e insira o código abaixo:  #!/usr/bin/perl use warnings; print(&amp;#34;Olá, Mundo!\n&amp;#34;);  Salve o arquivo com o nome hello.pl dentro do diretório perl-scripts.</description>
     </item>
     
     <item>

@@ -1,0 +1,50 @@
+[
+{
+	"uri": "https://perl.dev.br/zh-cn/tutorial/",
+	"title": "教程",
+	"tags": [],
+	"description": "",
+	"content": "第1章 Perl 教程 学习世界上最流行的语言之一的所有基础知识。教程中充满了实用和简单的例子，方便用户理解。\n Perl 简介   设置 Perl 开发环境   用 Perl 开发第一个程序   "
+},
+{
+	"uri": "https://perl.dev.br/zh-cn/tutorial/introduction/",
+	"title": "Perl 简介",
+	"tags": [],
+	"description": "",
+	"content": "在本文中，您将了解 Perl 编程语言的一些重要方面。这是与构成该语言的特征的第一次接触。\nPerl 特性——语言的重要方面 Perl 是市场上最流行、功能最丰富的编程语言之一。它经过二十多年的发展和改进。它在其发展过程中拥有一个积极参与的社区。\nPerl 可以在大量的平台上运行。兼容大多数流行的操作系统，如 Windows、Linux 和 MacOS，对于需要跨平台可移植性的任何人来说，它都是明智的选择。\nPerl 目前支持超过 100 种不同的平台。\n但是 Perl 可以用来做什么呢？\nPerl 是一种通用语言。它既可以用于任务关键型项目，也可以用于小型项目，甚至可以用于非常简单的单行脚本。\nPerl 最重要的特性——语言亮点 1. 可扩展的编程语言 Perl 有一个名为CPAN\u0026nbsp;\r的模块存储库 ， Comprehensive Perl Archive Network的缩写，在其中您可以找到该语言的数十万个扩展。\n如果您需要一个执行特定任务的模块，很可能社区中的某个人已经开发了它。\n模块范围从图形用户界面 UI 到与最流行的数据库管理器的集成。\nPerl 为MySQL、Oracle、PostgresSQL等程序员提供最流行的数据库支持。\n2. 易于使用和学习 尽管 Perl 存在一些争议，但该语言非常容易学习。\n除了拥有庞大而乐于助人的社区\u0026nbsp;\r，您仍然可以在互联网上免费找到数千个教程。\nPerl 也有文档\u0026nbsp;\r非常详细且易于理解。该语言以其在执行复杂任务方面的效率而著称。\n3. 多功能性 任何编程语言最重要的特性之一是它在编程范式方面的多功能性。\nPerl 支持面向对象、过程式编程或函数式编程，所有这些编程范例。\n这允许程序员使用最适合他们项目的范例自由地开发他们的程序。\n4.正则表达式 当我们谈论文本操作时，Perl 处于另一个层次。可以说，语言是正则表达式的先驱。\n正则表达式或正则表达式是一个强大的系统，用于在各种类型的内容中查找文本出现。随着教程的进行，您将了解更多有关此系统的信息。\nPerl 有一组专门用于文本处理的内置 API。有了它们，操作由 XML 和 HTML 等标记语言生成的文件要容易得多。\nPerl 的正则表达式引擎不需要注释。凭借强大的系统，Perl 的正则表达式可用于通过复杂的组合查找系统上的特定文件。\n5. 开源 开源项目允许用户自由、自由地访问、更改甚至分发它。\nPerl 从一开始就是作为一个开源项目开发的。您可以下载 Perl，对其进行更改，并使用 GNU、GPL 或艺术许可证之一自由分发它。\n该语言仍然支持商业用途。\n6.质量安全 当我们谈论编程时，语言安全是必不可少的。\nPerl 由 Coverity 认证，没有安全漏洞。语言核心也具有低缺陷密度。\n这使用户对使用 Perl 开发他们的程序更有信心。\n不同的 Perl 版本——版本 5 x 版本 6 这里值得注意的是，Perl 有两个主要版本，这在用户中会产生混淆。\n在 Perl 的第 5 版之前，该语言仍称为 Perl。然而，版本 6 与 Perl 有很大的不同，以至于它变成了另一种语言，称为Raku\u0026nbsp;\r。\nRaku 可以被认为是 Perl 的完全面向对象的实现。\n在我们的教程中，我们将使用 Perl 5.3 版。\n谁发明了 Perl？ Perl 于 1987 年由程序员 Larry Wall 首次引入。\n他是 NASA 的系统管理员，需要一种语言来更有效地处理报告。Perl 的第一个版本是在 UNIX 操作系统上创建和运行的。\n二十多年来，Perl 一直由一个活跃且敬业的程序员社区开发和改进。\n"
+},
+{
+	"uri": "https://perl.dev.br/zh-cn/tutorial/development-environment/",
+	"title": "设置 Perl 开发环境",
+	"tags": [],
+	"description": "",
+	"content": "在本教程中，我们将安装 Perl 以及开始使用这种语言编程所需的一切。\n要在 Perl 中编程，必须安装编程语言分发应用程序和一个简单的文本编辑器。\nStrawberry Perl — 它是什么以及如何下载它 Strawberry Perl 是 Microsoft Windows 的 Perl 开发环境。\nStrawberry Perl 包含运行 Perl 脚本所需的所有要求。\nStrawberry Perl 可以直接从官网下载https://strawberryperl.com\u0026nbsp;\r。\n下载后，只需运行安装程序应用程序。\n在 Windows 上安装 Strawberry Perl — 使用图像一步一步  运行 Strawberry Perl 安装程序后，立即出现以下窗口。单击下一步按钮继续。  \r\r单击“我接受许可协议中的条款”复选框，然后单击“下一步”按钮，阅读并接受计划条款  \r\r选择应用程序安装位置。默认情况下，建议将 Strawberry Perl 安装在 C:\\Strawberry 文件夹中。如果不确定安装位置，请保留此默认文件夹。  \r\r配置好整个系统后，只需单击安装按钮即可开始软件安装。  \r\r现在，只需等待安装完成。  \r\r完成 Strawberry Perl 安装后，将出现以下屏幕。单击“完成”按钮完成安装程序。  \r\rPerl 安装确认 要确认 Perl 已正确安装在您的计算机上，请执行以下步骤：\n 打开 Windows 命令提示符并键入命令 perl -v。 按 Enter 键执行命令。 检查该命令是否输出计算机上安装的 Perl 版本，如下图所示。  \r\r如果命令返回如下内容：\n\u0026#39;perl\u0026#39; 不是内部或外部命令、可运行程序或批处理文件。 或者\n\u0026#39;perl\u0026#39; 未被识别为内部命令... …有必要验证目录 C:\\Strawberry\\perl\\bin 是否已添加到 Windows PATH 环境变量中。\n您可以使用以下命令在 PATH 环境变量中添加 Perl 目录：\nsetx path \u0026#34;%path%;C:\\Strawberry\\perl\\bin\u0026#34; 安装文本编辑器 — 也称为代码编辑器 Perl 脚本是纯文本。\nPerl 脚本可以在任何纯文本编辑器中进行编辑。\n为了使 Perl 编程更容易，建议安装一个具有语法高亮和自动完成等功能的编辑器。\n编辑器选项很多。我建议使用 Visual Studio Code。\n要下载它，只需访问官方网站https://code.visualstudio.com\u0026nbsp;\r。\n安装 Visual Studio Code 非常简单明了。运行安装程序并按照程序提供的步骤进行操作。\n  如果您想尝试其他编辑器选项，可以尝试Sublime Text\u0026nbsp;\r或Atom\u0026nbsp;\r。 程序员中最受欢迎的两种代码编辑器。 Notepad\u0026#43;\u0026#43;\u0026nbsp;\r也是一个不错的选择。\n "
+},
+{
+	"uri": "https://perl.dev.br/zh-cn/tutorial/first-program/",
+	"title": "用 Perl 开发第一个程序",
+	"tags": [],
+	"description": "",
+	"content": " Perl 脚本是纯文本。\n 尽管它很简单，但 Perl 脚本可以执行复杂的任务。\n 首先，在 C: 根目录中创建一个名为 PERL-SCRIPTS 的文件夹。 打开您喜欢的文本编辑器以创建第一个 Perl 脚本。 创建一个新文件并输入以下代码：  #!/usr/bin/perl use warnings; print(\u0026#34;你好世界！\\n\u0026#34;);  将名为 hello.pl 的文件保存到 perl-scripts 文件夹。  在 Perl 中运行脚本 要运行 Perl 脚本，请在 Windows 中打开命令提示符。\n导航到脚本所在的文件夹。\n在我们的例子中，文件夹位于 c:\\perl-scripts。要将提示放在此文件夹中，请键入命令 cd c:\\perl-scripts 并按 Enter 键。\n 运行命令：\nperl hello.pl 输出：\n你好世界！ 如果您在屏幕上看到此结果，那么恭喜您刚刚创建并成功运行了您的第一个 Perl 脚本。\n解释脚本 - 详细 让我们通过第一个 Perl 程序的每一行来了解它是如何工作的。\n#!/usr/bin/perl 第一行告诉 shell 这个脚本应该使用 Perl 解释器运行。\n地址 /usr/bin/perl 正是解释器所在的位置。\nuse warnings; 脚本的第二行包含一个 Pragma。\n这个 Pragma 告诉 Perl 解释器，当代码中发生某些事情时，应该向用户显示额外的警告。\nPerl 中使用的另一个非常重要的 Pragma 是 use stricts。随着教程的进展，我们将看到更多关于它的信息。\n print(\u0026#34;你好世界！\\n\u0026#34;); 脚本的第三行包含一个名为 print 的函数。\n此函数在屏幕上放置一个值。\n在这种情况下，值是括号内的任何值。\n\u0026quot;你好世界！\\n\u0026quot; 表示 Perl 中的字符串。\nPerl 中的字符串用引号\u0026quot;\u0026quot;括起来。\n在整个教程中，您将了解有关 Perl 中字符串的更多信息。\n字符串中的序列 \\n 代表 Perl 解释器的换行符。\n\\n 被称为 escape sequence。\n"
+},
+{
+	"uri": "https://perl.dev.br/zh-cn/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://perl.dev.br/zh-cn/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://perl.dev.br/zh-cn/",
+	"title": "学习 Perl",
+	"tags": [],
+	"description": "",
+	"content": "学习 Perl 本教程涵盖了 Perl 最基本的方面，适合那些想要学习如何释放这种强大且成熟的编程语言的全部潜力的人。\n 无论您是刚开始使用 Perl 还是经验丰富的程序员，本教程都适合您。\n本教程将从 Perl 的基础知识开始，并推进到更专业的水平。学习 Perl 很容易，因此您不必担心。课程小而短，可让您按照自己的节奏学习。\n"
+}]

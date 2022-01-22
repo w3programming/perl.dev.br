@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.84.2" />
+    <meta name="description" content="Complete Perl tutorial. Learn all the fundamental Perl concepts to start off your programming career.">
+<meta name="author" content="w3empire.com">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Setting Up the Perl Development Environment | Perl Tutorial</title>
+
+    
+    <link href="/css/nucleus.css?1642875192" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1642875192" rel="stylesheet">
+    <link href="/css/hybrid.css?1642875192" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1642875192" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1642875192" rel="stylesheet">
+    <link href="/css/auto-complete.css?1642875192" rel="stylesheet">
+    
+    <link href="/css/github-dark.min.css?1642875192" rel="stylesheet">
+    <link href="/css/theme.css?1642875192" rel="stylesheet">
+    <link href="/css/tabs.css?1642875192" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1642875192" rel="stylesheet">
+    
+    <link href="/css/theme-dark-gray.css?1642875192" rel="stylesheet">
+    
+    <link href="/css/app.css?1642875192" rel="stylesheet">
+
+    <script src="/js/jquery-3.3.1.min.js?1642875192"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-41KQMP58BQ"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    
+    gtag('config', 'G-41KQMP58BQ'); 
+    
+</script>
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3427355473051563" crossorigin="anonymous"></script>
+  </head>
+  <body class="" data-url="/en/tutorial/development-environment/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      
+
+
+
+
+
+
+
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1642875192"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1642875192"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/perl.dev.br\/\/en";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1642875192"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/en/'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/en/tutorial/" title="Tutorial" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/en/tutorial/">
+          Tutorial
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/tutorial/introduction/" title="Introduction to Perl" class="dd-item ">
+        <a href="/en/tutorial/introduction/">
+        Perl - Introduction
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/tutorial/development-environment/" title="Setting Up the Perl Development Environment" class="dd-item active">
+        <a href="/en/tutorial/development-environment/">
+        Perl - Development Environment
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/tutorial/first-program/" title="Developing the First Program in Perl" class="dd-item ">
+        <a href="/en/tutorial/first-program/">
+        Perl - First Program
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/tutorial/operators/" title="Perl - Operators" class="dd-item ">
+        <a href="/en/tutorial/operators/">
+        Perl - Operators
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/tutorial/list/" title="Perl - List" class="dd-item ">
+        <a href="/en/tutorial/list/">
+        Perl - List
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+          <div class="select-style">
+            <select id="select-language" onchange="location = this.value;">
+          
+          
+          
+              
+              
+                  
+                    
+                    
+                      <option id="pt" value="https://perl.dev.br/tutorial/development-environment/">Português</option>
+                    
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="en" value="https://perl.dev.br/en/tutorial/development-environment/" selected>English</option>
+                    
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="es" value="https://perl.dev.br/es/tutorial/development-environment/">Español</option>
+                    
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="zh-cn" value="https://perl.dev.br/zh-cn/tutorial/development-environment/">中文</option>
+                    
+                  
+              
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="ja" value="https://perl.dev.br/ja/tutorial/development-environment/">日本語</option>
+                    
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="ru" value="https://perl.dev.br/ru/tutorial/development-environment/">Pусский</option>
+                    
+                  
+              
+          
+        </select>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+          <g>
+            <g id="arrow-drop-down">
+              <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+            </g>
+          </g>
+        </svg>
+        </div>
+        </a>
+        </li>
+      
+
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <small>
+    <a href="https://support.perl.dev.br/en/institutional/about/" target="_blank" rel="noopener">About&nbsp;us</a> | <a href="https://support.perl.dev.br/en/institutional/terms/" target="_blank" rel="noopener">Terms&nbsp;of&nbsp;use</a> | <a href="https://support.perl.dev.br/en/institutional/privacy-policy/" target="_blank" rel="noopener">Privacy&nbsp;policy</a> | <a href="https://support.perl.dev.br/en/institutional/cookie-policy/" target="_blank" rel="noopener">Cookie&nbsp;policy</a> | <a href="https://support.perl.dev.br/en/institutional/affiliate-disclosure/" target="_blank" rel="noopener">Affiliate&nbsp;disclosure</a>
+</small>
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://github.com/w3programming/perl.dev.br/edit/master/content/tutorial/development-environment/index.en.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/en/'>Learn Perl</a> > <a href='/en/tutorial/'>Tutorial</a> > Setting Up the Perl Development Environment
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#strawberry-perl--what-is-it-and-how-to-download-it">Strawberry Perl — What is it and how to download it</a></li>
+    <li><a href="#installing-strawberry-perl-on-windows--step-by-step-with-images">Installing Strawberry Perl on Windows — Step by Step with Images</a></li>
+    <li><a href="#perl-installation-confirmation">Perl installation confirmation</a></li>
+    <li><a href="#installing-a-text-editor--also-known-as-a-code-editor">Installing a Text Editor — Also Known as a Code Editor</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+            
+<div class="affiliate-disclosure">This site contains affiliate links. If you buy something through a link on this site we may receive a small commission at no additional cost to you. <a href="https://support.perl.dev.br/en/institutional/affiliate-disclosure/" target="blank" rel="noopener">Learn more</a></div>
+          
+            <h1>
+              
+              Setting Up the Perl Development Environment
+            </h1>
+          
+
+        
+
+
+<p>In this tutorial we are going to install Perl and everything else necessary to start programming in this language.</p>
+<p>To program in Perl it&rsquo;s necessary to install the programming language distribution application and a simple text editor.</p>
+<h2 id="strawberry-perl--what-is-it-and-how-to-download-it">Strawberry Perl — What is it and how to download it</h2>
+<p>Strawberry Perl is a Perl development environment for Microsoft Windows.</p>
+<p>Strawberry Perl contains all the requirements needed to run Perl scripts.</p>
+<p>Strawberry Perl can be downloaded directly from the official website <a href='https://strawberryperl.com' target="_blank" rel="nofollow noopener" title="Click to visit Strawberry Perl official website">https://strawberryperl.com&nbsp;<i class="fas fa-external-link-alt outter-link"></i>
+</a>.</p>
+<p>After downloading it, just run the installer application.</p>
+<h2 id="installing-strawberry-perl-on-windows--step-by-step-with-images">Installing Strawberry Perl on Windows — Step by Step with Images</h2>
+<ol>
+<li>Right after running the Strawberry Perl installer, the window below appears. Click the NEXT button to continue.</li>
+</ol>
+<p>
+    <a href="/images/install-perl-strawberry-1.png" data-featherlight="image">
+        <img src="/images/install-perl-strawberry-1.png" alt="Setting Up the Perl Development Environment" title="Setting Up the Perl Development Environment" style="width: auto; height: auto;" />
+    </a>
+</p>
+<ol start="2">
+<li>Read and accept the program terms by clicking the <code>I accept the terms in the license agreement</code> checkbox and then the <code>next</code> button</li>
+</ol>
+<p>
+    <a href="/images/install-perl-strawberry-2.png" data-featherlight="image">
+        <img src="/images/install-perl-strawberry-2.png" alt="Setting Up the Perl Development Environment" title="Setting Up the Perl Development Environment" style="width: auto; height: auto;" />
+    </a>
+</p>
+<ol start="3">
+<li>Select the application installation location. By default, it is suggested to install Strawberry Perl in the <code>C:\Strawberry</code> folder. If in doubt where to install it, leave this default folder.</li>
+</ol>
+<p>
+    <a href="/images/install-perl-strawberry-3.png" data-featherlight="image">
+        <img src="/images/install-perl-strawberry-3.png" alt="Setting Up the Perl Development Environment" title="Setting Up the Perl Development Environment" style="width: auto; height: auto;" />
+    </a>
+</p>
+<ol start="4">
+<li>With the whole system configured, just click the Install button to start the software installation.</li>
+</ol>
+<p>
+    <a href="/images/install-perl-strawberry-4.png" data-featherlight="image">
+        <img src="/images/install-perl-strawberry-4.png" alt="Setting Up the Perl Development Environment" title="Setting Up the Perl Development Environment" style="width: auto; height: auto;" />
+    </a>
+</p>
+<ol start="5">
+<li>Now, just wait for the installation to complete.</li>
+</ol>
+<p>
+    <a href="/images/install-perl-strawberry-5.png" data-featherlight="image">
+        <img src="/images/install-perl-strawberry-5.png" alt="Setting Up the Perl Development Environment" title="Setting Up the Perl Development Environment" style="width: auto; height: auto;" />
+    </a>
+</p>
+<ol start="6">
+<li>After completing the Strawberry Perl installation, the following screen appears. Finish the installer by clicking the <code>finish</code> button.</li>
+</ol>
+<p>
+    <a href="/images/install-perl-strawberry-6.png" data-featherlight="image">
+        <img src="/images/install-perl-strawberry-6.png" alt="Setting Up the Perl Development Environment" title="Setting Up the Perl Development Environment" style="width: auto; height: auto;" />
+    </a>
+</p>
+<h2 id="perl-installation-confirmation">Perl installation confirmation</h2>
+<p>To confirm that Perl has been properly installed on your computer, follow these steps:</p>
+<ol>
+<li>Open a Windows command prompt and type the command <code>perl -v</code>.</li>
+<li>Press <code>Enter</code> to execute the command.</li>
+<li>Check if the command outputs the Perl version installed on your computer as shown in the image below.</li>
+</ol>
+<p>
+    <a href="/images/perl-v.png" data-featherlight="image">
+        <img src="/images/perl-v.png" alt="Setting Up the Perl Development Environment" title="Setting Up the Perl Development Environment" style="width: auto; height: auto;" />
+    </a>
+</p>
+<p>If the command returns something like this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#e6db74">&#39;perl&#39;</span> is not recognized as an internal or external command, operable program or batch file.
+</code></pre></div><p>or</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#e6db74">&#39;perl&#39;</span> is not recognized as an internal command...
+</code></pre></div><p>…it is necessary to verify if the directory <code>C:\Strawberry\perl\bin</code> has been added to the windows PATH environment variable.</p>
+<p>You can add the Perl directory to the PATH environment variable using the command:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">setx path <span style="color:#e6db74">&#34;%path%;C:\Strawberry\perl\bin&#34;</span>
+</code></pre></div><h2 id="installing-a-text-editor--also-known-as-a-code-editor">Installing a Text Editor — Also Known as a Code Editor</h2>
+<p>Perl scripts are plain text.</p>
+<p>Perl scripts can be edited in any plain text editor.</p>
+<p>To make programming in Perl easier, it&rsquo;s recommended to install an editor that has features such as syntax highlighting and autocompletion.</p>
+<p>The editor options are many. I recommend using Visual Studio Code.</p>
+<p>To download it, just visit the official website at <a href='https://code.visualstudio.com' target="_blank" rel="nofollow noopener" title="Click to visit Visual Studio Code official website">https://code.visualstudio.com&nbsp;<i class="fas fa-external-link-alt outter-link"></i>
+</a>.</p>
+
+<div class="notices info" ><p>Installing Visual Studio Code is quite simple and straightforward. Run the installer and follow the steps presented by the program.</p>
+</div>
+
+<blockquote>
+<p>If you want to try other editor options, you can try <a href='https://www.sublimetext.com/' target="_blank" rel="nofollow noopener" title="Sublime Text official website">Sublime Text&nbsp;<i class="fas fa-external-link-alt outter-link"></i>
+</a> or the <a href='https://atom.io/' target="_blank" rel="nofollow noopener" title="Official Atom website">Atom&nbsp;<i class="fas fa-external-link-alt outter-link"></i>
+</a>. Two of the most popular code editors among programmers. <a href='https://notepad-plus-plus.org/downloads/' target="_blank" rel="nofollow noopener" title="Notepad&#43;&#43; official website">Notepad&#43;&#43;&nbsp;<i class="fas fa-external-link-alt outter-link"></i>
+</a> is also a good option.</p>
+</blockquote>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/en/tutorial/introduction/" title="Introduction to Perl"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/en/tutorial/first-program/" title="Developing the First Program in Perl" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1642875192"></script>
+    <script src="/js/perfect-scrollbar.min.js?1642875192"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1642875192"></script>
+    <script src="/js/jquery.sticky.js?1642875192"></script>
+    <script src="/js/featherlight.min.js?1642875192"></script>
+    <script src="/js/highlight.pack.js?1642875192"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1642875192"></script>
+    <script src="/js/learn.js?1642875192"></script>
+    <script src="/js/hugo-learn.js?1642875192"></script>
+    
+    
+  </body>
+</html>
+

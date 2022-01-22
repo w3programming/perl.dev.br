@@ -7,6 +7,41 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>pt</language><atom:link href="https://perl.dev.br/en/tutorial/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Introduction to Perl</title>
+      <link>https://perl.dev.br/en/tutorial/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://perl.dev.br/en/tutorial/introduction/</guid>
+      <description>In this article you will learn about some important aspects of the Perl programming language. This is a first contact with characteristics that make up the language.
+Perl Features — Important Aspects of the Language Perl is one of the most popular and feature-rich programming languages ​​on the market. It has been developed and improved for over two decades. It has an active and participatory community in its development.
+Perl can run on an insane amount of platform.</description>
+    </item>
+    
+    <item>
+      <title>Setting Up the Perl Development Environment</title>
+      <link>https://perl.dev.br/en/tutorial/development-environment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://perl.dev.br/en/tutorial/development-environment/</guid>
+      <description>In this tutorial we are going to install Perl and everything else necessary to start programming in this language.
+To program in Perl it&amp;rsquo;s necessary to install the programming language distribution application and a simple text editor.
+Strawberry Perl — What is it and how to download it Strawberry Perl is a Perl development environment for Microsoft Windows.
+Strawberry Perl contains all the requirements needed to run Perl scripts.
+Strawberry Perl can be downloaded directly from the official website https://strawberryperl.</description>
+    </item>
+    
+    <item>
+      <title>Developing the First Program in Perl</title>
+      <link>https://perl.dev.br/en/tutorial/first-program/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://perl.dev.br/en/tutorial/first-program/</guid>
+      <description>Perl scripts are plain text.
+ Despite its simplicity, Perl scripts can perform complex tasks.
+ First, create a folder called perl-scripts in the C: root directory. Open your favorite text editor to create the first Perl script. Create a new file and enter the code below:  #!/usr/bin/perl use warnings; print(&amp;#34;Hello, World!\n&amp;#34;);  Save the file with the name HELLO.PL to the perl-scripts folder.  Running a script in Perl To run a Perl script, open a command prompt in Windows.</description>
+    </item>
+    
+    <item>
       <title>Perl - Operators</title>
       <link>https://perl.dev.br/en/tutorial/operators/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -16,6 +51,19 @@
  Operators are a hugely important part of programming.
 They tell your computer what you want it to do with a given input.
 Numeric operators Perl has a variety of numeric operators to help you manipulate numbers, including arithmetic, Boolean, and bitwise operations.</description>
+    </item>
+    
+    <item>
+      <title>Perl - List</title>
+      <link>https://perl.dev.br/en/tutorial/list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://perl.dev.br/en/tutorial/list/</guid>
+      <description>A Perl list is a data type that can store an ordered sequence of values.
+A list is composed of items, called list elements.
+Each list element is a set of values, and these values are indexed and ordered.
+Example:
+() (1, 2, 3) (&amp;#34;Perl&amp;#34;, &amp;#34;Programming&amp;#34;, &amp;#34;Code&amp;#34;) (4, 5) (1, &amp;#34;hi&amp;#34;) (&amp;#34;hi&amp;#34;, 1, 2, &amp;#34;bye&amp;#34;) Simple Perl list Complex Perl list Flattening lists in Perl Flattening list in Perl is a process of converting nested lists to single-level lists.</description>
     </item>
     
   </channel>

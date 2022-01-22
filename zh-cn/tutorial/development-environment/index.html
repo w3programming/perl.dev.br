@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="zh-cn" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.84.2" />
+    <meta name="description" content="完整的 Perl 教程。 学习所有 Perl 基本概念，开始您的职业生涯。">
+<meta name="author" content="w3empire.com">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>设置 Perl 开发环境 | Perl教程</title>
+
+    
+    <link href="/css/nucleus.css?1642875192" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1642875192" rel="stylesheet">
+    <link href="/css/hybrid.css?1642875192" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1642875192" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1642875192" rel="stylesheet">
+    <link href="/css/auto-complete.css?1642875192" rel="stylesheet">
+    
+    <link href="/css/github-dark.min.css?1642875192" rel="stylesheet">
+    <link href="/css/theme.css?1642875192" rel="stylesheet">
+    <link href="/css/tabs.css?1642875192" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1642875192" rel="stylesheet">
+    
+    <link href="/css/theme-dark-gray.css?1642875192" rel="stylesheet">
+    
+    <link href="/css/app.css?1642875192" rel="stylesheet">
+
+    <script src="/js/jquery-3.3.1.min.js?1642875192"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-41KQMP58BQ"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    
+    gtag('config', 'G-41KQMP58BQ'); 
+    
+</script>
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3427355473051563" crossorigin="anonymous"></script>
+  </head>
+  <body class="" data-url="/zh-cn/tutorial/development-environment/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      
+
+
+
+
+
+
+
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="搜索...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1642875192"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1642875192"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/perl.dev.br\/\/zh-cn";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1642875192"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/zh-cn/'><i class='fas fa-home'></i> 转到主页</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/zh-cn/tutorial/" title="教程" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/zh-cn/tutorial/">
+          教程
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/zh-cn/tutorial/introduction/" title="Perl 简介" class="dd-item ">
+        <a href="/zh-cn/tutorial/introduction/">
+        Perl - 简介
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/zh-cn/tutorial/development-environment/" title="设置 Perl 开发环境" class="dd-item active">
+        <a href="/zh-cn/tutorial/development-environment/">
+        Perl - 开发环境
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/zh-cn/tutorial/first-program/" title="用 Perl 开发第一个程序" class="dd-item ">
+        <a href="/zh-cn/tutorial/first-program/">
+        Perl - 第一个程序
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+          <div class="select-style">
+            <select id="select-language" onchange="location = this.value;">
+          
+          
+          
+              
+              
+                  
+                    
+                    
+                      <option id="pt" value="https://perl.dev.br/tutorial/development-environment/">Português</option>
+                    
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="en" value="https://perl.dev.br/en/tutorial/development-environment/">English</option>
+                    
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="es" value="https://perl.dev.br/es/tutorial/development-environment/">Español</option>
+                    
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="zh-cn" value="https://perl.dev.br/zh-cn/tutorial/development-environment/" selected>中文</option>
+                    
+                  
+              
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="ja" value="https://perl.dev.br/ja/tutorial/development-environment/">日本語</option>
+                    
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="ru" value="https://perl.dev.br/ru/tutorial/development-environment/">Pусский</option>
+                    
+                  
+              
+          
+        </select>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+          <g>
+            <g id="arrow-drop-down">
+              <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+            </g>
+          </g>
+        </svg>
+        </div>
+        </a>
+        </li>
+      
+
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> 清理历史记录</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <small>
+    <a href="https://support.perl.dev.br/en/institutional/about/" target="_blank" rel="noopener">关于我们</a> | <a href="https://support.perl.dev.br/en/institutional/terms/" target="_blank" rel="noopener">使用条款</a> | <a href="https://support.perl.dev.br/en/institutional/privacy-policy/" target="_blank" rel="noopener">隐私政策</a> | <a href="https://support.perl.dev.br/en/institutional/cookie-policy/" target="_blank" rel="noopener">饼干政策</a> | <a href="https://support.perl.dev.br/en/institutional/affiliate-disclosure/" target="_blank" rel="noopener">关联公司披露</a>
+</small>
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='编辑当前页' href="https://github.com/w3programming/perl.dev.br/edit/master/content/tutorial/development-environment/index.zh-cn.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">编辑当前页</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/zh-cn/'>学习 Perl</a> > <a href='/zh-cn/tutorial/'>教程</a> > 设置 Perl 开发环境
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#strawberry-perl--它是什么以及如何下载它">Strawberry Perl — 它是什么以及如何下载它</a></li>
+    <li><a href="#在-windows-上安装-strawberry-perl--使用图像一步一步">在 Windows 上安装 Strawberry Perl — 使用图像一步一步</a></li>
+    <li><a href="#perl-安装确认">Perl 安装确认</a></li>
+    <li><a href="#安装文本编辑器--也称为代码编辑器">安装文本编辑器 — 也称为代码编辑器</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+            
+<div class="affiliate-disclosure">本网站包含附属链接。 如果您通过本网站上的链接购买商品，我们可能会收取少量佣金，您无需支付额外费用。 <a href="https://support.perl.dev.br/en/institutional/affiliate-disclosure/" target="blank" rel="noopener">学到更多</a></div>
+          
+            <h1>
+              
+              设置 Perl 开发环境
+            </h1>
+          
+
+        
+
+
+<p>在本教程中，我们将安装 Perl 以及开始使用这种语言编程所需的一切。</p>
+<p>要在 Perl 中编程，必须安装编程语言分发应用程序和一个简单的文本编辑器。</p>
+<h2 id="strawberry-perl--它是什么以及如何下载它">Strawberry Perl — 它是什么以及如何下载它</h2>
+<p>Strawberry Perl 是 Microsoft Windows 的 Perl 开发环境。</p>
+<p>Strawberry Perl 包含运行 Perl 脚本所需的所有要求。</p>
+<p>Strawberry Perl 可以直接从官网下载<a href='https://strawberryperl.com' target="_blank" rel="nofollow noopener" title="点击访问草莓Perl官网">https://strawberryperl.com&nbsp;<i class="fas fa-external-link-alt outter-link"></i>
+</a>。</p>
+<p>下载后，只需运行安装程序应用程序。</p>
+<h2 id="在-windows-上安装-strawberry-perl--使用图像一步一步">在 Windows 上安装 Strawberry Perl — 使用图像一步一步</h2>
+<ol>
+<li>运行 Strawberry Perl 安装程序后，立即出现以下窗口。单击下一步按钮继续。</li>
+</ol>
+<p>
+    <a href="/images/install-perl-strawberry-1.png" data-featherlight="image">
+        <img src="/images/install-perl-strawberry-1.png" alt="设置 Perl 开发环境" title="设置 Perl 开发环境" style="width: auto; height: auto;" />
+    </a>
+</p>
+<ol start="2">
+<li>单击“我接受许可协议中的条款”复选框，然后单击“下一步”按钮，阅读并接受计划条款</li>
+</ol>
+<p>
+    <a href="/images/install-perl-strawberry-2.png" data-featherlight="image">
+        <img src="/images/install-perl-strawberry-2.png" alt="设置 Perl 开发环境" title="设置 Perl 开发环境" style="width: auto; height: auto;" />
+    </a>
+</p>
+<ol start="3">
+<li>选择应用程序安装位置。默认情况下，建议将 <code>Strawberry Perl</code> 安装在 <code>C:\Strawberry</code> 文件夹中。如果不确定安装位置，请保留此默认文件夹。</li>
+</ol>
+<p>
+    <a href="/images/install-perl-strawberry-3.png" data-featherlight="image">
+        <img src="/images/install-perl-strawberry-3.png" alt="设置 Perl 开发环境" title="设置 Perl 开发环境" style="width: auto; height: auto;" />
+    </a>
+</p>
+<ol start="4">
+<li>配置好整个系统后，只需单击安装按钮即可开始软件安装。</li>
+</ol>
+<p>
+    <a href="/images/install-perl-strawberry-4.png" data-featherlight="image">
+        <img src="/images/install-perl-strawberry-4.png" alt="设置 Perl 开发环境" title="设置 Perl 开发环境" style="width: auto; height: auto;" />
+    </a>
+</p>
+<ol start="5">
+<li>现在，只需等待安装完成。</li>
+</ol>
+<p>
+    <a href="/images/install-perl-strawberry-5.png" data-featherlight="image">
+        <img src="/images/install-perl-strawberry-5.png" alt="设置 Perl 开发环境" title="设置 Perl 开发环境" style="width: auto; height: auto;" />
+    </a>
+</p>
+<ol start="6">
+<li>完成 <code>Strawberry Perl</code> 安装后，将出现以下屏幕。单击“完成”按钮完成安装程序。</li>
+</ol>
+<p>
+    <a href="/images/install-perl-strawberry-6.png" data-featherlight="image">
+        <img src="/images/install-perl-strawberry-6.png" alt="设置 Perl 开发环境" title="设置 Perl 开发环境" style="width: auto; height: auto;" />
+    </a>
+</p>
+<h2 id="perl-安装确认">Perl 安装确认</h2>
+<p>要确认 Perl 已正确安装在您的计算机上，请执行以下步骤：</p>
+<ol>
+<li>打开 Windows 命令提示符并键入命令 <code>perl -v</code>。</li>
+<li>按 <code>Enter</code> 键执行命令。</li>
+<li>检查该命令是否输出计算机上安装的 Perl 版本，如下图所示。</li>
+</ol>
+<p>
+    <a href="/images/perl-v.png" data-featherlight="image">
+        <img src="/images/perl-v.png" alt="设置 Perl 开发环境" title="设置 Perl 开发环境" style="width: auto; height: auto;" />
+    </a>
+</p>
+<p>如果命令返回如下内容：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#e6db74">&#39;perl&#39;</span> 不是内部或外部命令、可运行程序或批处理文件。
+</code></pre></div><p>或者</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#e6db74">&#39;perl&#39;</span> 未被识别为内部命令...
+</code></pre></div><p>…有必要验证目录 <code>C:\Strawberry\perl\bin</code> 是否已添加到 Windows PATH 环境变量中。</p>
+<p>您可以使用以下命令在 PATH 环境变量中添加 Perl 目录：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">setx path <span style="color:#e6db74">&#34;%path%;C:\Strawberry\perl\bin&#34;</span>
+</code></pre></div><h2 id="安装文本编辑器--也称为代码编辑器">安装文本编辑器 — 也称为代码编辑器</h2>
+<p>Perl 脚本是纯文本。</p>
+<p>Perl 脚本可以在任何纯文本编辑器中进行编辑。</p>
+<p>为了使 Perl 编程更容易，建议安装一个具有语法高亮和自动完成等功能的编辑器。</p>
+<p>编辑器选项很多。我建议使用 Visual Studio Code。</p>
+<p>要下载它，只需访问官方网站<a href='https://code.visualstudio.com' target="_blank" rel="nofollow noopener" title="点击访问Visual Studio Code官网">https://code.visualstudio.com&nbsp;<i class="fas fa-external-link-alt outter-link"></i>
+</a>。</p>
+
+<div class="notices info" ><p>安装 Visual Studio Code 非常简单明了。运行安装程序并按照程序提供的步骤进行操作。</p>
+</div>
+
+<blockquote>
+<p>如果您想尝试其他编辑器选项，可以尝试<a href='https://www.sublimetext.com/' target="_blank" rel="nofollow noopener" title="Sublime Text 官网">Sublime Text&nbsp;<i class="fas fa-external-link-alt outter-link"></i>
+</a>或<a href='https://atom.io/' target="_blank" rel="nofollow noopener" title="原子官方网站">Atom&nbsp;<i class="fas fa-external-link-alt outter-link"></i>
+</a>。 程序员中最受欢迎的两种代码编辑器。 <a href='https://notepad-plus-plus.org/downloads/' target="_blank" rel="nofollow noopener" title="Notepad&#43;&#43;官网">Notepad&#43;&#43;&nbsp;<i class="fas fa-external-link-alt outter-link"></i>
+</a>也是一个不错的选择。</p>
+</blockquote>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/zh-cn/tutorial/introduction/" title="Perl 简介"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/zh-cn/tutorial/first-program/" title="用 Perl 开发第一个程序" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1642875192"></script>
+    <script src="/js/perfect-scrollbar.min.js?1642875192"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1642875192"></script>
+    <script src="/js/jquery.sticky.js?1642875192"></script>
+    <script src="/js/featherlight.min.js?1642875192"></script>
+    <script src="/js/highlight.pack.js?1642875192"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1642875192"></script>
+    <script src="/js/learn.js?1642875192"></script>
+    <script src="/js/hugo-learn.js?1642875192"></script>
+    
+    
+  </body>
+</html>
+
