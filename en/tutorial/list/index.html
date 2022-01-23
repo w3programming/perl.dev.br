@@ -12,23 +12,23 @@
     <title>Perl - List | Perl Tutorial</title>
 
     
-    <link href="/css/nucleus.css?1642875192" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1642875192" rel="stylesheet">
-    <link href="/css/hybrid.css?1642875192" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1642875192" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1642875192" rel="stylesheet">
-    <link href="/css/auto-complete.css?1642875192" rel="stylesheet">
+    <link href="/css/nucleus.css?1642916339" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1642916339" rel="stylesheet">
+    <link href="/css/hybrid.css?1642916339" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1642916339" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1642916339" rel="stylesheet">
+    <link href="/css/auto-complete.css?1642916339" rel="stylesheet">
     
-    <link href="/css/github-dark.min.css?1642875192" rel="stylesheet">
-    <link href="/css/theme.css?1642875192" rel="stylesheet">
-    <link href="/css/tabs.css?1642875192" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1642875192" rel="stylesheet">
+    <link href="/css/github-dark.min.css?1642916339" rel="stylesheet">
+    <link href="/css/theme.css?1642916339" rel="stylesheet">
+    <link href="/css/tabs.css?1642916339" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1642916339" rel="stylesheet">
     
-    <link href="/css/theme-dark-gray.css?1642875192" rel="stylesheet">
+    <link href="/css/theme-dark-gray.css?1642916339" rel="stylesheet">
     
-    <link href="/css/app.css?1642875192" rel="stylesheet">
+    <link href="/css/app.css?1642916339" rel="stylesheet">
 
-    <script src="/js/jquery-3.3.1.min.js?1642875192"></script>
+    <script src="/js/jquery-3.3.1.min.js?1642916339"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -79,14 +79,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1642875192"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1642875192"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1642916339"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1642916339"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/perl.dev.br\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1642875192"></script>
+<script type="text/javascript" src="/js/search.js?1642916339"></script>
 
     
   </div>
@@ -335,7 +335,7 @@
                   
                 
                 
-                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                <div id="breadcrumbs">
                     <span id="sidebar-toggle-span">
                         <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
                           <i class="fas fa-bars"></i>
@@ -429,19 +429,27 @@
 <p>If you want to access the second element in a list, then you would use an index of 1.</p>
 <p>This system is called zero-based indexing, and it is used instead of one-based indexing because with zero-based indexing, lists can be indexed from 0 to n - 1, where n is the total amount of elements inside the list.</p>
 <p><strong>Example:</strong></p>
-<p>$items = (&ldquo;apple&rdquo;, &ldquo;orange&rdquo;, &ldquo;banana&rdquo;);</p>
-<p>$item = $items[0];</p>
-<p>print(&ldquo;The first item in the list is: $item&rdquo;);</p>
-<p><strong>Output:</strong></p>
-<p>The first item in the list is: apple</p>
-<h2 id="build-a-list-based-on-a-range">Build a list based on a range</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">$fruits <span style="color:#f92672">=</span> (<span style="color:#e6db74">&#34;apple&#34;</span>, <span style="color:#e6db74">&#34;orange&#34;</span>, <span style="color:#e6db74">&#34;banana&#34;</span>);
+
+$fruit <span style="color:#f92672">=</span> $fruits[<span style="color:#ae81ff">0</span>];
+
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;The first item in the list is: $fruit&#34;</span>);
+</code></pre></div><p><strong>Output:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">The first item in the list is: apple
+</code></pre></div><h2 id="build-a-list-based-on-a-range">Build a list based on a range</h2>
 <p>In Perl, you can build lists based on ranges of numbers or characters.</p>
 <p><strong>Example:</strong></p>
 <p>The following Perl code will generate a list (the number 1 through 10) and store it in the variable &ldquo;numbers&rdquo;.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#66d9ef">my</span> $number <span style="color:#f92672">=</span> (<span style="color:#ae81ff">1</span><span style="color:#f92672">..</span><span style="color:#ae81ff">10</span>);
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#66d9ef">my</span> $numbers <span style="color:#f92672">=</span> (<span style="color:#ae81ff">1</span><span style="color:#f92672">..</span><span style="color:#ae81ff">10</span>);
+
+<span style="color:#66d9ef">print</span>($numbers[<span style="color:#ae81ff">0</span>]);
+</code></pre></div><p><strong>Output:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#ae81ff">1</span>
 </code></pre></div><p><strong>Example:</strong></p>
-<p>The code below will generate the list (a-z) and store it in the variable &ldquo;letters&rdquo;.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#66d9ef">my</span> $number <span style="color:#f92672">=</span> (a<span style="color:#f92672">..</span>z);
+<p>The code below will generate the list (the letter a through z) and store it in the variable &ldquo;letters&rdquo;.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#66d9ef">my</span> $letters <span style="color:#f92672">=</span> (a<span style="color:#f92672">..</span>z);
+
+<span style="color:#66d9ef">print</span>($numbers[<span style="color:#ae81ff">20</span>]);
 </code></pre></div>
 
 <footer class="footline">
@@ -597,16 +605,16 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1642875192"></script>
-    <script src="/js/perfect-scrollbar.min.js?1642875192"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1642875192"></script>
-    <script src="/js/jquery.sticky.js?1642875192"></script>
-    <script src="/js/featherlight.min.js?1642875192"></script>
-    <script src="/js/highlight.pack.js?1642875192"></script>
+    <script src="/js/clipboard.min.js?1642916339"></script>
+    <script src="/js/perfect-scrollbar.min.js?1642916339"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1642916339"></script>
+    <script src="/js/jquery.sticky.js?1642916339"></script>
+    <script src="/js/featherlight.min.js?1642916339"></script>
+    <script src="/js/highlight.pack.js?1642916339"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1642875192"></script>
-    <script src="/js/learn.js?1642875192"></script>
-    <script src="/js/hugo-learn.js?1642875192"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1642916339"></script>
+    <script src="/js/learn.js?1642916339"></script>
+    <script src="/js/hugo-learn.js?1642916339"></script>
     
     
   </body>
